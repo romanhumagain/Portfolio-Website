@@ -212,7 +212,7 @@ nav ul li a:hover {
   color: #1DA1F2; /* Twitter icon color */
 }
 .social a:nth-child(6) i {
-  color: #f71b1b; /* Twitter icon color */
+  color: #c52424; /* Twitter icon color */
 }
 .social a:nth-child(7) i {
   color: #c52424; /* Twitter icon color */
@@ -268,7 +268,7 @@ footer {
     font-size: 16px;
   }
   .hero-text h1 span {
-    font-size: 28px;
+    font-size: 26px;
   }
   .hero-text h5 {
     font-size: 0.9rem;
@@ -327,7 +327,7 @@ margin: 5px;
     font-size: 20px;
   }
   .hero-text h1 span {
-    font-size: 35px;
+    font-size: 15px;
   }
   .hero-text h5 {
     font-size: 1rem;
