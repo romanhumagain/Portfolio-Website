@@ -56,7 +56,6 @@ header{
   display: inline-flex;
   justify-content: center;
   align-items: center;
- 
 }
 .logo i{
   height: 45px;
@@ -80,7 +79,7 @@ header{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
+  background-color: #030303;
   padding: 10px 20px;
   border-radius: 50px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
@@ -120,6 +119,7 @@ header{
   justify-content:space-around;
   align-items: center;
   padding-top: 4rem;
+  /* margin-top: 100px; */
 }
 .container .hero-pic{
   width:290px;
@@ -128,7 +128,7 @@ header{
   overflow: hidden;
   border: 15px solid #444;
 box-shadow: 5px 7px 25px rgba(0,0,0 ,0.5);
-margin-bottom: 60px;
+/* margin-bottom: 60px; */
 
 }
 .hero-pic img{
@@ -161,6 +161,10 @@ font-size: 1rem;
   margin-top: 10px ;
   color:#e5e5e5;
   margin: 10px;
+  margin-bottom: 70px;
+  text-align: justify;
+  font-size:medium;
+  margin: 2px;
 }
 nav ul {
   margin: 0;
