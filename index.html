@@ -19,11 +19,6 @@
           <i class="fas fa-r"></i>
           <div class="logo-text">Roman Humagain</div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
       </header>
       <div class="container">
         <div class="hero-pic">
@@ -75,20 +70,7 @@
         </footer>
       </div>
     </div>
-    <script>
-      const navLinks = document.querySelectorAll('nav ul li a');
-      
-      navLinks.forEach(link => {
-        link.addEventListener('click', e => {
-          e.preventDefault();
-          
-          const sectionId = link.getAttribute('href');
-          const section = document.querySelector(sectionId);
-          
-          section.scrollIntoView({ behavior: 'smooth' });
-        });
-      });
-    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script>
       var typed = new Typed(".hero-text h5",{
         strings: ["a Software Engineering Student","a Backend Developer","a Software Developer"],
