@@ -7,8 +7,12 @@ margin: 0;
 font-family: poppins,sans-serif;
 text-decoration: none;
 }
-body{
-background-color: #fffefe;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #fffefe;
   overflow-x: hidden;
 }
 .hero-header{
@@ -18,6 +22,9 @@ background-color: #fffefe;
   background-color: #070b0c
 }
 .contact {
+  width: 100%;
+  /* position: absolute; */
+  bottom: 0;
   background-color: #f7f7f7;
   padding: 50px 0;
   margin-top: 30;
@@ -126,7 +133,7 @@ header{
   height: 290px;
   border-radius: 50%;
   overflow: hidden;
-  border: 15px solid #444;
+  /* border: 15px solid #444; */
 box-shadow: 5px 7px 25px rgba(0,0,0 ,0.5);
 /* margin-bottom: 60px; */
 
@@ -158,14 +165,16 @@ margin-top: 10px ;
 font-size: 1rem;
 }
 .hero-text p{
-  margin-top: 10px ;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
   color:#e5e5e5;
   margin: 10px;
   margin-bottom: 70px;
   text-align: justify;
   font-size:medium;
-  margin: 2px;
-}
+  /* /* word-spacing: 2px; */
+ } 
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -201,7 +210,7 @@ nav ul li a:hover {
   
 }
 .social a:nth-child(1) i {
-  color: rgb(40, 40, 231); /* Facebook icon color */
+  color: rgb(46, 46, 221); /* Facebook icon color */
 }
 .social a:nth-child(3) i {
   color: #0077B5; /* LinkedIn icon color */
@@ -233,7 +242,10 @@ footer {
 }
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 768px) {
-  
+  body {
+    height: auto;
+  }
+
   .wrapper {
     width: 100%;
     padding: 0 10px;
@@ -261,7 +273,7 @@ footer {
   .container .hero-pic {
     width: 200px;
     height: 200px;
-    border: 10px solid #444;
+    border: 7px solid #444;
     margin-bottom: 30px;
   }
   .hero-text {
@@ -272,10 +284,10 @@ footer {
     font-size: 16px;
   }
   .hero-text h1 span {
-    font-size: 26px;
+    font-size: 24px;
   }
   .hero-text h5 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   nav ul li {
     margin-right: 10px;
@@ -285,7 +297,7 @@ footer {
     margin: 7px;
   }
   .hero-text p{
-margin: 5px;
+    margin: 5px;
     font-size: 15px;
   }
   footer{
@@ -298,6 +310,9 @@ margin: 5px;
 }
 /* Tablets and small desktops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    height: auto;
+  }
   .wrapper {
     width: 100%;
     padding: 0 20px;
@@ -324,7 +339,7 @@ margin: 5px;
   .container .hero-pic {
     width: 220px;
     height: 220px;
-    border: 12px solid #444;
+    border: 10px solid #444;
     margin-bottom: 40px;
   }
   .hero-text h1 {
@@ -336,16 +351,23 @@ margin: 5px;
   .hero-text h5 {
     font-size: 1rem;
   }
+  footer{
+    font-size: 14px;
+  }
 }
 /* Large desktops */
 @media only screen and (min-width: 1025px) {
+  body {
+    height: auto;
+  }
   .container {
     padding-top: 4rem;
   }
   .container .hero-pic {
     width: 270px;
     height: 270px;
-    border: 15px solid #444;
+    border-radius: 50%;
+    border: 10px solid #444;
     margin-bottom: 60px;
   }
   .hero-text h1 {
@@ -356,6 +378,9 @@ margin: 5px;
   }
   .hero-text h5 {
     font-size: 1.1rem;
+  }
+  footer{
+    font-size: 16px;
   }
 }
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
