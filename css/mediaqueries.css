@@ -138,30 +138,27 @@
     border-radius: 50%;
   }
   .github-link {
-    font-size: 0.8rem; /* Decreases the font size */
-    padding: 5px 5px; /* Reduces padding to make the button smaller */
+    font-size: 0.8rem; 
+    padding: 6px 5px; 
   }
   .github-link i {
-    font-size: 0.7rem; /* Adjusts the font size of the icon for mobile */
-    margin-right: 6px; /* Adjust space between icon and text if necessary */
+    font-size: 0.7rem; 
+    margin-right: 6px; 
   }
   .about-first,
   .about-second {
-    line-height: 1.4;
-    font-size: 16px;
+    line-height: 1.38;
+    font-size: 13px;
     text-align: center;
   }
   .about-third {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.36;
     text-align: center;
   }
-  .email,
-  .linkedin {
-    font-size: small;
-  }
+  
   .email-icon {
-    font-size: 25px;
+    font-size: 27px;
   }
   .linkedin-icon {
     font-size: x-large;
