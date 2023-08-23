@@ -1,0 +1,53 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .menu-links {
+    padding-top: 50px;  /* This provides space for the close button */
+}
+}
+
+@media screen and (max-width: 600px) {
+  
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+}

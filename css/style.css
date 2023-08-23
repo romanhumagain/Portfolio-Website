@@ -1,0 +1,962 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+a,
+.btn {
+  transition: all 400ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 11vh;
+}
+
+.nav-links {
+  gap: 1.4rem;
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: rgb(103, 103, 103);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(7, 217, 220);
+}
+
+.logo {
+    font-size: 1.9rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #2E3192, #07d6d6, #FF7A87, #FFCC00);
+    background-size: 200% auto; /* Make the gradient's size larger than the element for the animation */
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: GradientAnimation 4s ease infinite; /* Apply animation */
+ 
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+.icon i {
+  background: linear-gradient(45deg, #f55332, #ea237c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+.hamburger-logo{
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #2E3192, #0ae2e2, #FF7A87, #FFCC00);
+    background-size: 200% auto; /* Make the gradient's size larger than the element for the animation */
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: GradientAnimation 4s ease infinite;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+.menu-links {
+  position: fixed; 
+  top: 0;
+  right: 0;
+  bottom: 0; 
+  background-color: rgba(255, 255, 255, 0.9); 
+  width: 50%; /* Changed from 100% to 50% */
+  height: 100vh;  /* Ensure the menu takes up the full viewport height */
+  max-height: 100vh;
+  overflow-y: auto; 
+  transform: translateX(100%); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+
+.menu-links.open {
+  transform: translateX(0); 
+}
+.close-menu-btn {
+  background: transparent;  /* No background */
+  border: none;  /* Remove default button border */
+  color: #413f3f;  /* Text color */
+  font-size: 1.8rem;  /* Text size */
+  padding: 10px 15px;  /* Button padding */
+  position: absolute;  /* Positioning the button */
+  top: -8px;  /* Distance from the top */
+  right: 15px;  /* Distance from the right */
+  cursor: pointer;  /* Hand cursor on hover */
+  transition: transform 0.3s ease, opacity 0.3s ease;  /* Smooth transition for hover effects */
+  z-index: 10;  /* Ensure it stays above the other elements */
+}
+
+.close-menu-btn:hover {
+  transform: scale(1.1);  /* Slightly scale the button on hover */
+  opacity: 0.7;  /* Slightly fade the button on hover */
+}
+
+.close-menu-btn i {
+  font-size: 1.5rem;  /* Adjusting the icon size */
+}
+
+
+
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.2rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+
+/* for download cv button */
+
+/* Download Button Styling */
+.download-btn {
+  display: inline-block;
+  padding: 11px 12px;
+  font-size: 18px;
+  font-family: 'Fold', sans-serif;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #f74a4a, #3d3d3d); /* Purple to Pink gradient */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+.download-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #12c6f3, #21d4b6); /* Orange gradient for shine effect */
+  transform: skewX(-45deg);
+  transition: none;
+  z-index: -1;
+}
+
+.download-btn:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.download-btn:hover:before {
+  left: 100%;
+  transition: left 0.6s ease;
+}
+.home-img .profile-pic {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth transition for scaling and shadow */
+}
+
+.home-img:hover .profile-pic {
+  transform: scale(1.1); /* this scales the image up to 110% */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* adds a shadow around the image */
+}
+
+
+/* for the typed js effect */
+/* Font and color */
+.section__text__p2 {
+  font-family: 'Roboto Mono', monospace; /* Example font, make sure to include it from Google Fonts */
+  color: #f71d1d;
+}
+
+/* Text shadow */
+.section__text__p2 {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Cursor animation */
+.typed-cursor {
+  font-size: 1.2em;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* Background highlight */
+#typed {
+  transition: background-color 0.8s ease;
+}
+
+.typed-color-1 {
+  color: #159997;  
+}
+
+.typed-color-2 {
+  color: #f63434;  
+}
+
+
+
+/* for about section */
+
+.fact-item {
+  background-color: #f7f7f7;  /* Light background */
+  border: 1px solid #e0e0e0;  /* Subtle border */
+  border-radius: 10px;  /* Rounded edges */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition for hover effects */
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);  /* Soft shadow for depth */
+}
+
+.fact-item:hover {
+  transform: scale(1.05);  /* Slightly scale the fact on hover */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);  /* Deeper shadow on hover */
+}
+
+/* Common Category Box Styles */
+.category-box {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.category-box:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Styles */
+.category-title {
+  font-size: 24px; 
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.category-title::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #4a4a4a;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Skill item hover effect */
+.skill-items:hover {
+  background-color: #f6f1f1;
+}
+
+.about-first{
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: justify;
+}
+.about-second{
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: justify;
+}
+.about-third{
+  line-height: 1.4;
+  text-align: justify;
+}
+
+
+/* for service section */
+.service-item {
+  transition: transform .3s, box-shadow .3s; /* Smooth transition for hover effect */
+}
+
+.service-item:hover {
+  transform: translateY(-9px); /* Elevates the item up by 5 pixels */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds a more pronounced shadow */
+}
+
+
+/* for contact section */
+
+.shadow-sm {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* for icons in the contact section */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 9px; /* Space between icons */
+}
+
+.social a {
+  text-decoration: none;
+  font-size: 34px; /* Icon size. Adjust as needed. */
+  transition: transform 0.3s ease; /* Animation effect for hover */
+}
+
+/* Individual icon colors */
+.social a .fa-facebook { color: #1877F2; }
+.social a .fa-instagram { color: #C13584; }
+.social a .fa-linkedin { color: #0A66C2; }
+.social a .fa-github { color: #333; }
+.social a .fa-twitter { color: #1DA1F2; }
+.social a .fa-pinterest { color: #E60023; }
+
+/* Hover effects */
+.social a:hover {
+  transform: scale(1.2); /* Enlarges the icon slightly */
+}
+
+
+
+
+/* for projects  */
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(45deg, #f83c3c, #3d3d3d);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Gradient Button */
+.gradient-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(45deg, #f83c3c, #3d3d3d);
+  color: #ffffff;
+  transition: transform 0.2s;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Project Image Style with hover effect */
+.project-image {
+  transition: transform 0.3s;
+  border-radius: 5px;
+}
+
+.portfolio-item:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* For better alignment and spacing on mobile */
+@media only screen and (max-width: 767px) {
+  .project-row > div {
+      margin-bottom: 20px;
+  }
+}
+
+
+/* for freelancing  */
+.freelancer-available {
+  background: linear-gradient(135deg, #f13d4c, #d00000);
+  position: relative;
+  overflow: hidden;
+}
+
+.freelancer-available::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(-30deg);
+  pointer-events: none; /* ensures the pseudo-element doesn't interfere with any interactions */
+  z-index: 1;
+}
+
+.freelancer-available p, .freelancer-available h2, .freelancer-available a {
+  position: relative;
+  z-index: 10;
+}
+
+.freelancer-available a.btn {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.freelancer-available a.btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* fot contact section */
+
+#contact {
+  font-family: 'Arial', sans-serif; /* change this to your preferred font family */
+}
+
+.gradient-card {
+  background: linear-gradient(45deg, #f84a4a, #4d4c4c);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gradient-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  transition: box-shadow 0.3s;
+}
+
+.card i {
+  transition: transform 0.3s;
+}
+
+.card:hover i {
+  transform: scale(1.1);
+}
+
+
+
+@media (max-width: 768px) {
+  #contact h1 {
+      font-size: 2rem;
+  }
+
+  .card-body {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card-body a {
+      margin-top: 10px;
+  }
+}
+
+
+/* for footer */
+.site-footer {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-content {
+  font-size: 16px;
+}
+
+
+
+
+@media (max-width: 992px) {
+  body {
+      padding-top: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-img img {
+      width: 200px !important;
+      height:200px !important;
+  }
+  .proj{
+    font-size: small;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .social a i {
+      font-size: 20px; /* Adjust this value as per your preference for mobile size */
+  }
+  .social {
+    gap: 4px; 
+  }
+
+  .card-body a {
+      word-wrap: break-word;  /* Breaks the email onto the next line if it exceeds the width */
+  }
+  .title {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+
+
+/* for responsive */
+
+/* Styles that are always applied */
+.profile-pic {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.section__text__p1,
+.section__text__p2 {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+/* Adjustments for medium screens (tablets) */
+@media (max-width: 905px) {
+  .profile-pic {
+      width: 300px;
+      height: 300px;
+  }
+
+  .title {
+      font-size: 1.5rem;
+  }
+
+  .section__text__p1{
+    font-size: 1rem;
+  }
+  .section__text__p2 {
+      font-size: 1rem;
+  }
+}
+
+/* Adjustments for small screens (phones) */
+@media (max-width: 576px) {
+  .profile-pic {
+      width: 190px;
+      height: 190px;
+  }
+
+  .title {
+      font-size: 1.2rem;
+  }
+
+  .section__text__p1{
+    font-size: 1.2rem;
+  }
+  .section__text__p2 {
+      font-size: 0.9rem;
+  }
+  .fact-item {
+    margin-bottom: 20px; /* You can adjust this value as needed */
+}
+}
+/* Styles for larger than mobile views */
+@media (min-width: 577px) {
+  .fact-item {
+      margin-bottom: 0; 
+  }
+}
+/* for scrolling to the section title */
+.section-title {
+  padding-top: 12vh;  /* Adjust this value as needed */
+}
+
+/* Extended Gradient for h1 within .section-title */
+.section-title h2 {
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(45deg, #2E3192, #07d6d6, #FF7A87, #FFCC00);
+  background-size: 200% auto; /* Make the gradient's size larger than the element for the animation */
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: GradientAnimation 4s ease infinite; /* Apply animation */
+}
+
+/* Animation for moving gradient */
+@keyframes GradientAnimation {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+
+
+
+
+/* for certificates */
+#certificates .carousel-inner img {
+  max-width: 50%;
+  max-height: 450px;
+}
+
+#certificates .carousel-caption {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 10%;
+  text-align: center;
+  max-width: 50%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  #certificates .carousel-inner img {
+    max-width: 80%;
+  }
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: none; /* Remove default arrow */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #2E3192, #1BFFFF);
+}
+
+.carousel-control-prev-icon::before {
+  content: "\f053"; /* Font Awesome's left arrow */
+  font-family: 'Font Awesome 5 Free'; /* Adjust depending on your Font Awesome version */
+  font-weight: 900; /* Makes it solid */
+  color: white;
+}
+
+.carousel-control-next-icon::before {
+  content: "\f054"; /* Font Awesome's right arrow */
+  font-family: 'Font Awesome 5 Free'; /* Adjust depending on your Font Awesome version */
+  font-weight: 900; /* Makes it solid */
+  color: white;
+}
+
+
+
+.slide-count {
+  background: linear-gradient(45deg, #2E3192, #1BFFFF);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+
+/* to show the number of certificate */
+.cert-circle {
+  width: 105px; 
+  height: 105px;
+  border-radius: 50%; 
+  background: linear-gradient(135deg, #60cde0, #FF69B4); /* gradient colors */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.cert-circle:hover {
+  transform: scale(1.05);
+}
+
+.cert-circle .number {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.cert-circle p {
+  margin: 0;
+  font-size: 0.3rem;
+}
+.cert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .credentials .download-btn {
+      padding: 10px 12px; 
+      font-size: 12px;  
+  }
+  .download-btn {
+    padding: 10px 11px; 
+    font-size: 12px;  
+}
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+  }
+  
+  .github-link {
+    font-size: 0.8rem; /* Decreases the font size */
+    padding: 5px 5px; /* Reduces padding to make the button smaller */
+}
+
+.github-link i {
+    font-size: 0.7rem; /* Adjusts the font size of the icon for mobile */
+    margin-right: 6px; /* Adjust space between icon and text if necessary */
+}
+.about-first{
+  line-height: 1.4;
+  font-size: 19px;
+  text-align: center;
+}
+.about-second{
+  font-size: 19px;
+  line-height: 1.4;
+  text-align: center;
+}
+.about-third{
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
+.email{
+  font-size: x-small;
+}
+.linkedin{
+  font-size: x-small;
+}
+.email-icon{
+font-size: 25px;
+}
+.linkedin-icon{
+  font-size: x-large;
+}
+.cert-circle {
+  width: 95px; 
+  height: 95px;
+  border-radius: 50%; 
+}
+.cert-circle .number {
+  font-size: 1.001rem;
+}
+
+.cert-circle p {
+  font-size: 1px
+}
+}
+
+/* Base Styles for the Footer */
+.site-footer {
+  padding: 20px 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.copy-right {
+  font-size: 12px; /* Smaller base font size for mobile views. */
+}
+
+/* Responsive Styles */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .copy-right {
+      font-size: 14px; /* Slightly larger font size for tablet views. */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .copy-right {
+      font-size: 16px; /* Increase font size for desktop views. */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .copy-right {
+      font-size: 18px; /* Even larger font size for large desktops. */
+  }
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.5s;
+}
