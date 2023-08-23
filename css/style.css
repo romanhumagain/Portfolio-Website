@@ -356,6 +356,17 @@ a:hover {
   color: #f63434;  
 }
 
+.home .row {
+  min-height: 100vh;
+}
+
+/* Override height for mobile screens */
+@media (max-width: 767px) {
+  .home .row {
+      min-height: 90vh;
+  }
+}
+
 
 
 /* for about section */
