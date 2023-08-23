@@ -148,12 +148,12 @@
   .about-first,
   .about-second {
     line-height: 1.4;
-    font-size: 19px;
+    font-size: 16px;
     text-align: center;
   }
   .about-third {
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 1.36;
     text-align: center;
   }
   .email,
