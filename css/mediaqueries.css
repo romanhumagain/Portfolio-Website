@@ -48,6 +48,172 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  
+
+/* ------ MEDIA QUERIES ------ */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .copy-right {
+    font-size: 14px; /* Slightly larger font size for tablet views. */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .copy-right {
+    font-size: 16px; /* Increase font size for desktop views. */
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .copy-right {
+    font-size: 18px; /* Even larger font size for large desktops. */
+  }
+}
+
+/* Adjustments for specific mobile breakpoints and small screens */
+@media (max-width: 905px) {
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .section__text__p1 {
+    font-size: 1rem;
+  }
+  .section__text__p2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-img img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .proj {
+    font-size: small;
+  }
+}
+
+@media (max-width: 768px) {
+  .social a i {
+    font-size: 20px;
+  }
+  .social {
+    gap: 4px; 
+  }
+  .card-body a {
+    word-wrap: break-word; /* Breaks the email onto the next line if it exceeds the width */
+  }
+  .title {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  #contact h1 {
+    font-size: 2rem;
+  }
+  .card-body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-body a {
+    margin-top: 10px;
+  }
+  #certificates .carousel-inner img {
+    max-width: 80%;
+  }
+  .credentials .download-btn,
+  .download-btn {
+    padding: 10px 12px; 
+    font-size: 12px;  
+  }
+  .carousel-control-prev-icon, 
+  .carousel-control-next-icon {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+  }
+  .github-link {
+    font-size: 0.8rem; /* Decreases the font size */
+    padding: 5px 5px; /* Reduces padding to make the button smaller */
+  }
+  .github-link i {
+    font-size: 0.7rem; /* Adjusts the font size of the icon for mobile */
+    margin-right: 6px; /* Adjust space between icon and text if necessary */
+  }
+  .about-first,
+  .about-second {
+    line-height: 1.4;
+    font-size: 19px;
+    text-align: center;
+  }
+  .about-third {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .email,
+  .linkedin {
+    font-size: small;
+  }
+  .email-icon {
+    font-size: 25px;
+  }
+  .linkedin-icon {
+    font-size: x-large;
+  }
+  .cert-circle {
+    width: 95px; 
+    height: 95px;
+    border-radius: 50%; 
+  }
+  .cert-circle .number {
+    font-size: 1.001rem;
+  }
+  .cert-circle p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-pic {
+    width: 190px;
+    height: 190px;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .section__text__p1 {
+    font-size: 1.2rem;
+  }
+  .section__text__p2 {
+    font-size: 0.9rem;
+  }
+  .fact-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Styles for larger than mobile views */
+@media (min-width: 577px) {
+  .fact-item {
+    margin-bottom: 0; 
+  }
+}
+
+/* For better alignment and spacing on mobile */
+@media only screen and (max-width: 767px) {
+  .project-row > div {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 60px;
+  }
 }

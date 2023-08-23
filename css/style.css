@@ -54,10 +54,10 @@ a:hover {
     font-family: 'Poppins', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     background: linear-gradient(45deg, #2E3192, #07d6d6, #FF7A87, #FFCC00);
-    background-size: 200% auto; /* Make the gradient's size larger than the element for the animation */
+    background-size: 200% auto; 
     -webkit-background-clip: text;
     color: transparent;
-    animation: GradientAnimation 4s ease infinite; /* Apply animation */
+    animation: GradientAnimation 4s ease infinite;
  
 }
 
@@ -82,7 +82,7 @@ a:hover {
     font-family: 'Poppins', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     background: linear-gradient(45deg, #2E3192, #0ae2e2, #FF7A87, #FFCC00);
-    background-size: 200% auto; /* Make the gradient's size larger than the element for the animation */
+    background-size: 200% auto;
     -webkit-background-clip: text;
     color: transparent;
     animation: GradientAnimation 4s ease infinite;
@@ -166,8 +166,8 @@ a:hover {
   right: 0;
   bottom: 0; 
   background-color: rgba(255, 255, 255, 0.9); 
-  width: 50%; /* Changed from 100% to 50% */
-  height: 100vh;  /* Ensure the menu takes up the full viewport height */
+  width: 50%; 
+  height: 100vh; 
   max-height: 100vh;
   overflow-y: auto; 
   transform: translateX(100%); 
@@ -179,26 +179,26 @@ a:hover {
   transform: translateX(0); 
 }
 .close-menu-btn {
-  background: transparent;  /* No background */
-  border: none;  /* Remove default button border */
-  color: #413f3f;  /* Text color */
-  font-size: 1.8rem;  /* Text size */
-  padding: 10px 15px;  /* Button padding */
-  position: absolute;  /* Positioning the button */
-  top: -8px;  /* Distance from the top */
-  right: 15px;  /* Distance from the right */
-  cursor: pointer;  /* Hand cursor on hover */
-  transition: transform 0.3s ease, opacity 0.3s ease;  /* Smooth transition for hover effects */
-  z-index: 10;  /* Ensure it stays above the other elements */
+  background: transparent;  
+  border: none;  
+  color: #413f3f;  
+  font-size: 1.8rem;  
+  padding: 10px 15px; 
+  position: absolute;  
+  top: -8px;  
+  right: 15px;  
+  cursor: pointer; 
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+  z-index: 10; 
 }
 
 .close-menu-btn:hover {
-  transform: scale(1.1);  /* Slightly scale the button on hover */
-  opacity: 0.7;  /* Slightly fade the button on hover */
+  transform: scale(1.1);  
+  opacity: 0.7;  
 }
 
 .close-menu-btn i {
-  font-size: 1.5rem;  /* Adjusting the icon size */
+  font-size: 1.5rem;  
 }
 
 
@@ -277,7 +277,7 @@ a:hover {
   font-family: 'Fold', sans-serif;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(to right, #f74a4a, #3d3d3d); /* Purple to Pink gradient */
+  background: linear-gradient(to right, #f74a4a, #3d3d3d); 
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -295,14 +295,14 @@ a:hover {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #12c6f3, #21d4b6); /* Orange gradient for shine effect */
+  background: linear-gradient(to right, #12c6f3, #21d4b6); 
   transform: skewX(-45deg);
   transition: none;
   z-index: -1;
 }
 
 .download-btn:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05); 
 }
 
 .download-btn:hover:before {
@@ -310,19 +310,19 @@ a:hover {
   transition: left 0.6s ease;
 }
 .home-img .profile-pic {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth transition for scaling and shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .home-img:hover .profile-pic {
-  transform: scale(1.1); /* this scales the image up to 110% */
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* adds a shadow around the image */
+  transform: scale(1.1); 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
 }
 
 
 /* for the typed js effect */
 /* Font and color */
 .section__text__p2 {
-  font-family: 'Roboto Mono', monospace; /* Example font, make sure to include it from Google Fonts */
+  font-family: 'Roboto Mono', monospace; 
   color: #f71d1d;
 }
 
@@ -361,16 +361,16 @@ a:hover {
 /* for about section */
 
 .fact-item {
-  background-color: #f7f7f7;  /* Light background */
-  border: 1px solid #e0e0e0;  /* Subtle border */
-  border-radius: 10px;  /* Rounded edges */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition for hover effects */
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);  /* Soft shadow for depth */
+  background-color: #f7f7f7;  
+  border: 1px solid #e0e0e0;  
+  border-radius: 10px;  
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);  
 }
 
 .fact-item:hover {
-  transform: scale(1.05);  /* Slightly scale the fact on hover */
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);  /* Deeper shadow on hover */
+  transform: scale(1.05);  
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);  
 }
 
 /* Common Category Box Styles */
@@ -428,12 +428,12 @@ a:hover {
 
 /* for service section */
 .service-item {
-  transition: transform .3s, box-shadow .3s; /* Smooth transition for hover effect */
+  transition: transform .3s, box-shadow .3s; 
 }
 
 .service-item:hover {
-  transform: translateY(-9px); /* Elevates the item up by 5 pixels */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds a more pronounced shadow */
+  transform: translateY(-9px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -455,13 +455,13 @@ a:hover {
 .social {
   display: flex;
   justify-content: center;
-  gap: 9px; /* Space between icons */
+  gap: 9px; 
 }
 
 .social a {
   text-decoration: none;
-  font-size: 34px; /* Icon size. Adjust as needed. */
-  transition: transform 0.3s ease; /* Animation effect for hover */
+  font-size: 34px; 
+  transition: transform 0.3s ease; 
 }
 
 /* Individual icon colors */
@@ -474,7 +474,7 @@ a:hover {
 
 /* Hover effects */
 .social a:hover {
-  transform: scale(1.2); /* Enlarges the icon slightly */
+  transform: scale(1.2); 
 }
 
 
@@ -518,12 +518,6 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* For better alignment and spacing on mobile */
-@media only screen and (max-width: 767px) {
-  .project-row > div {
-      margin-bottom: 20px;
-  }
-}
 
 
 /* for freelancing  */
@@ -542,7 +536,7 @@ a:hover {
   height: 200%;
   background: rgba(255, 255, 255, 0.1);
   transform: rotate(-30deg);
-  pointer-events: none; /* ensures the pseudo-element doesn't interfere with any interactions */
+  pointer-events: none; 
   z-index: 1;
 }
 
@@ -565,7 +559,7 @@ a:hover {
 /* fot contact section */
 
 #contact {
-  font-family: 'Arial', sans-serif; /* change this to your preferred font family */
+  font-family: 'Arial', sans-serif; 
 }
 
 .gradient-card {
@@ -592,20 +586,6 @@ a:hover {
 
 
 
-@media (max-width: 768px) {
-  #contact h1 {
-      font-size: 2rem;
-  }
-
-  .card-body {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .card-body a {
-      margin-top: 10px;
-  }
-}
 
 
 /* for footer */
@@ -620,41 +600,6 @@ a:hover {
 }
 
 
-
-
-@media (max-width: 992px) {
-  body {
-      padding-top: 60px;
-  }
-}
-
-@media (max-width: 900px) {
-  .home-img img {
-      width: 200px !important;
-      height:200px !important;
-  }
-  .proj{
-    font-size: small;
-  }
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .social a i {
-      font-size: 20px; /* Adjust this value as per your preference for mobile size */
-  }
-  .social {
-    gap: 4px; 
-  }
-
-  .card-body a {
-      word-wrap: break-word;  /* Breaks the email onto the next line if it exceeds the width */
-  }
-  .title {
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
-}
 
 
 
@@ -678,55 +623,10 @@ a:hover {
   font-weight: bolder;
 }
 
-/* Adjustments for medium screens (tablets) */
-@media (max-width: 905px) {
-  .profile-pic {
-      width: 300px;
-      height: 300px;
-  }
 
-  .title {
-      font-size: 1.5rem;
-  }
-
-  .section__text__p1{
-    font-size: 1rem;
-  }
-  .section__text__p2 {
-      font-size: 1rem;
-  }
-}
-
-/* Adjustments for small screens (phones) */
-@media (max-width: 576px) {
-  .profile-pic {
-      width: 190px;
-      height: 190px;
-  }
-
-  .title {
-      font-size: 1.2rem;
-  }
-
-  .section__text__p1{
-    font-size: 1.2rem;
-  }
-  .section__text__p2 {
-      font-size: 0.9rem;
-  }
-  .fact-item {
-    margin-bottom: 20px; /* You can adjust this value as needed */
-}
-}
-/* Styles for larger than mobile views */
-@media (min-width: 577px) {
-  .fact-item {
-      margin-bottom: 0; 
-  }
-}
 /* for scrolling to the section title */
 .section-title {
-  padding-top: 12vh;  /* Adjust this value as needed */
+  padding-top: 12vh;  
 }
 
 /* Extended Gradient for h1 within .section-title */
@@ -734,10 +634,10 @@ a:hover {
   font-family: 'Poppins', sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   background: linear-gradient(45deg, #2E3192, #07d6d6, #FF7A87, #FFCC00);
-  background-size: 200% auto; /* Make the gradient's size larger than the element for the animation */
+  background-size: 200% auto; 
   -webkit-background-clip: text;
   color: transparent;
-  animation: GradientAnimation 4s ease infinite; /* Apply animation */
+  animation: GradientAnimation 4s ease infinite; 
 }
 
 /* Animation for moving gradient */
@@ -775,14 +675,9 @@ a:hover {
   padding: 10px;
 }
 
-@media (max-width: 768px) {
-  #certificates .carousel-inner img {
-    max-width: 80%;
-  }
-}
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  background-image: none; /* Remove default arrow */
+  background-image: none; 
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -794,16 +689,16 @@ a:hover {
 }
 
 .carousel-control-prev-icon::before {
-  content: "\f053"; /* Font Awesome's left arrow */
-  font-family: 'Font Awesome 5 Free'; /* Adjust depending on your Font Awesome version */
-  font-weight: 900; /* Makes it solid */
+  content: "\f053"; 
+  font-family: 'Font Awesome 5 Free'; 
+  font-weight: 900; 
   color: white;
 }
 
 .carousel-control-next-icon::before {
-  content: "\f054"; /* Font Awesome's right arrow */
-  font-family: 'Font Awesome 5 Free'; /* Adjust depending on your Font Awesome version */
-  font-weight: 900; /* Makes it solid */
+  content: "\f054"; 
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; 
   color: white;
 }
 
@@ -855,71 +750,7 @@ a:hover {
   align-items: center;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  .credentials .download-btn {
-      padding: 10px 12px; 
-      font-size: 12px;  
-  }
-  .download-btn {
-    padding: 10px 11px; 
-    font-size: 12px;  
-}
-  .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-  }
-  
-  .github-link {
-    font-size: 0.8rem; /* Decreases the font size */
-    padding: 5px 5px; /* Reduces padding to make the button smaller */
-}
 
-.github-link i {
-    font-size: 0.7rem; /* Adjusts the font size of the icon for mobile */
-    margin-right: 6px; /* Adjust space between icon and text if necessary */
-}
-.about-first{
-  line-height: 1.4;
-  font-size: 19px;
-  text-align: center;
-}
-.about-second{
-  font-size: 19px;
-  line-height: 1.4;
-  text-align: center;
-}
-.about-third{
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: center;
-}
-.email{
-  font-size: small;
-}
-.linkedin{
-  font-size: small;
-}
-.email-icon{
-font-size: 25px;
-}
-.linkedin-icon{
-  font-size: x-large;
-}
-.cert-circle {
-  width: 95px; 
-  height: 95px;
-  border-radius: 50%; 
-}
-.cert-circle .number {
-  font-size: 1.001rem;
-}
-
-.cert-circle p {
-  font-size: 15px
-}
-}
 
 /* Base Styles for the Footer */
 .site-footer {
@@ -931,34 +762,10 @@ font-size: 25px;
 }
 
 .copy-right {
-  font-size: 12px; /* Smaller base font size for mobile views. */
+  font-size: 12px; 
 }
 
-/* Responsive Styles */
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .copy-right {
-      font-size: 14px; /* Slightly larger font size for tablet views. */
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .copy-right {
-      font-size: 16px; /* Increase font size for desktop views. */
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .copy-right {
-      font-size: 18px; /* Even larger font size for large desktops. */
-  }
-}
 .card:hover {
   transform: translateY(-5px);
   transition: transform 0.5s;
 }
-
-
