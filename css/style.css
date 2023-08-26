@@ -770,3 +770,20 @@ a:hover {
   transform: translateY(-5px);
   transition: transform 0.5s;
 }
+
+/* for modal close button */
+.close-btn {
+  background-color: rgb(243, 243, 243); 
+  border-radius: 15%;  
+  color: #ff4757;                  
+  font-size: 20px;     
+  padding: 5px;            
+  border: none;                    
+  cursor: pointer;                 
+  transition: color 0.3s;          
+}
+
+.close-btn:hover {
+  color: #e8414a;                  
+}
+

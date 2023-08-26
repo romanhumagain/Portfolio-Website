@@ -214,3 +214,27 @@
     padding-top: 60px;
   }
 }
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  .content {
+      font-size: 12px; 
+  }
+  .modal-title{
+    font-size: 14px;
+  }
+}
+
+/* For tablets (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .content {
+      font-size: 13px; 
+  }
+}
+
+/* For laptops (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 2199px) {
+  .content {
+      font-size: 15px; /* Adjust as needed for laptops */
+  }
+}
