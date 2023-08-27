@@ -519,6 +519,11 @@ a:hover {
   transform: scale(1.05);
 }
 
+.github-link {
+  font-size: 0.8rem; 
+  padding: 9px 8px; 
+}
+
 
 
 /* for freelancing  */
@@ -770,13 +775,31 @@ a:hover {
   transform: translateY(-5px);
   transition: transform 0.5s;
 }
+/* for modal trigger button */
+.view-details-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #363636;
+  transition: all 0.3s;
+  display: inline-block;
+  text-decoration: none;  /* Removes underline by default */
+}
+
+.view-details-text:hover {
+  color: #5d5d5d;
+  transform: scale(1.05);
+  text-decoration: underline;  
+  text-decoration-color: #07f4e8; 
+  text-underline-offset:6px;
+}
+
 
 /* for modal close button */
 .close-btn {
   background-color: rgb(243, 243, 243); 
   border-radius: 15%;  
   color: #ff4757;                  
-  font-size: 20px;     
+  font-size: 18px;     
   padding: 5px;            
   border: none;                    
   cursor: pointer;                 

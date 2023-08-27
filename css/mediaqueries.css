@@ -138,8 +138,8 @@
     border-radius: 50%;
   }
   .github-link {
-    font-size: 0.8rem; 
-    padding: 6px 5px; 
+    font-size: 0.7rem; 
+    padding: 6px 4px; 
   }
   .github-link i {
     font-size: 0.7rem; 
@@ -222,6 +222,13 @@
   }
   .modal-title{
     font-size: 14px;
+  }
+  .close-btn {
+padding: 1px;
+  }
+  .view-details-text {
+    font-size: 0.7rem;
+    font-weight: 500;
   }
 }
 
