@@ -523,6 +523,9 @@ a:hover {
   font-size: 0.8rem; 
   padding: 9px 8px; 
 }
+.project-name{
+  text-align: center;
+}
 
 
 
@@ -782,7 +785,7 @@ a:hover {
   color: #363636;
   transition: all 0.3s;
   display: inline-block;
-  text-decoration: none;  /* Removes underline by default */
+  text-decoration: none;  
 }
 
 .view-details-text:hover {

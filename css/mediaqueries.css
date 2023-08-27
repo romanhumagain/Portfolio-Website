@@ -138,8 +138,7 @@
     border-radius: 50%;
   }
   .github-link {
-    font-size: 0.7rem; 
-    padding: 6px 4px; 
+    padding: 6px 6px; 
   }
   .github-link i {
     font-size: 0.7rem; 
@@ -224,10 +223,11 @@
     font-size: 14px;
   }
   .close-btn {
-padding: 1px;
+padding: 4px 4px;
+margin-left:20px;
   }
   .view-details-text {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 500;
   }
 }
