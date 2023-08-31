@@ -813,3 +813,33 @@ a:hover {
   color: #e8414a;                  
 }
 
+/* for image inside the image  */
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* for video in the modal */
+
+#video-container {
+  position: relative;
+  max-width: 100%;
+}
+
+#play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+/* for technology used  */

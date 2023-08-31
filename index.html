@@ -380,7 +380,9 @@
 
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item shadow-sm mb-4">
-            <img src="Images/portfolio/techblog.png" class="w-100 project-image" alt="Tech Blog">
+            <a href="Images/portfolio/techblog.png" target="_blank">
+              <img src="Images/portfolio/techblog.png" class="w-100 project-image" alt="Tech Blog">
+            </a>
             <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Tech Blog- A Blogging Platform</h3>
             <div class="text-center mb-3 m-3">
 
@@ -396,9 +398,10 @@
                 <i class="fab fa-github"></i> View on GitHub
               </a>
               <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#techblog" style="cursor: pointer;">
+              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#techblog"
+                style="cursor: pointer;">
                 View Details
-            </span>
+              </span>
             </p>
           </div>
         </div>
@@ -429,6 +432,34 @@
                   </ul>
                   <strong>On The Horizon 🚀</strong>
                   <p>Up next: 💬 Real-time chats for better connections.</p>
+
+                  <div id="video-container">
+                    <p class="text-muted text-center fw-bold">Project Demonstration</p>
+                    <video style="max-width: 100%;" controls>
+                      <source src="Video/techblog.mp4" type="video/mp4" />
+                    </video>
+                    <button id="play-button" onclick="openVideo('techblog')">Watch the Full Demo</button>
+                  </div>
+
+                  <div id="tech-stack">
+                    <p class="text-muted text-center fw-bold mt-5">Technology Used</p>
+                    <div class="tech-category backend">
+                        <p><strong>Backend:</strong></p>
+                        <p>🖥️ Crafted with the powerful Django framework (Python).</p>
+                    </div>
+                
+                    <div class="tech-category frontend">
+                        <p><strong>Frontend:</strong></p>
+                        <p>🎨 Responsive and intuitive design using HTML, Bootstrap and JavaScript.</p>
+                    </div>
+                
+                    <div class="tech-category database">
+                        <p><strong>Database:</strong></p>
+                        <p><i class="fas fa-database text-danger"></i> Reliable storage with MySQL.</p>
+                    </div>
+                
+                </div>
+
                 </div>
               </div>
               <div class="modal-footer">
@@ -447,14 +478,15 @@
 
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item shadow-sm mb-4">
-            <img src="Images/portfolio/student_management.png" class="w-100 project-image" alt="Tech Blog">
+            <a href="Images/portfolio/student_management.png" target="_blank">
+              <img src="Images/portfolio/student_management.png" class="w-100 project-image" alt="Tech Blog">
+            </a>
             <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Student Management System</h3>
             <div class="text-center mb-3 m-3">
 
               <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
               <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
               <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
-              <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large ;"></i>
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
             </div>
 
@@ -465,9 +497,10 @@
               </a>
 
               <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#std_management" style="cursor: pointer;">
+              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#std_management"
+                style="cursor: pointer;">
                 View Details
-            </span>
+              </span>
             </p>
           </div>
         </div>
@@ -502,6 +535,35 @@
                       account creation.</li>
                     <li><strong>Digital Notice Board:</strong> A space for admins to announce updates.</li>
                   </ul>
+
+                  <div id="video-container">
+                    <p class="text-muted text-center fw-bold">Project Demonstration</p>
+                    <video style="max-width: 100%;" controls>
+                      <source src="Video/student-management-system.mp4" type="video/mp4" />
+                    </video>
+                    <button id="play-button" onclick="openVideo('student')">Watch the Full Demo</button>
+                  </div>
+
+                  <div id="tech-stack">
+                    <p class="text-muted text-center fw-bold mt-5">Technology Used</p>
+                    <div class="tech-category backend">
+                        <p><strong>Backend:</strong></p>
+                        <p>🖥️ Crafted with the powerful Django framework (Python).</p>
+                    </div>
+                
+                    <div class="tech-category frontend">
+                        <p><strong>Frontend:</strong></p>
+                        <p>🎨 Responsive and intuitive design using HTML and Bootstrap.</p>
+                    </div>
+                
+                    <div class="tech-category database">
+                        <p><strong>Database:</strong></p>
+                        <p><i class="fas fa-database text-danger"></i> Reliable storage with MySQL.</p>
+                    </div>
+                
+                </div>
+                
+
                 </div>
               </div>
               <div class="modal-footer">
@@ -516,67 +578,12 @@
           </div>
         </div>
 
-
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item shadow-sm mb-4">
-            <img src="Images/portfolio/food_odering.png" class="w-100 project-image" alt="Tech Blog">
-            <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Food Ordering Website</h3>
-
-            <div class="text-center mb-3 m-3">
-
-              <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
-              <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
-              <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
-              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div>
-            <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/django-food-ordering-system"
-                class="github-link gradient-btn my-1">
-                <i class="fab fa-github"></i> View on GitHub
-              </a>
-
-              <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#food_ordering" style="cursor: pointer;">
-                View Details
-            </span>
-            </p>
-          </div>
-        </div>
-
-        <!--Food Ordering Website Modal -->
-        <div class="modal fade" id="food_ordering" tabindex="-1" aria-labelledby="foodorderinglabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="foodorderinglabel"> <strong>Food Ordering Website</strong> </h6>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="content">
-                  <strong>Food Ordering Website</strong> built on Django, a powerful Python framework, that has the
-                  potential to transform the way people order food online. I have implemented a robust email
-                  verification
-                  system. This ensures that users' accounts are protected and helps maintain the security for ordering
-                  process. Additionally, users have the ability to effortlessly track their order history and make
-                  updates
-                  or deletions to their ordered items.
-                </div>
-              </div>
-              <div class="modal-footer">
-                <a href="https://github.com/romanhumagain/django-food-ordering-system"
-                  class="github-link gradient-btn my-1 mr-2">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-                <button type="button" class="close-btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mt-3">
-          <div class="portfolio-item shadow-sm mb-4">
-            <img src="Images/portfolio/hotel_management.png" class="w-100 project-image"
-              alt="Hotel-Booking-Application">
+            <a href="Images/portfolio/hotel_management.png" target="_blank">
+              <img src="Images/portfolio/hotel_management.png" class="w-100 project-image"
+                alt="Hotel-Booking-Application">
+            </a>
             <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Hotel Booking Application</h3>
             <div class="text-center mb-3 m-2">
               <i class="fab fa-java" style="color: #007396; font-size: x-large ;"></i>
@@ -590,9 +597,10 @@
               </a>
 
               <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#hotelbooking" style="cursor: pointer;">
+              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#hotelbooking"
+                style="cursor: pointer;">
                 View Details
-            </span>
+              </span>
             </p>
           </div>
         </div>
@@ -623,8 +631,37 @@
                     <li>❌ Facilitate booking cancellations when necessary.</li>
                     <li>💵 Track customer payments and generate PDF bills during checkout.</li>
                   </ul>
-                </div>
 
+
+                  <div id="video-container">
+                    <p class="text-muted text-center fw-bold">Project Demonstration</p>
+                    <video style="max-width: 100%;" controls>
+                      <source src="Video/hotel-booking-application.mp4" type="video/mp4" />
+                    </video>
+                    <button id="play-button" onclick="openVideo('hotel-booking-application')">Watch the Full
+                      Demo</button>
+                  </div>
+
+                  <div id="tech-stack">
+                    <p class="text-muted text-center fw-bold mt-5">Technology Used</p>
+                    <div class="tech-category backend">
+                      <p><strong>Core Logic:</strong></p>
+                      <p><i class="fab fa-java" style="color: #007396;" title="Java"></i> Powered by Java with high-performance capabilities.</p>
+                  </div>
+              
+                  <div class="tech-category frontend">
+                      <p><strong>User Interface:</strong></p>
+                      <p>🖼️ Crafted with Java Swing, providing a rich and interactive desktop application experience.</p>
+                  </div>
+                
+                    <div class="tech-category database">
+                        <p><strong>Database:</strong></p>
+                        <p><i class="fas fa-database icon text-danger"></i> Reliable storage with MySQL.</p>
+                    </div>
+                
+                </div>
+                
+                </div>
               </div>
               <div class="modal-footer">
                 <a href="https://github.com/romanhumagain/Hotel-Booking-Application"
@@ -640,8 +677,88 @@
 
         <div class="col-md-6 col-lg-4 mt-3">
           <div class="portfolio-item shadow-sm mb-4">
-            <img src="Images/portfolio/weather-app.png" class="w-100 project-image" alt="weather_app ">
-            <h3 class="project-name text-capitalize fs-5 my-2 mt-4 gradient-text">Weather Application</h3>
+            <a href="Images/portfolio/food_odering.png" target="_blank">
+              <img src="Images/portfolio/food_odering.png" class="w-100 project-image" alt="Tech Blog">
+            </a>
+            <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Food Ordering Website</h3>
+
+            <div class="text-center mb-3 m-3">
+
+              <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
+              <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
+              <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
+              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
+            </div>
+            <p class="mb-4 d-flex align-items-center justify-content-center">
+              <a href="https://github.com/romanhumagain/django-food-ordering-system"
+                class="github-link gradient-btn my-1">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+
+              <!-- Icon to trigger modal -->
+              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#food_ordering"
+                style="cursor: pointer;">
+                View Details
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <!--Food Ordering Website Modal -->
+        <div class="modal fade" id="food_ordering" tabindex="-1" aria-labelledby="foodorderinglabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title" id="foodorderinglabel"> <strong>Food Ordering Website</strong> </h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="content">
+                  <strong>Food Ordering Website</strong> built on Django, a powerful Python framework, that has the
+                  potential to transform the way people order food online. I have implemented a robust email
+                  verification
+                  system. This ensures that users' accounts are protected and helps maintain the security for ordering
+                  process. Additionally, users have the ability to effortlessly track their order history and make
+                  updates
+                  or deletions to their ordered items.
+                <div id="tech-stack">
+                  <p class="text-muted text-center fw-bold mt-5">Technology Used</p>
+                  <div class="tech-category backend">
+                      <p><strong>Backend:</strong></p>
+                      <p>🖥️ Crafted with the powerful Django framework (Python).</p>
+                  </div>
+              
+                  <div class="tech-category frontend">
+                      <p><strong>Frontend:</strong></p>
+                      <p>🎨 Responsive and intuitive design using HTML and Bootstrap.</p>
+                  </div>
+              
+                  <div class="tech-category database">
+                      <p><strong>Database:</strong></p>
+                      <p><i class="fas fa-database text-danger"></i> Reliable storage with MySQL.</p>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+              <div class="modal-footer">
+                <a href="https://github.com/romanhumagain/django-food-ordering-system"
+                  class="github-link gradient-btn my-1 mr-2">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <button type="button" class="close-btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4 mt-3">
+          <div class="portfolio-item shadow-sm mb-4">
+            <a href="Images/portfolio/weather-app.png" target="_blank">
+              <img src="Images/portfolio/weather-app.png" class="w-100 project-image" alt="weather_app ">
+            </a>
+            <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Weather Application</h3>
 
             <div class="text-center mb-3 m-3">
 
@@ -656,9 +773,10 @@
               </a>
 
               <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#weather" style="cursor: pointer;">
+              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#weather"
+                style="cursor: pointer;">
                 View Details
-            </span>
+              </span>
             </p>
           </div>
         </div>
@@ -680,6 +798,22 @@
                   icon. Enhanced with interactive visual cues and transitions, it offers an engaging and intuitive
                   weather-checking experience. Its features include an engaging user interface and rain notifications
                   based on precipitation volume.
+
+                  <div id="tech-stack">
+                    <p class="text-muted text-center fw-bold mt-5">Technology Used</p>
+                    <div class="tech-category backend">
+                        <p><strong>Backend:</strong></p>
+                        <p>🖥️ Crafted with the powerful Django framework (Python).</p>
+                    </div>
+                
+                    <div class="tech-category frontend">
+                        <p><strong>Frontend:</strong></p>
+                        <p>🎨 Responsive and intuitive design using HTML and Bootstrap.</p>
+                    </div>
+
+                    <p class="text-muted fw-light">Used Weather API to fetch the weather data.</p>
+                </div>
+                  
                 </div>
               </div>
               <div class="modal-footer">
@@ -695,8 +829,10 @@
 
         <div class="col-md-6 col-lg-4 mt-3">
           <div class="portfolio-item shadow-sm mb-4">
-            <img src="Images/portfolio/AI-ChatBot.png" class="w-100 project-image" alt="portfolio">
-            <h3 class="project-name text-capitalize fs-5 my-2 mt-4 gradient-text">AI ChatBot</h3>
+            <a href="Images/portfolio/AI-ChatBot.png" target="_blank">
+              <img src="Images/portfolio/AI-ChatBot.png" class="w-100 project-image" alt="portfolio">
+            </a>
+            <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">AI ChatBot</h3>
 
             <div class="text-center mb-3 m-3">
 
@@ -711,9 +847,10 @@
                 <i class="fab fa-github"></i> View on GitHub
               </a>
               <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#chatbot" style="cursor: pointer;">
+              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#chatbot"
+                style="cursor: pointer;">
                 View Details
-            </span>
+              </span>
             </p>
           </div>
         </div>
@@ -739,6 +876,22 @@
                   <P>If you have a premium subscription for OpenAI GPT or if you're planning to subscribe, you can
                     easily integrate it with this chatbot. Follow the instructions from my GitHub README file to set up.
                   </P>
+
+                  <div id="tech-stack">
+                    <p class="text-muted text-center fw-bold mt-5">Technology Used</p>
+                    <div class="tech-category backend">
+                        <p><strong>Backend:</strong></p>
+                        <p>🖥️ Crafted with the powerful Django framework (Python).</p>
+                    </div>
+                
+                    <div class="tech-category frontend">
+                        <p><strong>Frontend:</strong></p>
+                        <p>🎨 Responsive and intuitive design using HTML and Bootstrap.</p>
+                    </div>
+
+                    <p class="text-muted fw-light">Integrated with OpenAI's API for data retrieval.</p>
+
+                </div>
                 </div>
               </div>
               <div class="modal-footer">
@@ -1100,6 +1253,32 @@
         menu.style.transform = "translateX(0%)";
         menu.style.height = "100vh";
       }
+    }
+
+  </script>
+
+  <script>
+    function openVideo(videoType) {
+      let videoURL = '';
+
+      switch (videoType) {
+        case 'student':
+          videoURL = 'Video/student-management-system.mp4';
+          break;
+        case 'techblog':
+          videoURL = 'Video/techblog.mp4';
+          break;
+
+        case 'hotel-booking-application':
+          videoURL = 'Video/hotel-booking-application.mp4';
+          break;
+
+        default:
+          console.error('Unknown video type provided.');
+          return;
+      }
+
+      window.open(videoURL, '_blank');
     }
 
   </script>
