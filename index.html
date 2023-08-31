@@ -436,7 +436,7 @@
                   <div id="video-container">
                     <p class="text-muted text-center fw-bold">Project Demonstration</p>
                     <video style="max-width: 100%;" controls>
-                      <source src="Video/tech.mp4" type="video/mp4" />
+                      <source src="Video/techblog.mp4" type="video/mp4" />
                     </video>
                     <button id="play-button" onclick="openVideo('techblog')">Watch the Full Demo</button>
                   </div>
@@ -1259,27 +1259,30 @@
 
   <script>
     function openVideo(videoType) {
-      let videoURL = '';
+    let videoURL = '';
+    let downloadLink = document.createElement('a');  // Create a new anchor element dynamically
 
-      switch (videoType) {
+    switch (videoType) {
         case 'student':
-          videoURL = 'Video/student-management-system.mp4';
-          break;
+            videoURL = 'Video/student-management-system.mp4';
+            break;
         case 'techblog':
-          videoURL = 'Video/tech.mp4';
-          break;
-
+            videoURL = 'Video/techblog.mp4';
+            break;
         case 'hotel-booking-application':
-          videoURL = 'Video/hotel-booking-application.mp4';
-          break;
-
+            videoURL = 'Video/hotel-booking-application.mp4';
+            break;
         default:
-          console.error('Unknown video type provided.');
-          return;
-      }
-
-      window.open(videoURL, '_blank');
+            console.error('Unknown video type provided.');
+            return;
     }
+
+    downloadLink.href = videoURL;
+    downloadLink.download = '';  
+    document.body.appendChild(downloadLink);  
+    downloadLink.click();  
+    document.body.removeChild(downloadLink); 
+}
 
   </script>
 
