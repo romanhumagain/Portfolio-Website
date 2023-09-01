@@ -144,6 +144,10 @@
     font-size: 0.7rem; 
     margin-right: 6px; 
   }
+  .bio-text {
+    font-size: 12px;
+  }
+  
   .about-first,
   .about-second {
     line-height: 1.38;

@@ -108,6 +108,11 @@ a:hover {
   background-color: black;
   transition: all 0.3 ease-in-out;
 }
+.hamburger-text{
+  background: linear-gradient(45deg, #f55332, #ea237c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 .menu-links {
   position: absolute;
@@ -200,6 +205,7 @@ a:hover {
 .close-menu-btn i {
   font-size: 1.5rem;  
 }
+
 
 
 
@@ -842,4 +848,11 @@ a:hover {
 }
 
 
-/* for technology used  */
+/* for bio  */
+.bio-text {
+  font-size: 17px;
+  color:rgb(43, 43, 43) ;
+  line-height: 1.38;
+}
+
+
