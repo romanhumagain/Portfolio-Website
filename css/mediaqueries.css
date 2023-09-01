@@ -54,21 +54,21 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .copy-right {
-    font-size: 14px; /* Slightly larger font size for tablet views. */
+    font-size: 14px; 
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .copy-right {
-    font-size: 16px; /* Increase font size for desktop views. */
+    font-size: 16px; 
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .copy-right {
-    font-size: 18px; /* Even larger font size for large desktops. */
+    font-size: 18px; 
   }
 }
 
