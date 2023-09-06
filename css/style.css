@@ -41,12 +41,13 @@ a {
   text-decoration-color: white;
 }
 
-a:hover {
+.top-nav-links .nav-links li a:hover {
   color: rgb(103, 103, 103);
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(7, 217, 220);
 }
+
 
 .logo {
     font-size: 1.68rem;
@@ -316,13 +317,16 @@ a:hover {
   transition: left 0.6s ease;
 }
 .home-img .profile-pic {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.5s ease-out, box-shadow 0.5s ease-out; 
+  transform-origin: center;
 }
 
 .home-img:hover .profile-pic {
-  transform: scale(1.1); 
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+  transform: scale(1.1) ; 
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7); 
 }
+
 
 
 /* for the typed js effect */
@@ -867,13 +871,17 @@ a:hover {
 }
 
 .simple-link {
-  color: #555;
+  color: #eb1717;
   text-decoration: none;
   transition: color 0.3s ease; /* Using ease for a simple transition effect */
 }
 
 .simple-link:hover {
-  color: #ed1e41; /* Transition to this color on hover */
+  color: rgb(104, 104, 104);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(7, 217, 220);
 }
 
 .content li {
