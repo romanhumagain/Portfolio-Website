@@ -856,3 +856,19 @@ a:hover {
 }
 
 
+.simple-prompt {
+  font-size: 17px;
+  margin-top: 10px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.simple-link {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Using ease for a simple transition effect */
+}
+
+.simple-link:hover {
+  color: #ed1e41; /* Transition to this color on hover */
+}
