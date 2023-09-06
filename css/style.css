@@ -858,9 +858,12 @@ a:hover {
 
 .simple-prompt {
   font-size: 17px;
-  margin-top: 10px;
-  color: #333;
+  margin-top: 20px;
   font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #07a6c2, #ee1145);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .simple-link {
@@ -871,4 +874,8 @@ a:hover {
 
 .simple-link:hover {
   color: #ed1e41; /* Transition to this color on hover */
+}
+
+.content li {
+  margin: 5px;
 }

@@ -147,6 +147,9 @@
   .bio-text {
     font-size: 12px;
   }
+  .simple-prompt{
+    font-size: 12px;
+  }
   
   .about-first,
   .about-second {
@@ -177,6 +180,7 @@
   .cert-circle p {
     font-size: 15px;
   }
+  
 }
 
 @media (max-width: 576px) {
@@ -209,6 +213,18 @@
 @media only screen and (max-width: 767px) {
   .project-row > div {
     margin-bottom: 20px;
+  }
+  .service-item p {
+    font-size: small
+  }
+   .education{
+    font-size: small;
+  }
+  .category-title{
+    font-size: medium;
+  }
+  .about-language{
+    font-size: small;
   }
 }
 
