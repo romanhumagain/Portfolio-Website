@@ -898,41 +898,30 @@ a {
 .service-item,
 .education-item,
 .portfolio-item,
-.fact-item,
-.category-box {
-    
-    border: 1px solid #70afd980; 
+.category-box{
+    border: 1px solid #8bc7ef80; 
     transition: box-shadow 0.4s ease, transform 0.4s ease; 
+    box-shadow: 0 0 11px rgba(142, 196, 239, 0.702); 
 }
 
 .service-item:hover {
-    box-shadow: 0 0 20px rgba(71, 139, 195, 0.702); 
-    transform: scale(1.035); 
-}
-
-
-.service-item,
-.education-item,
-.portfolio-item,
-.fact-item,
-.category-box{
-    box-shadow: 0 0 16px rgba(109, 167, 215, 0.702); 
+  box-shadow: 0 0 11px rgba(115, 174, 222, 0.702); 
+  transform: scale(1.029); 
 }
 
 .portfolio-item:hover{
-  box-shadow: 0 0 20px rgba(71, 139, 195, 0.702); 
-  transform: scale(1.05);
+  box-shadow: 0 0 11px rgba(115, 174, 222, 0.702); 
+  transform: scale(1.033);
 }
-.fact-item:hover{
-  box-shadow: 0 0 20px rgba(71, 139, 195, 0.702); 
-  transform: scale(1.05);
-}
+
 .category-box:hover {
-  box-shadow: 0 0 16px rgba(109, 167, 215, 0.702); 
+  box-shadow: 0 0 11px rgba(115, 174, 222, 0.702); 
 }
 .certificate_image {
-  box-shadow: 0 0 17px rgba(71, 139, 195, 0.702); 
+  box-shadow: 0 0 12px rgba(116, 183, 237, 0.702); 
 }
+
+
 
 .section-title h2 {
   position: relative;

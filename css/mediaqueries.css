@@ -184,6 +184,29 @@
   .section-title h2::before, .section-title h2::after {
     width: 15%; /* reduce the length on smaller screens */
   }
+
+  .service-item,
+  .education-item,
+  .portfolio-item,
+  .category-box{
+    border: 1px solid #8bc7ef80; 
+    transition: box-shadow 0.4s ease, transform 0.4s ease; 
+    box-shadow: 0 0 9px rgba(115, 174, 222, 0.702); 
+}
+
+.service-item:hover {
+  box-shadow: 0 0 9px rgba(115, 174, 222, 0.702); 
+  transform: scale(1.029); 
+}
+
+.portfolio-item:hover{
+  box-shadow: 0 0 9px rgba(115, 174, 222, 0.702); 
+  transform: scale(1.033);
+}
+
+.category-box:hover {
+  box-shadow: 0 0 9px rgba(115, 174, 222, 0.702); 
+}
   
 }
 
@@ -312,6 +335,15 @@ margin-left:20px;
   
   .home-text {
     animation: slideInFromRight 2s ease-in-out;
+  }
+  .fact-item{
+      border: 1px solid #85c2eb80; 
+      transition: box-shadow 0.4s ease, transform 0.4s ease; 
+      box-shadow: 0 0 12px rgba(115, 174, 222, 0.702); 
+  }
+  .fact-item:hover{
+    box-shadow: 0 0 12px rgba(115, 174, 222, 0.702); 
+    transform: scale(1.033);
   }
 
 }
