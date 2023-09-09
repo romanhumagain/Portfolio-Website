@@ -8,6 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  color: black;
 }
 
 
@@ -46,6 +47,7 @@ a {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(7, 217, 220);
+  transition: color 0.3s ease;
 }
 
 
@@ -525,9 +527,7 @@ a {
   border-radius: 5px;
 }
 
-.portfolio-item:hover .project-image {
-  transform: scale(1.05);
-}
+
 
 .github-link {
   font-size: 0.8rem; 
@@ -887,3 +887,81 @@ a {
 .content li {
   margin: 5px;
 }
+
+
+.social i:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+
+.service-item,
+.education-item,
+.portfolio-item,
+.fact-item,
+.category-box {
+    
+    border: 1px solid #70afd980; 
+    transition: box-shadow 0.4s ease, transform 0.4s ease; 
+}
+
+.service-item:hover {
+    box-shadow: 0 0 20px rgba(71, 139, 195, 0.702); 
+    transform: scale(1.035); 
+}
+
+
+.service-item,
+.education-item,
+.portfolio-item,
+.fact-item,
+.category-box{
+    box-shadow: 0 0 16px rgba(109, 167, 215, 0.702); 
+}
+
+.portfolio-item:hover{
+  box-shadow: 0 0 20px rgba(71, 139, 195, 0.702); 
+  transform: scale(1.05);
+}
+.fact-item:hover{
+  box-shadow: 0 0 20px rgba(71, 139, 195, 0.702); 
+  transform: scale(1.05);
+}
+.category-box:hover {
+  box-shadow: 0 0 16px rgba(109, 167, 215, 0.702); 
+}
+.certificate_image {
+  box-shadow: 0 0 17px rgba(71, 139, 195, 0.702); 
+}
+
+.section-title h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.4s;
+}
+
+.section-title h2::before {
+  width: 90%; /* control the length of the left line */
+  right: 100%; /* places it to the left of the text */
+  margin-right: 2vw; /* distance between line and text */
+  background: linear-gradient(to left, #000, transparent);
+}
+
+.section-title h2::after {
+  width: 90%; /* control the length of the right line */
+  left: 100%; /* places it to the right of the text */
+  margin-left: 2vw; /* distance between line and text */
+  background: linear-gradient(to right, #000, transparent);
+}
+
+
