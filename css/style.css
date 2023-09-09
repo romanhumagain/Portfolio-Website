@@ -899,9 +899,10 @@ a {
 .education-item,
 .portfolio-item,
 .category-box{
-    border: 1px solid #8bc7ef80; 
+    border: 1px solid #ffffff80; 
     transition: box-shadow 0.4s ease, transform 0.4s ease; 
-    box-shadow: 0 0 11px rgba(142, 196, 239, 0.702); 
+    box-shadow: 0 0 11px rgba(127, 184, 231, 0.702); 
+
 }
 
 .service-item:hover {

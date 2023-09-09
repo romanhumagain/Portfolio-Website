@@ -189,23 +189,25 @@
   .education-item,
   .portfolio-item,
   .category-box{
-    border: 1px solid #8bc7ef80; 
+    border: 1px solid #ffffff80; 
     transition: box-shadow 0.4s ease, transform 0.4s ease; 
-    box-shadow: 0 0 9px rgba(115, 174, 222, 0.702); 
+    box-shadow: 0 0 9px rgba(127, 184, 231, 0.702); 
+
 }
 
 .service-item:hover {
-  box-shadow: 0 0 9px rgba(115, 174, 222, 0.702); 
+  box-shadow: 0 0 9px rgba(127, 184, 231, 0.702); 
   transform: scale(1.029); 
 }
 
 .portfolio-item:hover{
-  box-shadow: 0 0 9px rgba(115, 174, 222, 0.702); 
+  box-shadow: 0 0 9px rgba(127, 184, 231, 0.702); 
   transform: scale(1.033);
 }
 
 .category-box:hover {
-  box-shadow: 0 0 9px rgba(115, 174, 222, 0.702); 
+  box-shadow: 0 0 9px rgba(127, 184, 231, 0.702); 
+
 }
   
 }
