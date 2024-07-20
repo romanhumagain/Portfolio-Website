@@ -31,7 +31,7 @@ nav {
 }
 
 .nav-links {
-  gap: 1.4rem;
+  gap: 1.7rem;
   list-style: none;
   font-size: 1rem;
 }
@@ -40,6 +40,9 @@ a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
+}
+.top-nav-links .nav-links li a {
+  font-size: 1.06rem;
 }
 
 .top-nav-links .nav-links li a:hover {
@@ -52,7 +55,7 @@ a {
 
 
 .logo {
-    font-size: 1.68rem;
+    font-size: 1.75rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -281,8 +284,8 @@ a {
 /* Download Button Styling */
 .download-btn {
   display: inline-block;
-  padding: 11px 12px;
-  font-size: 18px;
+  padding: 7px 8px;
+  font-size: 15px;
   font-family: 'Fold', sans-serif;
   border: none;
   border-radius: 25px;
@@ -325,8 +328,8 @@ a {
 }
 
 .home-img:hover .profile-pic {
-  transform: scale(1.1) ; 
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7); 
+  transform: scale(1.01) ; 
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); 
 }
 
 
@@ -423,13 +426,13 @@ a {
 }
 
 .about-first{
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.4;
   text-align: justify;
   font-weight: normal;
 }
 .about-second{
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.4;
   text-align: justify;
 }
@@ -473,8 +476,8 @@ a {
 
 .social a {
   text-decoration: none;
-  font-size: 34px; 
-  transition: transform 0.3s ease; 
+  font-size: 30px; 
+  transition: transform 0.7s ease; 
 }
 
 /* Individual icon colors */
@@ -487,7 +490,7 @@ a {
 
 /* Hover effects */
 .social a:hover {
-  transform: scale(1.2); 
+  transform: scale(1.15); 
 }
 
 
@@ -501,6 +504,7 @@ a {
   -webkit-background-clip: text;
   color: transparent;
 }
+
 
 /* Gradient Button */
 .gradient-btn {
@@ -626,19 +630,19 @@ a {
 
 /* Styles that are always applied */
 .profile-pic {
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
 }
 
 .title {
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-weight: bolder;
 }
 
 .section__text__p1,
 .section__text__p2 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: bolder;
 }
 

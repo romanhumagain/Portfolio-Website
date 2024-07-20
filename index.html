@@ -25,12 +25,12 @@
     <div class="logo">Roman</div>
     <div class="top-nav-links">
       <ul class="nav-links pt-1 ">
-        <li><a href="#home" class="gradient-text fs-6">Home</a></li>
-        <li><a href="#about" class="gradient-text fs-6">About</a></li>
-        <li><a href="#services" class="gradient-text fs-6">Service</a></li>
-        <li><a href="#projects" class="gradient-text fs-6">Projects</a></li>
-        <li><a href="#certificates" class="gradient-text fs-6">Certificates</a></li>
-        <li><a href="#contact" class="gradient-text fs-6">Contact</a></li>
+        <li><a href="#home" class="gradient-text ">Home</a></li>
+        <li><a href="#about" class="gradient-text">About</a></li>
+        <li><a href="#services" class="gradient-text">Service</a></li>
+        <li><a href="#projects" class="gradient-text">Projects</a></li>
+        <li><a href="#certificates" class="gradient-text">Certificates</a></li>
+        <li><a href="#contact" class="gradient-text">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -58,29 +58,33 @@
 
 
   <!-- home section -->
-  <section class="home my-md-3 my-1" id="home">
+  <section class="home my-md-1 my-1" id="home">
     <div class="container">
       <div class="row align-items-center align-content-center min-vh-100">
-        <div class="col-lg-6 mb-4 mb-lg-0 mt-md-0">
-          <div class="home-img text-center">
-            <img src="Images/profile_image.png" alt="profile-pic" class="profile-pic">
+        <div class="col-lg-6 mb-4 mb-lg-0 mt-md-0 d-flex justify-content-center justify-content-lg-end">
+          <div class="home-img text-center px-5">
+            <img src="Images/heroimg.jpg" alt="profile-pic" class="profile-pic">
           </div>
         </div>
 
-        <div class="col-lg-6 mt-3 mt-md-0 d-flex justify-content-center flex-column">
-          <div class="home-text text-center">
-            <p class="section__text__top fw-bold text-muted">Hello I'm</p>
-            <h1 class="title">Roman Humagain</h1>
-            <h1 class="section__text__p2 "><span id="typed"></span></h1>
-            <P class="bio-text text-center d-none d-md-block">Your frontend dreams, my backend magic; let's enhance
-              together !</P>
-            <div class="button mt-3">
-              <a href="Images/Roman-Humagain-cv (1).pdf" class="download-btn text-white">Download Resume</a>
-            </div>
 
-            <div class="social d-flex justify-content-center flex-wrap mt-1 mb-1">
-              <a href="https://github.com/romanhumagain/" class="m-2"><i class="fab fa-github fs-2"></i></a>
-              <a href="https://www.linkedin.com/in/roman-humagain/" class="m-2"><i class="fab fa-linkedin fs-2"></i></a>
+        <div class="col-lg-6 mt-4 mt-md-0 d-flex justify-content-center flex-column">
+          <div class="d-flex justify-content-center justify-content-lg-start px-5">
+            <div class="home-text text-center lg-text-start">
+              <p class="section__text__top fw-bold text-muted">Hello I'm</p>
+              <h1 class="title">Roman Humagain</h1>
+              <h1 class="section__text__p2 "><span id="typed"></span></h1>
+              <!-- <P class="bio-text text-center d-none d-md-block">Your frontend dreams, my backend magic; let's enhance
+              together !</P> -->
+              <div class="button mt-3">
+                <a href="Images/Roman-Humagain-cv (1).pdf" class="download-btn text-white">Download Resume</a>
+              </div>
+
+              <div class="social d-flex justify-content-center flex-wrap mt-1 mb-1">
+                <a href="https://github.com/romanhumagain/" class="m-2"><i class="fab fa-github fs-2"></i></a>
+                <a href="https://www.linkedin.com/in/roman-humagain/" class="m-2"><i
+                    class="fab fa-linkedin fs-2"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -107,13 +111,11 @@
               PCPS College, affiliated with the University of Bedfordshire.
               I have a strong passion for programming, specifically in <strong>Java</strong> and <strong>Python</strong>
               . I am highly
-              interested in backend development. To enhance my backend skills, I am presently engaged in Python
-              <strong>Django</strong> framework.
+              interested in full stack development. To enhance my full stack skills, I am presently engaged in Python
+              <strong>Django</strong> framework and JavaScript <strong>React</strong> framework.
             </p>
             <p class="about-first ">
-              Looking ahead, I am enthusiast about expanding my knowledge in <strong>AI</strong> and <strong>Machine
-                Learning</strong> using Python,
-              fields in which I have a significant interest.</p>
+              Looking ahead, I am enthusiast about expanding my knowledge in <strong>MERN Stack </strong>.
             <p class=" about-first text-muted">I am always looking to connect with like-minded individuals and explore
               new
               opportunities. Let's keep in touch!</p>
@@ -174,7 +176,7 @@
             <div class="flex-grow-1 mx-2">
               <h6 class="about-language">JavaScript</h6>
               <div class="progress" style="height: 5px">
-                <div class="progress-bar" style="background-color: #F7DF1E; width: 15%"></div>
+                <div class="progress-bar" style="background-color: #F7DF1E; width: 90%"></div>
               </div>
             </div>
           </div>
@@ -200,20 +202,11 @@
               </div>
             </div>
           </div>
-          <!-- MySQL Skill -->
-          <div class="skill-items mb-3 d-flex align-items-center">
-            <img src="Images/mysql.png" alt="Django" style="width: 34px; height: 34px; ">
-            <div class="flex-grow-1 mx-2">
-              <h6 class="about-language">MySQL</h6>
-              <div class="progress" style="height: 5px">
-                <div class="progress-bar" style="background-color: #f29111; width: 90%"></div>
-              </div>
-            </div>
-          </div>
+
+
         </div>
         <div class="category-box frameworks mb-5">
           <h3 class="category-title">Frameworks</h3>
-
           <!-- Bootstrap Skill -->
           <div class="skill-items mb-3 d-flex align-items-center">
             <i class="fab fa-bootstrap fa-2x mr-3" style="color: #710af0; "></i>
@@ -221,6 +214,27 @@
               <h6 class="about-language">Bootstrap</h6>
               <div class="progress" style="height: 5px">
                 <div class="progress-bar" style="background-color: #710af0; width: 55%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-items mb-3 d-flex align-items-center">
+            <img src="Images/tailwind.png" alt="Tailwind" style="width: 34px; height: 30px; ">
+            <div class="flex-grow-1">
+              <h6 class="about-language">Tailwind CSS</h6>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar" style="background-color: #06B6D4; width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="skill-items mb-3 d-flex align-items-center">
+            <i class="fab fa-react fa-2x mr-3" style="color: #61DBFB;"></i>
+            <div class="flex-grow-1">
+              <h6 class="about-language">React</h6>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar" style="background-color: #61DBFB; width: 75%;"></div>
               </div>
             </div>
           </div>
@@ -242,7 +256,33 @@
             <div class="flex-grow-1">
               <h6 class="about-language">Django Rest Framework</h6>
               <div class="progress" style="height: 5px">
-                <div class="progress-bar" style="background-color: #cda927; width: 20%"></div>
+                <div class="progress-bar" style="background-color: #cda927; width: 90%"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="category-box frameworks mb-5">
+          <h3 class="category-title ">Database Technology</h3>
+
+          <!-- MySQL Skill -->
+          <div class="skill-items mb-3 d-flex align-items-center">
+            <img src="Images/mysql.png" alt="Django" style="width: 34px; height: 34px; ">
+            <div class="flex-grow-1 mx-2">
+              <h6 class="about-language">MySQL</h6>
+              <div class="progress" style="height: 5px">
+                <div class="progress-bar" style="background-color: #f29111; width: 90%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-items mb-3 d-flex align-items-center">
+            <img src="Images/mongo.png" alt="Mongo" style="width: 34px; height: 34px; ">
+            <div class="flex-grow-1">
+              <h6 class="about-language">MongoDB</h6>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar" style="background-color: #4DB33D; width: 70%;"></div>
               </div>
             </div>
           </div>
@@ -251,58 +291,46 @@
       </div>
     </div>
 
-    <div class="container ">
-      <div class="section-title text-center">
-        <h2 class="fw-bold mb-5 ">Education</h2>
+    <div class="container">
+      <div class="section-title text-center mb-5">
+        <h2 class="fw-bold">Education</h2>
       </div>
 
-      <div class="row">
-        <!-- High School Education -->
-        <div class="col-md-4">
-          <div class="education-item card  p-3 mb-5 bg-white rounded">
-            <div class="card-body">
-              <h5 class="card-title mb-4 text-center gradient-text">Lilawati National Academy</h5>
-              <p class="card-text text-center education">Achieved an <strong>A+</strong> GPA at the end of my high
-                school
-                journey, setting a solid academic foundation.</p>
-            </div>
-            <div class="card-footer bg-transparent border-0 text-center">
-              <small class="text-muted ">High School</small>
-            </div>
-          </div>
-        </div>
-
+      <div class="row justify-content-center p-2">
         <!-- Higher Secondary Education -->
-        <div class="col-md-4">
-          <div class="education-item card  p-3 mb-5 bg-white rounded">
-            <div class="card-body ">
-              <h5 class="card-title mb-4 text-center gradient-text">Khwopa Higher Secondary School</h5>
-              <p class="card-text text-center education">Graduated with a remarkable <strong>A</strong> grade in
-                Computer
-                Science stream, marking a significant academic achievement.</p>
+        <div class="col-md-5 mb-5">
+          <div class="education-item card p-3 bg-white rounded">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-4 gradient-text">Khwopa Higher Secondary School</h5>
+              <p class="card-text education">
+                Graduated with a remarkable <strong>A</strong> grade in Computer Science stream, marking a significant
+                academic achievement.
+              </p>
             </div>
             <div class="card-footer bg-transparent border-0 text-center">
-              <small class="text-muted text-center">Higher Secondary</small>
+              <small class="text-muted">Higher Secondary</small>
             </div>
           </div>
         </div>
 
         <!-- Bachelor's Education -->
-        <div class="col-md-4">
-          <div class="education-item card p-3 mb-5 bg-white rounded">
-            <div class="card-body ">
-              <h5 class="card-title mb-4 text-center gradient-text ">PCPS College (Hons Degree)</h5>
-              <p class="card-text text-center education">Currently pursuing Software Engineering program at PCPS
-                College, which
-                is affilated to the University Of Bedfordshire, UK</p>
+        <div class="col-md-5 mb-5">
+          <div class="education-item card p-3 bg-white rounded">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-4 gradient-text">PCPS College (Hons Degree)</h5>
+              <p class="card-text education">
+                Currently pursuing Software Engineering program at PCPS College, which is affiliated with the University
+                Of Bedfordshire, UK.
+              </p>
             </div>
             <div class="card-footer bg-transparent border-0 text-center">
-              <small class="text-muted text-center">Bachelor's Degree (Ongoing)</small>
+              <small class="text-muted">Bachelor's Degree (Ongoing)</small>
             </div>
           </div>
         </div>
       </div>
     </div>
+
 
   </section>
   <!-- about section end -->
@@ -319,10 +347,10 @@
         </div>
       </div>
       <div class="row text-center p-2">
-        
+
 
         <div class=" col-md-6 col-lg-4 mb-5">
-          <div class="service-item  py-2 rounded bg-white ">
+          <div class="service-item py-2 rounded bg-white ">
             <div class="icon my-3 text-danger fs-2">
               <i class="fas fa-database"></i>
             </div>
@@ -356,11 +384,11 @@
             <div class="icon my-3 text-danger fs-2">
               <i class="fas fa-globe"></i>
             </div>
-            <h3 class="fs-5 py-2 ">Web Application</h3>
+            <h3 class="fs-5 py-2 ">Full Stack Application</h3>
             <p class="text-muted p-2">
-              Proficient in <strong>Python</strong>, I craft high-performance web applications with an emphasis on user
-              experience. Leveraging frameworks like <strong>Django</strong> for Python, I'm dedicated to creating web
-              solutions.
+              Proficient in <strong>Django</strong> and <strong>JavaScript</strong>, I craft high-performance full stack
+              web applications with an emphasis on user
+              experience. Leveraging frameworks like <strong>Django</strong> and <strong>React</strong> for the full stack application.
             </p>
           </div>
         </div>
@@ -382,22 +410,22 @@
         </div>
       </div>
 
-      <div class="row project-row justify-content-center">
+      <div class="row project-row justify-content-center px-2">
 
-        <div class="col-md-6 col-lg-8">
+        <div class="col-md-6 col-lg-7">
           <div class="portfolio-item  mb-4">
             <a href="Images/portfolio/techx.png" target="_blank">
               <img src="Images/portfolio/techx.png" class="w-100 project-image" alt="Tech Blog">
             </a>
             <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">TechX- A Social Media Platform</h3>
-            <div class="text-center mb-3 m-3">
+            <!-- <div class="text-center mb-3 m-3">
 
               <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
               <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
               <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
               <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large ;"></i>
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div>
+            </div> -->
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/TechBlog-A_Blogging_Platform"
                 class="github-link gradient-btn my-1 mr-2">
@@ -422,22 +450,25 @@
               </div>
               <div class="modal-body">
                 <div class="content">
-                  <p><strong>TechX</strong> is a dynamic platform designed to be a unique social media space where users can share their tech articles. Developed using Django, the platform offers high security, among other features.</p>
+                  <p><strong>TechX</strong> is a dynamic platform designed to be a unique social media space where users
+                    can share their tech articles. Developed using Django, the platform offers high security, among
+                    other features.</p>
                   <strong>Features 🛠️</strong>
-                  
-                    <li>✍️ Post articles effortlessly.</li>
-                    <li>🗣️ Engage in post discussions with comments.</li>
-                    <li>🔗 Share cool posts on LinkedIn with a click.</li>
-                    <li>🔒 Incorporates two-factor authentication, allowing users to obtain verification codes through Google Authenticator via QR codes or through email.</li>
-                    <li>👤 Your unique user space/profile.</li>
-                    <li>🔒 View details of the logged-in device.</li>
-                    <li>🔄 Edit posts anytime.</li>
-                    <li>🔔 Whenever someone likes your content, follows you, or drops a comment, you'll know right away.
-                    </li>
-                    <li>🤝 Connect with tech enthusiasts by following each others.</li>
-                    <li>❤️ Option for likes and comments.</li>
-                    <li>🔒 Easy password recovery with email authentication.</li>
-                    <li>📡 Watch out! Chat feature coming soon.</li>
+
+                  <li>✍️ Post articles effortlessly.</li>
+                  <li>🗣️ Engage in post discussions with comments.</li>
+                  <li>🔗 Share cool posts on LinkedIn with a click.</li>
+                  <li>🔒 Incorporates two-factor authentication, allowing users to obtain verification codes through
+                    Google Authenticator via QR codes or through email.</li>
+                  <li>👤 Your unique user space/profile.</li>
+                  <li>🔒 View details of the logged-in device.</li>
+                  <li>🔄 Edit posts anytime.</li>
+                  <li>🔔 Whenever someone likes your content, follows you, or drops a comment, you'll know right away.
+                  </li>
+                  <li>🤝 Connect with tech enthusiasts by following each others.</li>
+                  <li>❤️ Option for likes and comments.</li>
+                  <li>🔒 Easy password recovery with email authentication.</li>
+                  <li>📡 Watch out! Chat feature coming soon.</li>
                   </ul>
                   <strong>On The Horizon 🚀</strong>
                   <p>Up next: 💬 Real-time chats for better connections.</p>
@@ -490,29 +521,31 @@
 
 
 
-        <div class="col-md-6 col-lg-8 mt-4">
-  <div class="portfolio-item mb-4">
-    <a href="Images/portfolio/student_management.png" target="_blank">
-      <img src="Images/portfolio/student_management.png" class="w-100 project-image" alt="Tech Blog">
-    </a>
-    <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Student Management System</h3>
-    <div class="text-center mb-3 m-3">
-      <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
-      <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
-      <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
-      <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-    </div>
-    <p class="mb-2 d-flex align-items-center justify-content-center">
-      <a href="https://github.com/romanhumagain/Django_Student-Management-System" class="github-link gradient-btn my-1">
-        <i class="fab fa-github"></i> View on GitHub
-      </a>
-      <!-- Icon to trigger modal -->
-      <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#std_management" style="cursor: pointer;">
-        View Details
-      </span>
-    </p>
-  </div>
-</div>
+        <div class="col-md-6 col-lg-7 mt-4">
+          <div class="portfolio-item mb-4">
+            <a href="Images/portfolio/student_management.png" target="_blank">
+              <img src="Images/portfolio/student_management.png" class="w-100 project-image" alt="Tech Blog">
+            </a>
+            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Student Management System</h3>
+            <!-- <div class="text-center mb-3 m-3">
+              <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
+              <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
+              <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
+              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
+            </div> -->
+            <p class="mb-2 d-flex align-items-center justify-content-center">
+              <a href="https://github.com/romanhumagain/Django_Student-Management-System"
+                class="github-link gradient-btn my-1">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+              <!-- Icon to trigger modal -->
+              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#std_management"
+                style="cursor: pointer;">
+                View Details
+              </span>
+            </p>
+          </div>
+        </div>
 
 
         <!--Student Management System Modal -->
@@ -595,44 +628,41 @@
         </div>
 
         <!-- for taxi booking -->
-        <div class="col-md-6 col-lg-8 mt-4">
+        <div class="col-md-6 col-lg-7 mt-4">
           <div class="portfolio-item  mb-4">
             <a href="Images/portfolio/taxi_booking.png" target="_blank">
-              <img src="Images/portfolio/taxi_booking.png" class="w-100 project-image"
-                alt="Taxi-Booking-System">
+              <img src="Images/portfolio/taxi_booking.png" class="w-100 project-image" alt="Taxi-Booking-System">
             </a>
             <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Taxi Booking System</h3>
-            <div class="text-center mb-3 m-2">
+            <!-- <div class="text-center mb-3 m-2">
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
 
-            </div>
+            </div> -->
 
             <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/Taxi-Booking-System"
-                class="github-link gradient-btn my-1">
+              <a href="https://github.com/romanhumagain/Taxi-Booking-System" class="github-link gradient-btn my-1">
                 <i class="fab fa-github"></i> View on GitHub
               </a>
 
               <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target=""
-                style="cursor: pointer;">
+              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="" style="cursor: pointer;">
                 View Details
               </span>
             </p>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-8 mt-4">
+        <div class="col-md-6 col-lg-7 mt-4">
           <div class="portfolio-item  mb-4">
             <a href="Images/portfolio/hotel_management.png" target="_blank">
               <img src="Images/portfolio/hotel_management.png" class="w-100 project-image"
                 alt="Hotel-Booking-Application">
             </a>
             <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Hotel Booking Application</h3>
-            <div class="text-center mb-3 m-2">
+            <!-- <div class="text-center mb-3 m-2">
               <i class="fab fa-java" style="color: #007396; font-size: x-large ;"></i>
 
-            </div>
+            </div> -->
 
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/Hotel-Booking-Application"
@@ -730,20 +760,20 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-8 mt-4">
+        <div class="col-md-6 col-lg-7 mt-4">
           <div class="portfolio-item mb-4">
             <a href="Images/portfolio/food_odering.png" target="_blank">
               <img src="Images/portfolio/food_odering.png" class="w-100 project-image" alt="Tech Blog">
             </a>
             <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Food Ordering Website</h3>
 
-            <div class="text-center mb-3 m-3">
+            <!-- <div class="text-center mb-3 m-3">
 
               <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
               <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
               <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div>
+            </div> -->
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/django-food-ordering-system"
                 class="github-link gradient-btn my-1">
@@ -816,19 +846,19 @@
         </div>
 
 
-        <div class="col-md-6 col-lg-8 mt-4">
+        <div class="col-md-6 col-lg-7 mt-4">
           <div class="portfolio-item mb-4">
             <a href="Images/portfolio/weather-app.png" target="_blank">
               <img src="Images/portfolio/weather-app.png" class="w-100 project-image" alt="weather_app ">
             </a>
             <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Weather Application</h3>
 
-            <div class="text-center mb-3 m-3">
+            <!-- <div class="text-center mb-3 m-3">
 
               <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
               <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div>
+            </div> -->
 
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/Weather-Application" class="github-link gradient-btn my-1">
@@ -890,20 +920,20 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-8 mt-4">
+        <div class="col-md-6 col-lg-7 mt-4">
           <div class="portfolio-item mb-4">
             <a href="Images/portfolio/AI-ChatBot.png" target="_blank">
               <img src="Images/portfolio/AI-ChatBot.png" class="w-100 project-image" alt="portfolio">
             </a>
             <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">AI ChatBot</h3>
 
-            <div class="text-center mb-3 m-3">
+            <!-- <div class="text-center mb-3 m-3">
 
               <i class="fab fa-html5" style="color: #E34F26;  font-size: x-large ;"></i>
               <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
 
-            </div>
+            </div> -->
 
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/AI-Chat-Bot" class="github-link gradient-btn my-1">
@@ -968,8 +998,6 @@
         </div>
 
       </div>
-
-      <p class="text-muted fw-light text-center mt-3">...and this is just the beginning.</p>
     </div>
   </section>
   <!-- portfolio section end  -->
@@ -988,7 +1016,7 @@
       <div class="d-flex justify-content-center align-items-center d-none d-md-block">
         <div class="cert-container mb-1">
           <div class="cert-circle" data-aos="zoom-in">
-            <span class="number">18+</span>
+            <span class="number">20+</span>
             <p>Certificates</p>
           </div>
         </div>
@@ -1000,7 +1028,7 @@
       </div>
       <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
         <!-- Slides -->
-        <div class="carousel-inner ">
+        <div class="carousel-inner p-1 ">
           <!-- Certificate 1 -->
           <div class="carousel-item active">
             <a href="Images/certificates/programming_in_python.png" target="_blank">
@@ -1308,7 +1336,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-content d-flex justify-content-center align-items-center">
-        <p class="copy-right text-muted ml-3 mb-4 ">&copy; 2023 by Roman Humagain. All Rights Reserved</p>
+        <p class="copy-right text-muted ml-3 mb-4 ">&copy; 2024 by Roman Humagain. All Rights Reserved</p>
       </div>
     </div>
   </footer>
@@ -1334,7 +1362,7 @@
   <script>
     $(document).ready(function () {
       var typed = new Typed("#typed", {
-        strings: ["a Software Developer", "a Backend Developer"],
+        strings: ["a Software Engineer", "a Full Stack Developer"],
         typeSpeed: 70,
         backSpeed: 46,
         loop: true,
@@ -1382,7 +1410,7 @@
   <script>
     function openVideo(videoType) {
       let videoURL = '';
-      let downloadLink = document.createElement('a');  // Create a new anchor element dynamically
+      let downloadLink = document.createElement('a');
 
       switch (videoType) {
         case 'student':
