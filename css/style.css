@@ -426,16 +426,16 @@ a {
 }
 
 .about-first{
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.4;
   text-align: justify;
   font-weight: normal;
 }
-.about-second{
+/* .about-second{
   font-size: 20px;
   line-height: 1.4;
   text-align: justify;
-}
+} */
 .about-third{
   line-height: 1.4;
   text-align: justify;
@@ -916,10 +916,10 @@ a {
 
 .portfolio-item:hover{
   box-shadow: 0 0 15px rgba(115, 174, 222, 0.702); 
-  transform: scale(1.039);
+  transform: scale(0.6);
 }
 .portfolio-item {
-  transition: box-shadow 0.3s, transform 0.3s;
+  transition: box-shadow 0.3s, transform 0.6s;
 }
 
 .portfolio-item:hover {
@@ -965,5 +965,6 @@ a {
   margin-left: 2vw; /* distance between line and text */
   background: linear-gradient(to right, #000, transparent);
 }
+
 
 
