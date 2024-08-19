@@ -21,7 +21,7 @@
 <body class="bg-light">
 
   <!-- nav bar section starts -->
-  <nav id="desktop-nav" class="fixed-top bg-white shadow-sm">
+  <nav id="desktop-nav" class="fixed-top shadow">
     <!-- <div class="logo">Roman</div> -->
     <div class="top-nav-links d-flex justify-content-center">
       <ul class="nav-links pt-1 ">
@@ -34,13 +34,11 @@
       </ul>
     </div>
   </nav>
-  <nav id="hamburger-nav" class="fixed-top bg-white shadow-sm">
+  <nav id="hamburger-nav" class="fixed-top shadow-sm">
     <div class="hamburger-logo">Roman</div>
     <div class="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+        <i class="fas fa-bars"></i> <!-- Replacing spans with an icon -->
       </div>
       <div class="menu-links">
         <button class="close-menu-btn" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
@@ -58,7 +56,7 @@
 
 
   <!-- home section -->
-  <section class="home my-md-1 my-1" id="home">
+  <section class="home" id="home">
     <div class="container">
       <div class="row align-items-center align-content-center min-vh-100">
         <div class="col-lg-6 mb-4 mb-lg-0 mt-md-0 d-flex justify-content-center justify-content-lg-end">
@@ -71,7 +69,7 @@
         <div class="col-lg-6 mt-4 mt-md-0 d-flex justify-content-center flex-column">
           <div class="d-flex justify-content-center justify-content-lg-start px-5">
             <div class="home-text text-center lg-text-start">
-              <p class="section__text__top fw-bold text-muted">Hello I'm</p>
+              <p class="section__text__top fw-bold">Hello I'm</p>
               <h1 class="title">Roman Humagain</h1>
               <h1 class="section__text__p2 "><span id="typed"></span></h1>
               <!-- <P class="bio-text text-center d-none d-md-block">Your frontend dreams, my backend magic; let's enhance
@@ -91,7 +89,6 @@
       </div>
     </div>
   </section>
-
   <!-- home section end -->
 
   <!-- about section -->
@@ -116,25 +113,25 @@
             </p>
             <p class="about-first ">
               Looking ahead, I am enthusiast about expanding my knowledge in <strong>MERN Stack </strong>.
-            <p class=" about-first text-muted">I am always looking to connect with like-minded individuals and explore
+            <p class=" about-first ">I am always looking to connect with like-minded individuals and explore
               new
               opportunities. Let's keep in touch!</p>
           </div>
           <div class="row text-center text-uppercase my-5 p-2">
-            <div class="col-sm-4 mb-3">
+            <div class="col-sm-4 mb-3 shadow">
               <a href="#projects" class="text-decoration-none">
                 <div class="fact-item p-2 mb-3">
-                  <i class="fas fa-laptop-code fa-2x mb-2"></i>
+                  <i class="fas fa-laptop-code fa-2x mb-2 mt-2"></i>
                   <h4 class="fs-1 fw-bold ">10+</h4>
                   <p class="gradient-text">Projects Completed</p>
                 </div>
               </a> <!-- Added closing tag for anchor -->
             </div>
 
-            <div class="col-sm-4 mb-3">
+            <div class="col-sm-4 mb-3 shadow">
               <a href="#certificates" class="text-decoration-none">
                 <div class="fact-item p-2 mb-3">
-                  <i class="fas fa-award fa-2x mb-2"></i>
+                  <i class="fas fa-award fa-2x mb-2 mt-2"></i>
                   <h4 class="fs-1 fw-bold ">20+</h4>
                   <p class="gradient-text">Certificates & Achievements</p>
                 </div>
@@ -299,32 +296,32 @@
       <div class="row justify-content-center p-2">
         <!-- Higher Secondary Education -->
         <div class="col-md-5 mb-5">
-          <div class="education-item card p-3 bg-white rounded">
+          <div class="education-item  p-3 rounded">
             <div class="card-body text-center">
               <h5 class="card-title mb-4 gradient-text">Khwopa Higher Secondary School</h5>
-              <p class="card-text education">
+              <p class="card-text education education_desc">
                 Graduated with a remarkable <strong>A</strong> grade in Computer Science stream, marking a significant
                 academic achievement.
               </p>
             </div>
-            <div class="card-footer bg-transparent border-0 text-center">
-              <small class="text-muted">Higher Secondary</small>
+            <div class="card-footer bg-transparent border-0 text-center mt-2">
+              <small class="education_degree ">Higher Secondary</small>
             </div>
           </div>
         </div>
 
         <!-- Bachelor's Education -->
         <div class="col-md-5 mb-5">
-          <div class="education-item card p-3 bg-white rounded">
+          <div class="education-item  p-3 rounded">
             <div class="card-body text-center">
               <h5 class="card-title mb-4 gradient-text">PCPS College (Hons Degree)</h5>
-              <p class="card-text education">
+              <p class="card-text education education_desc">
                 Currently pursuing Software Engineering program at PCPS College, which is affiliated with the University
                 Of Bedfordshire, UK.
               </p>
             </div>
-            <div class="card-footer bg-transparent border-0 text-center">
-              <small class="text-muted">Bachelor's Degree (Ongoing)</small>
+            <div class="card-footer bg-transparent border-0 text-center mt-2">
+              <small class="education_degree">Bachelor's Degree (Ongoing)</small>
             </div>
           </div>
         </div>
@@ -347,14 +344,13 @@
         </div>
       </div>
       <div class="row text-center p-2 px-3">
-
         <div class=" col-md-6 col-lg-4 mb-5">
-          <div class="service-item py-2 rounded bg-white">
+          <div class="service-item py-2 rounded">
             <div class="icon my-3 text-danger fs-2">
               <i class="fas fa-globe"></i>
             </div>
             <h3 class="fs-5 py-2 ">Full Stack Application</h3>
-            <p class="text-muted p-2">
+            <p class="service_description p-2">
               Proficient in <strong>Python</strong> and <strong>JavaScript</strong>, I craft high-performance full stack
               web applications with an emphasis on user
               experience. Leveraging frameworks like <strong>Django</strong> and <strong>React</strong> for the full
@@ -364,12 +360,12 @@
         </div>
 
         <div class=" col-md-6 col-lg-4 mb-5">
-          <div class="service-item py-2 rounded bg-white ">
+          <div class="service-item py-2 rounded ">
             <div class="icon my-3 text-danger fs-2">
               <i class="fas fa-desktop"></i>
             </div>
             <h3 class="fs-5 py-2 ">Desktop Application</h3>
-            <p class="text-muted p-2">
+            <p class="service_description p-2">
               With expertise in <strong>Java</strong> and <strong>Python</strong>, I develop performant and
               user-friendly desktop applications. I'm adept at leveraging various libraries and tools to create
               solutions that are both functional and aesthetically pleasing.
@@ -378,12 +374,12 @@
           </div>
         </div>
         <div class=" col-md-6 col-lg-4 mb-5">
-          <div class="service-item py-2 rounded bg-white ">
+          <div class="service-item py-2 rounded ">
             <div class="icon my-3 text-danger fs-2">
               <i class="fas fa-database"></i>
             </div>
             <h3 class="fs-5 py-2 ">Backend Development</h3>
-            <p class="text-muted p-2">
+            <p class="service_description p-2">
               Specializing in <strong>Python</strong> with a strong proficiency in the <strong>Django</strong>
               framework, I ensure robust backend solutions. I prioritize writing clean and obitimized code, focusing on
               efficient databases and secure REST APIs.
@@ -411,28 +407,25 @@
 
       <div class="row project-row justify-content-center px-2">
 
-        <div class="col-md-6 col-lg-7">
+        <div class="col-md-6 col-lg-7 p-2 p-lg-5">
           <div class="portfolio-item  mb-4">
             <a href="Images/portfolio/task_unity.png" target="_blank">
-              <img src="Images/portfolio/task_unity.png" class="w-100 project-image" alt="Tech Blog">
+              <img src="Images/portfolio/task_unity.png" class="w-100 project-image " alt="Tech Blog">
             </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">TaskUnity- A Collaborative Task Management Platform</h3>
-            <!-- <div class="text-center mb-3 m-3">
-
-              <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
-              <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
-              <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
-              <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large ;"></i>
-              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div> -->
+            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">TaskUnity- A Collaborative Task
+              Management Platform</h3>
+              <div class="text-center m-1">
+                <i class="fas fa-leaf" style="color: #47A248; font-size: x-large;"></i>
+                <i class="fab fa-node" style="color: #3C873A; font-size: x-large;"></i>
+                <i class="fab fa-react" style="color: #61DAFB; font-size: x-large;"></i> 
+                <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large;"></i>
+              </div>
+              
             <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/TaskUnity"
-                class="github-link gradient-btn my-1 mr-2">
-                <i class="fab fa-github"></i> View on GitHub
+              <a href="https://github.com/romanhumagain/TaskUnity" class="github-link gradient-btn my-1 mr-2">
+                <i class="fab fa-github transparent-bg"></i> View on GitHub
               </a>
-              <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3"
-                style="cursor: pointer;">
+              <span class="view-details-text m-3" style="cursor: pointer;">
                 View Details
               </span>
             </p>
@@ -440,24 +433,24 @@
         </div>
 
 
-        <div class="col-md-6 col-lg-7 mt-4">
+        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5">
           <div class="portfolio-item  mb-4">
             <a href="Images/portfolio/techx.png" target="_blank">
               <img src="Images/portfolio/techx.png" class="w-100 project-image" alt="Tech Blog">
             </a>
             <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">TechX- A Social Media Platform</h3>
-            <!-- <div class="text-center mb-3 m-3">
+            <div class="text-center m-1">
 
               <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
               <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
               <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
               <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large ;"></i>
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div> -->
+            </div>
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/TechBlog-A_Blogging_Platform"
                 class="github-link gradient-btn my-1 mr-2">
-                <i class="fab fa-github"></i> View on GitHub
+                <i class="fab fa-github bg-transparent"></i> View on GitHub
               </a>
               <!-- Icon to trigger modal -->
               <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#techblog"
@@ -474,7 +467,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h6 class="modal-title" id="techbloglabel"><strong>TechX- A Social Media Platform</strong></h6>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close font-white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <div class="content">
@@ -549,22 +542,22 @@
 
 
 
-        <div class="col-md-6 col-lg-7 mt-4">
+        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5">
           <div class="portfolio-item mb-4">
             <a href="Images/portfolio/student_management.png" target="_blank">
               <img src="Images/portfolio/student_management.png" class="w-100 project-image" alt="Tech Blog">
             </a>
             <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Student Management System</h3>
-            <!-- <div class="text-center mb-3 m-3">
+            <div class="text-center m-1">
               <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
               <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
               <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div> -->
+            </div>
             <p class="mb-2 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/Django_Student-Management-System"
                 class="github-link gradient-btn my-1">
-                <i class="fab fa-github"></i> View on GitHub
+                <i class="fab fa-github bg-transparent"></i> View on GitHub
               </a>
               <!-- Icon to trigger modal -->
               <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#std_management"
@@ -656,20 +649,20 @@
         </div>
 
         <!-- for taxi booking -->
-        <div class="col-md-6 col-lg-7 mt-4">
+        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5 ">
           <div class="portfolio-item  mb-4">
             <a href="Images/portfolio/taxi_booking.png" target="_blank">
               <img src="Images/portfolio/taxi_booking.png" class="w-100 project-image" alt="Taxi-Booking-System">
             </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Taxi Booking System</h3>
-            <!-- <div class="text-center mb-3 m-2">
+            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Taxi Booking System</h3>
+            <div class="text-center m-1">
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
 
-            </div> -->
+            </div>
 
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/Taxi-Booking-System" class="github-link gradient-btn my-1">
-                <i class="fab fa-github"></i> View on GitHub
+                <i class="fab fa-github bg-transparent"></i> View on GitHub
               </a>
 
               <!-- Icon to trigger modal -->
@@ -680,22 +673,21 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-7 mt-4">
+        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5">
           <div class="portfolio-item  mb-4">
             <a href="Images/portfolio/hotel_management.png" target="_blank">
               <img src="Images/portfolio/hotel_management.png" class="w-100 project-image"
                 alt="Hotel-Booking-Application">
             </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Hotel Booking Application</h3>
-            <!-- <div class="text-center mb-3 m-2">
+            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Hotel Booking Application</h3>
+            <div class="text-center m-1">
               <i class="fab fa-java" style="color: #007396; font-size: x-large ;"></i>
-
-            </div> -->
+            </div>
 
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/Hotel-Booking-Application"
                 class="github-link gradient-btn my-1">
-                <i class="fab fa-github"></i> View on GitHub
+                <i class="fab fa-github bg-transparent"></i> View on GitHub
               </a>
 
               <!-- Icon to trigger modal -->
@@ -788,24 +780,24 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-7 mt-4">
+        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5">
           <div class="portfolio-item mb-4">
             <a href="Images/portfolio/food_odering.png" target="_blank">
               <img src="Images/portfolio/food_odering.png" class="w-100 project-image" alt="Tech Blog">
             </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Food Ordering Website</h3>
+            <h3 class="project-name text-capitalize fs-5 proj my-2 gradient-text">Food Ordering Website</h3>
 
-            <!-- <div class="text-center mb-3 m-3">
+            <div class="text-center m-1">
 
               <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
               <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
               <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div> -->
+            </div>
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/django-food-ordering-system"
                 class="github-link gradient-btn my-1">
-                <i class="fab fa-github"></i> View on GitHub
+                <i class="fab fa-github bg-transparent"></i> View on GitHub
               </a>
 
               <!-- Icon to trigger modal -->
@@ -874,23 +866,23 @@
         </div>
 
 
-        <div class="col-md-6 col-lg-7 mt-4">
+        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5 ">
           <div class="portfolio-item mb-4">
             <a href="Images/portfolio/weather-app.png" target="_blank">
               <img src="Images/portfolio/weather-app.png" class="w-100 project-image" alt="weather_app ">
             </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">Weather Application</h3>
+            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Weather Application</h3>
 
-            <!-- <div class="text-center mb-3 m-3">
+            <div class="text-center m-1">
 
               <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
               <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div> -->
+            </div>
 
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/Weather-Application" class="github-link gradient-btn my-1">
-                <i class="fab fa-github"></i> View on GitHub
+                <i class="fab fa-github bg-transparent"></i> View on GitHub
               </a>
 
               <!-- Icon to trigger modal -->
@@ -948,24 +940,24 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-7 mt-4">
+        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5 ">
           <div class="portfolio-item mb-4">
             <a href="Images/portfolio/AI-ChatBot.png" target="_blank">
               <img src="Images/portfolio/AI-ChatBot.png" class="w-100 project-image" alt="portfolio">
             </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">AI ChatBot</h3>
+            <h3 class="project-name text-capitalize fs-5 proj my-2 gradient-text">AI ChatBot</h3>
 
-            <!-- <div class="text-center mb-3 m-3">
+            <div class="text-center m-1">
 
               <i class="fab fa-html5" style="color: #E34F26;  font-size: x-large ;"></i>
               <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
               <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
 
-            </div> -->
+            </div>
 
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/AI-Chat-Bot" class="github-link gradient-btn my-1">
-                <i class="fab fa-github"></i> View on GitHub
+                <i class="fab fa-github bg-transparent"></i> View on GitHub
               </a>
               <!-- Icon to trigger modal -->
               <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#chatbot"
@@ -1025,24 +1017,22 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-7 mt-4">
+        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5">
           <div class="portfolio-item mb-4">
             <a href="Images/portfolio/news_app.png" target="_blank">
               <img src="Images/portfolio/news_app.png" class="w-100 project-image" alt="portfolio">
             </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 gradient-text">News App</h3>
+            <h3 class="project-name text-capitalize fs-5 proj my-2 gradient-text">News App</h3>
 
-            <!-- <div class="text-center mb-3 m-3">
+            <div class="text-center m-1">
+              <i class="fab fa-react" style="color: #61DAFB; font-size: x-large;"></i> 
+                <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large;"></i>
 
-              <i class="fab fa-html5" style="color: #E34F26;  font-size: x-large ;"></i>
-              <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
-              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-
-            </div> -->
+            </div>
 
             <p class="mb-4 d-flex align-items-center justify-content-center">
               <a href="https://github.com/romanhumagain/React-News-App" class="github-link gradient-btn my-1">
-                <i class="fab fa-github"></i> View on GitHub
+                <i class="fab fa-github bg-transparent"></i> View on GitHub
               </a>
               <!-- Icon to trigger modal -->
               <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="" style="cursor: pointer;">
@@ -1059,7 +1049,7 @@
 
 
   <!-- certificates  section-->
-  <section id="certificates" class="py-md-4 bg-light">
+  <section id="certificates" class="py-md-4">
     <div class="container-lg py-4">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -1070,9 +1060,9 @@
       </div>
       <div class="d-flex justify-content-center align-items-center d-none d-md-block">
         <div class="cert-container mb-1">
-          <div class="cert-circle" data-aos="zoom-in">
-            <span class="number">20+</span>
-            <p>Certificates</p>
+          <div class="cert-circle " data-aos="zoom-in">
+            <span class="number transparent-bg">20+</span>
+            <p class="transparent-bg">Certificates</p>
           </div>
         </div>
       </div>
@@ -1328,23 +1318,24 @@
 
 
   <!-- freelancer available section  -->
-  <section class="freelancer-available py-md-5 bg-danger">
-    <div class="container-lg py-2">
+  <section class="freelancer-available py-md-5">
+    <div class="container-lg py-2 transparent-bg">
       <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <p class="text-light fs-5">Do you have any project ? </p>
-          <h2 class="fs-1 text-white mb-4"> I'm Available For Freelancer Projects</h2>
+        <div class="col-lg-8 text-center py-4">
+          <p class="text-light fs-5 transparent-bg">Do you have any project ?</p>
+          <h2 class="fs-1 text-white mb-4 transparent-bg">I'm Available For Freelancer Projects</h2>
           <a href="#contact" class="hire btn btn-outline-light">Hire Me</a>
         </div>
       </div>
     </div>
   </section>
+
   <!-- freelancer available section end  -->
 
 
   <!-- section for contact -->
-  <section id="contact" class="py-md-5  bg-light text-center">
-    <div class="container-lg py-4">
+  <section id="contact" class="py-md-5  text-center">
+    <div class="container-lg py-4 ">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-title text-center">
@@ -1352,57 +1343,52 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <h4 class="mb-3 fw-medium gradient-text ">Get in Touch ! </h4>
-            <div class="contact-form mb-3">
-              <form action="https://api.web3forms.com/submit" method="POST">
+      <div class="d-flex justify-content-center">
+        <div class="contact-form-container ">
+          <h4 class="form-title transparent-bg ">Get in Touch!</h4>
+          <form class="contact-form transparent-bg" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="ad9f78ce-04e6-4b39-85c0-d7c93d3a1b94" />
+            <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio Website" />
+            <input type="hidden" name="from_name" value="romanhumagain.com.np" />
 
-                <input type="hidden" name="access_key" value="ad9f78ce-04e6-4b39-85c0-d7c93d3a1b94" />
-                <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio Website" />
-                <input type="hidden" name="from_name" value="romanhumagain.com.np" />
-
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control rounded-4" id="name" name="name" placeholder="Name" required >
-                  <label for="name">Name</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control rounded-4" id="email" name="email" placeholder="Email" required>
-                  <label for="email">Email</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <textarea class="form-control rounded-4" placeholder="Message" id="message" name="message" required
-                    style="height: 150px;"></textarea>
-                  <label for="message">Message</label>
-                </div>
-                <button type="submit" class="rounded-5 gradient-btn"><i class="fas fa-paper-plane"></i> Submit</button>
-              </form>
+            <div class="form-group transparent-bg">
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
             </div>
-          </div>
+
+            <div class="form-group transparent-bg">
+              <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group transparent-bg ">
+              <textarea id="message" name="message" class="form-input" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
         </div>
+
       </div>
 
-      <p class="text-muted mb-3 mt-3">Interested in working together? Reach out!</p>
+
+      <p class="education_desc mb-3 mt-5">Interested in working together? Reach out!</p>
 
       <div class="row justify-content-center">
         <div class="col-12 col-md-4 mb-4">
-          <div class="card border-0 shadow-sm gradient-card">
-            <div class="card-body d-flex align-items-center justify-content-center">
-              <i class=" email-icon fas fa-envelope fa-2x text-white me-3"></i>
+          <div class="card border-0 shadow-sm gradient-card ">
+            <div class="card-body d-flex align-items-center justify-content-center bg-transparent">
+              <i class=" email-icon fas fa-envelope fa-2x text-white me-3 bg-transparent "></i>
               <a href="mailto:romanhumagain@gmail.com"
-                class="email text-decoration-none text-white">romanhumagain@gmail.com</a>
-
+                class="email text-decoration-none text-white bg-transparent">romanhumagain@gmail.com</a>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-md-4">
           <div class="card border-0 shadow-sm gradient-card"> <!-- Added gradient-card here -->
-            <div class="card-body d-flex align-items-center justify-content-center">
-              <i class="linkedin-icon fab fa-linkedin fa-2x text-white me-3"></i> <!-- Color adjusted to white -->
+            <div class="card-body d-flex align-items-center justify-content-center bg-transparent">
+              <i class="linkedin-icon fab fa-linkedin fa-2x text-white me-3 bg-transparent"></i> <!-- Color adjusted to white -->
               <a href="https://www.linkedin.com/in/roman-humagain/"
-                class="linkedin text-decoration-none text-white">LinkedIn
+                class="linkedin text-decoration-none text-white bg-transparent">LinkedIn
                 Profile</a> <!-- Color adjusted to white -->
             </div>
           </div>
@@ -1423,7 +1409,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-content d-flex justify-content-center align-items-center">
-        <p class="copy-right text-muted ml-3 mb-4 ">&copy; 2024 by Roman Humagain. All Rights Reserved</p>
+        <p class="copy-right ml-3 mb-4 ">&copy; 2024 by Roman Humagain. All Rights Reserved</p>
       </div>
     </div>
   </footer>

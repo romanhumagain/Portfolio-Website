@@ -4,7 +4,10 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: rgb(18, 18, 18);
+  color: white;
 }
+
 
 body {
   font-family: "Poppins", sans-serif;
@@ -42,15 +45,17 @@ a {
   text-decoration-color: white;
 }
 .top-nav-links .nav-links li a {
-  font-size: 1.06rem;
+  font-size: 1.08rem;
 }
 
 .top-nav-links .nav-links li a:hover {
-  color: rgb(103, 103, 103);
+  color: rgb(190, 187, 187);
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(7, 217, 220);
-  transition: color 0.3s ease;
+  transition: color 0.4s ease;
+  
+
 }
 
 
@@ -100,22 +105,19 @@ a {
 }
 
 .hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
   cursor: pointer;
+  font-size: 24px; /* Adjust size as needed */
+  color: white; /* Icon color */
+  transition: transform 0.3s ease-in-out;
 }
 
-.hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
+/* Optional: Rotate the icon when menu is open */
+.hamburger-icon.open i {
+  transform: rotate(90deg); /* Example rotation for open state */
+  color: #ff8a00; /* Change color on open */
 }
 .hamburger-text{
-  background: linear-gradient(45deg, #f55332, #ea237c);
+  background: linear-gradient(45deg, #b3b2b2, #2f2f2f);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -124,12 +126,14 @@ a {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: rgba(18, 18, 18, 0.99); /* Slightly transparent background */
+  color: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+
 
 .menu-links a {
   display: block;
@@ -175,8 +179,7 @@ a {
   position: fixed; 
   top: 0;
   right: 0;
-  bottom: 0; 
-  background-color: rgba(255, 255, 255, 0.9); 
+  bottom: 0;
   width: 50%; 
   height: 100vh; 
   max-height: 100vh;
@@ -184,6 +187,7 @@ a {
   transform: translateX(100%); 
   transition: transform 0.3s ease-in-out; 
 }
+
 
 
 .menu-links.open {
@@ -289,7 +293,7 @@ a {
   font-family: 'Fold', sans-serif;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(to right, #f74a4a, #3d3d3d); 
+  background: linear-gradient(to right, #6e6e6e, #131212); 
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -322,7 +326,7 @@ a {
   transition: left 0.6s ease;
 }
 .home-img .profile-pic {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0px 0px 15px rgb(118, 118, 118); 
   transition: transform 0.5s ease-out, box-shadow 0.5s ease-out; 
   transform-origin: center;
 }
@@ -332,6 +336,9 @@ a {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); 
 }
 
+.section__text__top{
+  color: gray;
+}
 
 
 /* for the typed js effect */
@@ -376,7 +383,7 @@ a {
 /* for about section */
 
 .fact-item {
-  background-color: #f7f7f7;  
+  background-color: rgb(18, 18, 18)  
   border: 1px solid #e0e0e0;  
   border-radius: 10px;  
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
@@ -404,7 +411,7 @@ a {
 .category-title {
   font-size: 24px; 
   font-weight: 600;
-  color: #4a4a4a;
+  color: #b4b1b1;
   margin-bottom: 20px;
   position: relative;
 }
@@ -421,15 +428,14 @@ a {
 }
 
 /* Skill item hover effect */
-.skill-items:hover {
-  background-color: #f6f1f1;
-}
+
 
 .about-first{
   font-size: 17px;
   line-height: 1.4;
   text-align: justify;
   font-weight: normal;
+  color: rgb(230, 228, 228);
 }
 /* .about-second{
   font-size: 20px;
@@ -450,6 +456,18 @@ a {
 .service-item:hover {
   transform: translateY(-9px); 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.education_desc{
+  color: rgb(205, 203, 203);
+}
+
+.education_degree{
+  color: rgb(116, 116, 116);
+}
+
+.service_description{
+  color: rgb(205, 203, 203);
 }
 
 
@@ -484,7 +502,7 @@ a {
 .social a .fa-facebook { color: #1877F2; }
 .social a .fa-instagram { color: #C13584; }
 .social a .fa-linkedin { color: #0A66C2; }
-.social a .fa-github { color: #333; }
+.social a .fa-github { color: #eaeaea; }
 .social a .fa-twitter { color: #1DA1F2; }
 .social a .fa-pinterest { color: #E60023; }
 
@@ -500,7 +518,7 @@ a {
 
 /* Gradient Text */
 .gradient-text {
-  background: linear-gradient(45deg, #f83c3c, #3d3d3d);
+  background: linear-gradient(45deg, #c9c7c7, #5e5e5e);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -514,7 +532,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  background: linear-gradient(45deg, #f83c3c, #3d3d3d);
+  background: linear-gradient(45deg, #585858, #242424);
   color: #ffffff;
   transition: transform 0.2s;
 }
@@ -545,9 +563,14 @@ a {
 
 /* for freelancing  */
 .freelancer-available {
-  background: linear-gradient(135deg, #f13d4c, #d00000);
+  background: linear-gradient(135deg, #232222, #232323);
   position: relative;
   overflow: hidden;
+}
+
+/* Transparent background for inner divs */
+.transparent-bg {
+  background-color: transparent;
 }
 
 .freelancer-available::before {
@@ -557,7 +580,7 @@ a {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.039);
   transform: rotate(-30deg);
   pointer-events: none; 
   z-index: 1;
@@ -586,7 +609,7 @@ a {
 }
 
 .gradient-card {
-  background: linear-gradient(45deg, #f84a4a, #4d4c4c);
+  background: linear-gradient(45deg, #212121, #4d4c4c);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -614,8 +637,6 @@ a {
 /* for footer */
 .site-footer {
   padding: 20px 0;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e7e7e7;
 }
 
 .footer-content {
@@ -796,14 +817,14 @@ a {
 .view-details-text {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #363636;
+  color: #9f9e9e;
   transition: all 0.3s;
   display: inline-block;
   text-decoration: none;  
 }
 
 .view-details-text:hover {
-  color: #5d5d5d;
+  color: #848383;
   transform: scale(1.05);
   text-decoration: underline;  
   text-decoration-color: #07f4e8; 
@@ -906,6 +927,7 @@ a {
     border: 1px solid #ffffff80; 
     transition: box-shadow 0.4s ease, transform 0.4s ease; 
     box-shadow: 0 0 11px rgba(127, 184, 231, 0.702); 
+    overflow: hidden;
 
 }
 
@@ -914,17 +936,13 @@ a {
   transform: scale(1.029); 
 }
 
-.portfolio-item:hover{
-  box-shadow: 0 0 15px rgba(115, 174, 222, 0.702); 
-  transform: scale(0.6);
-}
 .portfolio-item {
   transition: box-shadow 0.3s, transform 0.6s;
 }
 
 .portfolio-item:hover {
-  box-shadow: 0 0 25px rgba(115, 174, 222, 0.902); 
-  transform: scale(1.05);
+  /* box-shadow: 0 0 25px rgba(115, 174, 222, 0.902);  */
+  transform: scale(1.01);
 }
 
 .category-box:hover {
@@ -956,15 +974,75 @@ a {
   width: 90%; /* control the length of the left line */
   right: 100%; /* places it to the left of the text */
   margin-right: 2vw; /* distance between line and text */
-  background: linear-gradient(to left, #000, transparent);
+  background: linear-gradient(to left, #cac8c8, transparent);
 }
 
 .section-title h2::after {
   width: 90%; /* control the length of the right line */
   left: 100%; /* places it to the right of the text */
   margin-left: 2vw; /* distance between line and text */
-  background: linear-gradient(to right, #000, transparent);
+  background: linear-gradient(to right, #cac8c8, transparent);
 }
 
+.contact-form-container {
+  background: #1c1c1c;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #f35a5a; /* Gradient text color */
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #cccccc; /* Light gray labels */
+  font-size: 0.9rem;
+  align-items: start;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 10px;
+  border: 1px solid #333333;
+  background-color: #262626;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-input::placeholder {
+  color: #888888;
+  font-size: small;
+}
+
+
+.submit-btn {
+  width: 100%;
+  padding: 0.45rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6e6e6e, #131212); 
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #131212, #6e6e6e); /* Gradient reverse on hover */
+}
 
 
