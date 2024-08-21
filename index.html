@@ -13,7 +13,7 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <link rel="shortcut icon" type="xicon" href="Images/icon.png">
+  <link rel="shortcut icon" type="xicon" href="Images/hero_img.jpg">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mediaqueries.css" />
 </head>
@@ -27,6 +27,7 @@
       <ul class="nav-links pt-1 ">
         <li><a href="#home" class="gradient-text ">Home</a></li>
         <li><a href="#about" class="gradient-text">About</a></li>
+        <li><a href="#skills" class="gradient-text">Skills</a></li>
         <li><a href="#services" class="gradient-text">Service</a></li>
         <li><a href="#projects" class="gradient-text">Projects</a></li>
         <li><a href="#certificates" class="gradient-text">Certificates</a></li>
@@ -44,6 +45,7 @@
         <button class="close-menu-btn" onclick="toggleMenu()"><i class="fas fa-times"></i></button>
         <li><a href="#home" onclick="toggleMenu()" class="hamburger-text">Home</a></li>
         <li><a href="#about" onclick="toggleMenu()" class="hamburger-text">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()" class="hamburger-text">Skills</a></li>
         <li><a href="#services" onclick="toggleMenu()" class="hamburger-text">Service</a></li>
         <li><a href="#projects" onclick="toggleMenu()" class="hamburger-text">Projects</a></li>
         <li><a href="#certificates" onclick="toggleMenu()" class="hamburger-text">Certificates</a></li>
@@ -101,47 +103,107 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="about-text">
-            <p class=" about-first mb-3">I am a Software Engineering Student, currently, I am pursuing my studies at
-              PCPS College, affiliated with the University of Bedfordshire.
-              I have a strong passion for programming, specifically in <strong>Java</strong> and <strong>Python</strong>
-              . I am highly
-              interested in full stack development. To enhance my full stack skills, I am presently engaged in Python
-              <strong>Django</strong> framework and JavaScript <strong>React</strong> framework.
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-7">
+          <div class="about-text text-center">
+            <p class="about-first mb-3">
+              I am a Software Engineering Student, currently, I am pursuing my studies at
+              PCPS College, affiliated with the University of Bedfordshire. I have a strong passion for programming,
+              specifically in <strong>Java</strong> and <strong>Python</strong>. I am highly interested in full stack
+              development. To enhance my full stack skills, I am presently engaged in Python <strong>Django</strong>
+              framework and JavaScript <strong>React</strong> framework.
             </p>
-            <p class="about-first ">
-              Looking ahead, I am enthusiast about expanding my knowledge in <strong>MERN Stack </strong>.
-            <p class=" about-first ">I am always looking to connect with like-minded individuals and explore
-              new
-              opportunities. Let's keep in touch!</p>
+            <p class="about-first">
+              Looking ahead, I am enthusiast about expanding my knowledge in <strong>MERN Stack</strong>.
+            </p>
+            <p class="about-first">
+              I am always looking to connect with like-minded individuals and explore new opportunities. Let's keep in
+              touch!
+            </p>
           </div>
-          <div class="row text-center text-uppercase my-5 p-2">
+        </div>
+      </div>
+
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="col-md-6 mt-4">
+          <div class="row text-center text-uppercase p-2 justify-content-center align-items-center">
             <div class="col-sm-4 mb-3 shadow">
               <a href="#projects" class="text-decoration-none">
                 <div class="fact-item p-2 mb-3">
                   <i class="fas fa-laptop-code fa-2x mb-2 mt-2"></i>
-                  <h4 class="fs-1 fw-bold ">10+</h4>
+                  <h4 class="fs-1 fw-bold">10+</h4>
                   <p class="gradient-text">Projects Completed</p>
                 </div>
-              </a> <!-- Added closing tag for anchor -->
+              </a>
             </div>
-
             <div class="col-sm-4 mb-3 shadow">
               <a href="#certificates" class="text-decoration-none">
                 <div class="fact-item p-2 mb-3">
                   <i class="fas fa-award fa-2x mb-2 mt-2"></i>
-                  <h4 class="fs-1 fw-bold ">20+</h4>
+                  <h4 class="fs-1 fw-bold">20+</h4>
                   <p class="gradient-text">Certificates & Achievements</p>
                 </div>
               </a>
             </div>
           </div>
+        </div>
+      </div>
 
+    </div>
+
+    <div class="container">
+      <div class="section-title text-center mb-5">
+        <h2 class="fw-bold">Education</h2>
+      </div>
+
+      <div class="row justify-content-center p-2">
+        <!-- Higher Secondary Education -->
+        <div class="col-md-4 mb-5">
+          <div class="education-item  p-3 rounded">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-4 gradient-text">Khwopa Higher Secondary School</h5>
+              <p class="card-text education education_desc">
+                Graduated with a remarkable <strong>A</strong> grade in Computer Science stream, marking a significant
+                academic achievement.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-center mt-2">
+              <small class="education_degree ">Higher Secondary</small>
+            </div>
+          </div>
         </div>
 
-        <div class="col-md-6 mt-5 mt-md-0 px-4">
+        <!-- Bachelor's Education -->
+        <div class="col-md-4 mb-5">
+          <div class="education-item  p-3 rounded">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-4 gradient-text">PCPS College (Hons Degree)</h5>
+              <p class="card-text education education_desc">
+                Currently pursuing Software Engineering program at PCPS College, which is affiliated with the University
+                Of Bedfordshire, UK.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-center mt-2">
+              <small class="education_degree">Bachelor's Degree (Ongoing)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about section end -->
+
+  <section class="skills" id="skills">
+    <div class="container-lg py-4 px-4 lg-px-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Skills</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center px-1 px-md-2 px-lg-5">
+        <div class="col-md-4">
           <div class="category-box languages mb-5">
             <h3 class="category-title ">Languages</h3>
             <!-- HTML Skill -->
@@ -202,11 +264,13 @@
 
 
         </div>
+      </div>
+      <div class="col-md-4">
         <div class="category-box frameworks mb-5">
           <h3 class="category-title">Frameworks</h3>
           <!-- Bootstrap Skill -->
-          <div class="skill-items mb-3 d-flex align-items-center">
-            <i class="fab fa-bootstrap fa-2x mr-3" style="color: #710af0; "></i>
+          <div class="skill-items mb-3 d-flex  align-items-center">
+            <i class="fab fa-bootstrap fa-2x mr-4" style="color: #710af0; "></i>
             <div class="flex-grow-1 ">
               <h6 class="about-language">Bootstrap</h6>
               <div class="progress" style="height: 5px">
@@ -215,7 +279,7 @@
             </div>
           </div>
 
-          <div class="skill-items mb-3 d-flex align-items-center">
+          <div class="skill-items mb-3 d-flex gap-1 align-items-center">
             <img src="Images/tailwind.png" alt="Tailwind" style="width: 34px; height: 30px; ">
             <div class="flex-grow-1">
               <h6 class="about-language">Tailwind CSS</h6>
@@ -226,7 +290,7 @@
           </div>
 
 
-          <div class="skill-items mb-3 d-flex align-items-center">
+          <div class="skill-items mb-3 d-flex gap-1 align-items-center">
             <i class="fab fa-react fa-2x mr-3" style="color: #61DBFB;"></i>
             <div class="flex-grow-1">
               <h6 class="about-language">React</h6>
@@ -238,18 +302,18 @@
 
 
           <!-- Django Skill -->
-          <div class="skill-items mb-3 d-flex align-items-center">
-            <img src="Images/django.png" alt="Django" style="width: 40px; height: 38px; ">
+          <div class="skill-items mb-3 d-flex gap-1 align-items-center">
+            <img src="Images/django.png" alt="Django" style="width: 36px; height: 36px; ">
             <div class="flex-grow-1">
               <h6 class="about-language">Django</h6>
               <div class="progress" style="height: 5px">
-                <div class="progress-bar" style="background-color: #0f412e; width: 90%"></div>
+                <div class="progress-bar" style="background-color: #175f43; width: 90%"></div>
               </div>
             </div>
           </div>
 
-          <div class="skill-items mb-3 d-flex align-items-center">
-            <img src="Images/django.png" alt="Django" style="width: 40px; height: 38px; ">
+          <div class="skill-items mb-3 d-flex gap-1 align-items-center">
+            <img src="Images/django.png" alt="Django" style="width: 36px; height: 36px; ">
             <div class="flex-grow-1">
               <h6 class="about-language">Django Rest Framework</h6>
               <div class="progress" style="height: 5px">
@@ -259,8 +323,10 @@
           </div>
 
         </div>
+      </div>
 
-        <div class="category-box frameworks mb-5">
+      <div class="col-md-4">
+        <div class="category-box databases mb-5">
           <h3 class="category-title ">Database</h3>
 
           <!-- MySQL Skill -->
@@ -286,51 +352,14 @@
 
         </div>
       </div>
+
+
     </div>
-
-    <div class="container">
-      <div class="section-title text-center mb-5">
-        <h2 class="fw-bold">Education</h2>
-      </div>
-
-      <div class="row justify-content-center p-2">
-        <!-- Higher Secondary Education -->
-        <div class="col-md-5 mb-5">
-          <div class="education-item  p-3 rounded">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-4 gradient-text">Khwopa Higher Secondary School</h5>
-              <p class="card-text education education_desc">
-                Graduated with a remarkable <strong>A</strong> grade in Computer Science stream, marking a significant
-                academic achievement.
-              </p>
-            </div>
-            <div class="card-footer bg-transparent border-0 text-center mt-2">
-              <small class="education_degree ">Higher Secondary</small>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bachelor's Education -->
-        <div class="col-md-5 mb-5">
-          <div class="education-item  p-3 rounded">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-4 gradient-text">PCPS College (Hons Degree)</h5>
-              <p class="card-text education education_desc">
-                Currently pursuing Software Engineering program at PCPS College, which is affiliated with the University
-                Of Bedfordshire, UK.
-              </p>
-            </div>
-            <div class="card-footer bg-transparent border-0 text-center mt-2">
-              <small class="education_degree">Bachelor's Degree (Ongoing)</small>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
 
+    </div>
   </section>
-  <!-- about section end -->
 
 
   <!-- service section -->
@@ -343,7 +372,7 @@
           </div>
         </div>
       </div>
-      <div class="row text-center p-2 px-3">
+      <div class="row text-center p-2 px-3 px-lg-5">
         <div class=" col-md-6 col-lg-4 mb-5">
           <div class="service-item py-2 rounded">
             <div class="icon my-3 text-danger fs-2">
@@ -405,644 +434,276 @@
         </div>
       </div>
 
-      <div class="row project-row justify-content-center px-2">
+      <div class="px-3">
+        <div class="project-container px-lg-5">
 
-        <div class="col-md-6 col-lg-7 p-2 p-lg-5">
-          <div class="portfolio-item  mb-4">
-            <a href="Images/portfolio/task_unity.png" target="_blank">
-              <img src="Images/portfolio/task_unity.png" class="w-100 project-image " alt="Tech Blog">
-            </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">TaskUnity- A Collaborative Task
-              Management Platform</h3>
-              <div class="text-center m-1">
-                <i class="fas fa-leaf" style="color: #47A248; font-size: x-large;"></i>
-                <i class="fab fa-node" style="color: #3C873A; font-size: x-large;"></i>
-                <i class="fab fa-react" style="color: #61DAFB; font-size: x-large;"></i> 
-                <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large;"></i>
-              </div>
-              
-            <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/TaskUnity" class="github-link gradient-btn my-1 mr-2">
-                <i class="fab fa-github transparent-bg"></i> View on GitHub
-              </a>
-              <span class="view-details-text m-3" style="cursor: pointer;">
-                View Details
-              </span>
-            </p>
-          </div>
-        </div>
-
-
-        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5">
-          <div class="portfolio-item  mb-4">
-            <a href="Images/portfolio/techx.png" target="_blank">
-              <img src="Images/portfolio/techx.png" class="w-100 project-image" alt="Tech Blog">
-            </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">TechX- A Social Media Platform</h3>
-            <div class="text-center m-1">
-
-              <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
-              <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
-              <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
-              <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large ;"></i>
-              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div>
-            <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/TechBlog-A_Blogging_Platform"
-                class="github-link gradient-btn my-1 mr-2">
-                <i class="fab fa-github bg-transparent"></i> View on GitHub
-              </a>
-              <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#techblog"
-                style="cursor: pointer;">
-                View Details
-              </span>
-            </p>
-          </div>
-        </div>
-
-        <!--TechX Modal -->
-        <div class="modal fade" id="techblog" tabindex="-1" aria-labelledby="techbloglabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="techbloglabel"><strong>TechX- A Social Media Platform</strong></h6>
-                <button type="button" class="btn-close font-white" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="content">
-                  <p><strong>TechX</strong> is a dynamic platform designed to be a unique social media space where users
-                    can share their tech articles. Developed using Django, the platform offers high security, among
-                    other features.</p>
-                  <strong>Features 🛠️</strong>
-
-                  <li>✍️ Post articles effortlessly.</li>
-                  <li>🗣️ Engage in post discussions with comments.</li>
-                  <li>🔗 Share cool posts on LinkedIn with a click.</li>
-                  <li>🔒 Incorporates two-factor authentication, allowing users to obtain verification codes through
-                    Google Authenticator via QR codes or through email.</li>
-                  <li>👤 Your unique user space/profile.</li>
-                  <li>🔒 View details of the logged-in device.</li>
-                  <li>🔄 Edit posts anytime.</li>
-                  <li>🔔 Whenever someone likes your content, follows you, or drops a comment, you'll know right away.
-                  </li>
-                  <li>🤝 Connect with tech enthusiasts by following each others.</li>
-                  <li>❤️ Option for likes and comments.</li>
-                  <li>🔒 Easy password recovery with email authentication.</li>
-                  <li>📡 Watch out! Chat feature coming soon.</li>
-                  </ul>
-                  <strong>On The Horizon 🚀</strong>
-                  <p>Up next: 💬 Real-time chats for better connections.</p>
-
-                  <div id="video-container">
-                    <p class="text-muted text-center fw-bold">Project Demonstration</p>
-                    <video style="max-width: 100%;" controls>
-                      <source src="Video/techx.mp4" type="video/mp4" />
-                    </video>
-                    <a href="https://github.com/romanhumagain/Portfolio-Website/raw/master/Video/techx.mp4"
-                      class="text-decoration-none" id="play-button">Download to View</a>
-                  </div>
-                  <p class="simple-prompt">Watch the demo video to see the project in action. <a
-                      href="https://github.com/romanhumagain/Portfolio-Website/raw/master/Video/techx.mp4"
-                      class="simple-link ">Download now !! </a></p>
-
-
-                  <div id="tech-stack">
-                    <p class="text-muted text-center fw-bold mt-5">Languages Used</p>
-                    <div class="tech-category backend">
-                      <p><strong>Backend:</strong></p>
-                      <p>🐍 Developed with the powerful Django framework (Python)</p>
+          <!-- Project Row 1 -->
+          <div class="project-row-container">
+            <div class="project-row">
+              <div class="row justify-content-start w-full">
+                <div class="project-item odd">
+                  <div class="portfolio-item mb-4">
+                    <a href="Images/portfolio/task_unity.png" target="_blank">
+                      <img src="Images/portfolio/task_unity.png" class="w-100 project-image" alt="TaskUnity">
+                    </a>
+                    <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">TaskUnity - A Collaborative
+                      Task Management Platform</h3>
+                    <div class="text-center m-2">
+                      <!-- Icons -->
+                      <i class="fas fa-leaf" style="color: #47A248; font-size: x-large;"></i>
+                      <i class="fab fa-node" style="color: #3C873A; font-size: x-large;"></i>
+                      <i class="fab fa-react" style="color: #61DAFB; font-size: x-large;"></i>
+                      <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large;"></i>
                     </div>
-
-                    <div class="tech-category frontend">
-                      <p><strong>Frontend:</strong></p>
-                      <p>🎨 Built using HTML, Bootstrap and JavaScript for a seamless user experience.</p>
-                    </div>
-
-                    <div class="tech-category database">
-                      <p><strong>Database:</strong></p>
-                      <p><i class="fas fa-database text-danger"></i> Reliable storage with MySQL.</p>
-                    </div>
-
-                  </div>
-
-                </div>
-              </div>
-              <div class="modal-footer">
-                <a href="https://github.com/romanhumagain/TechBlog-A_Blogging_Platform"
-                  class="github-link gradient-btn my-1 mr-2">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-                <button type="button" class="close-btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5">
-          <div class="portfolio-item mb-4">
-            <a href="Images/portfolio/student_management.png" target="_blank">
-              <img src="Images/portfolio/student_management.png" class="w-100 project-image" alt="Tech Blog">
-            </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Student Management System</h3>
-            <div class="text-center m-1">
-              <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
-              <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
-              <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
-              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div>
-            <p class="mb-2 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/Django_Student-Management-System"
-                class="github-link gradient-btn my-1">
-                <i class="fab fa-github bg-transparent"></i> View on GitHub
-              </a>
-              <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#std_management"
-                style="cursor: pointer;">
-                View Details
-              </span>
-            </p>
-          </div>
-        </div>
-
-
-        <!--Student Management System Modal -->
-        <div class="modal fade" id="std_management" tabindex="-1" aria-labelledby="stdlabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="stdlabel"><strong>Student Management System</strong></h6>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="content">
-                  <p>A single solution for all student needs.</p>
-                  <ul>
-                    <li><strong>Personal Dashboard:</strong> Customized view for students to track their progress and
-                      updates.</li>
-                    <li><strong>Enrollment:</strong> Register students across courses.</li>
-                    <li><strong>Attendance:</strong> Monitor class presence. Auto-emails for absences.</li>
-                    <li><strong>Grades & Assignments:</strong> Oversee marksheet and track assignment deadlines, with
-                      immediate email notifications for new tasks.</li>
-                    <li><strong>Examination Management:</strong> Admins can seamlessly add exam marks from the system
-                      and generate the results.</li>
-                    <li><strong>Marksheet Generation:</strong> A dynamic system to auto-generate mark sheets that
-                      students can view.</li>
-                    <li><strong>Assignment Submissions:</strong> Facilitate Online platform for students to submit
-                      assignments, with tracking for timely or late submissions, similar to Google Classroom.</li>
-                    <li><strong>Email Verification:</strong> Authenticate students with a verification link during
-                      account creation.</li>
-                    <li><strong>Digital Notice Board:</strong> A space for admins to announce updates.</li>
-                    <li><strong>Track Student:</strong> This system facilitate the option for tracking the student
-                      progress details and the attendance details.</li>
-                  </ul>
-
-                  <div id="video-container">
-                    <p class="text-muted text-center fw-bold">Project Demonstration</p>
-                    <video style="max-width: 100%;" controls>
-                      <source src="Video/student-management-system.mp4" type="video/mp4" />
-                    </video>
-                    <a href="https://github.com/romanhumagain/Portfolio-Website/raw/master/Video/student-management-system.mp4"
-                      class="text-decoration-none" id="play-button">Download to View</a>
-                  </div>
-
-                  <p class="simple-prompt">Watch the demo video to see the project in action. <a
-                      href="https://github.com/romanhumagain/Portfolio-Website/raw/master/Video/student-management-system.mp4"
-                      class="simple-link ">Download now !! </a></p>
-
-
-                  <div id="tech-stack">
-                    <p class="text-muted text-center fw-bold mt-5">Languages Used</p>
-                    <div class="tech-category backend">
-                      <p><strong>Backend:</strong></p>
-                      <p>🐍 Developed with the powerful Django framework (Python).</p>
-                    </div>
-
-                    <div class="tech-category frontend">
-                      <p><strong>Frontend:</strong></p>
-                      <p>🎨 Built using HTML and Bootstrap for a seamless user experience.</p>
-                    </div>
-
-                    <div class="tech-category database">
-                      <p><strong>Database:</strong></p>
-                      <p><i class="fas fa-database text-danger"></i> Reliable storage with MySQL.</p>
-                    </div>
-
-                  </div>
-
-
-                </div>
-              </div>
-              <div class="modal-footer">
-                <a href="https://github.com/romanhumagain/Django_Student-Management-System"
-                  class="github-link gradient-btn my-1 mr-2">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-                <button type="button" class="close-btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- for taxi booking -->
-        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5 ">
-          <div class="portfolio-item  mb-4">
-            <a href="Images/portfolio/taxi_booking.png" target="_blank">
-              <img src="Images/portfolio/taxi_booking.png" class="w-100 project-image" alt="Taxi-Booking-System">
-            </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Taxi Booking System</h3>
-            <div class="text-center m-1">
-              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-
-            </div>
-
-            <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/Taxi-Booking-System" class="github-link gradient-btn my-1">
-                <i class="fab fa-github bg-transparent"></i> View on GitHub
-              </a>
-
-              <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="" style="cursor: pointer;">
-                View Details
-              </span>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5">
-          <div class="portfolio-item  mb-4">
-            <a href="Images/portfolio/hotel_management.png" target="_blank">
-              <img src="Images/portfolio/hotel_management.png" class="w-100 project-image"
-                alt="Hotel-Booking-Application">
-            </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Hotel Booking Application</h3>
-            <div class="text-center m-1">
-              <i class="fab fa-java" style="color: #007396; font-size: x-large ;"></i>
-            </div>
-
-            <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/Hotel-Booking-Application"
-                class="github-link gradient-btn my-1">
-                <i class="fab fa-github bg-transparent"></i> View on GitHub
-              </a>
-
-              <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#hotelbooking"
-                style="cursor: pointer;">
-                View Details
-              </span>
-            </p>
-          </div>
-        </div>
-
-        <!--hotelbooking Modal -->
-        <div class="modal fade" id="hotelbooking" tabindex="-1" aria-labelledby="hotelbookinglabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="hotelbookinglabel"><strong>🏨 Hotel Booking Application</strong></h6>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="content">
-                  <p>Our Hotel Booking desktop application, built with Java, makes it easy to book and manage hotels. It
-                    is designed with users in mind, offering a smooth experience.</p>
-
-                  <strong>🌟 Customer Capabilities:</strong>
-                  <ul>
-                    <li>📊 Comprehensive customer dashboard for complete hotel booking process.</li>
-                    <li>🖱️ Effortless room booking experience.</li>
-                    <li>👤 Personalized user profiles to access booking history, payment details, and personal info.
-                    </li>
-                    <li>📝 Share your experience directly with hotel management.</li>
-                    <li>📢 Request special services not listed in our offerings.</li>
-                    <li>🍽️ Explore our bar and restaurant menu and order with ease.</li>
-                  </ul>
-                  <strong>🔧 Admin Capabilities:</strong>
-                  <ul>
-                    <li>🛎️ Comprehensive admin dashboard for complete hotel management.</li>
-                    <li>📊 Monitor registered users and active guests.</li>
-                    <li>🛏️ Oversee room availability and assignments.</li>
-                    <li>❌ Facilitate booking cancellations when necessary.</li>
-                    <li>💵 Track customer payments and generate PDF bills during checkout.</li>
-                  </ul>
-
-
-                  <div id="video-container">
-                    <p class="text-muted text-center fw-bold">Project Demonstration</p>
-                    <video style="max-width: 100%;" controls>
-                      <source src="Video/hotel-booking-application.mp4" type="video/mp4" />
-                    </video>
-                    <a href="https://github.com/romanhumagain/Portfolio-Website/raw/master/Video/hotel-booking-application.mp4"
-                      class="text-decoration-none" id="play-button">Download to View</a>
-                  </div>
-
-                  <p class="simple-prompt">Watch the demo video to see the project in action. <a
-                      href="https://github.com/romanhumagain/Portfolio-Website/raw/master/Video/hotel-booking-application.mp4"
-                      class="simple-link ">Download now !! </a></p>
-
-                  <div id="tech-stack">
-                    <p class="text-muted text-center fw-bold mt-5">Languages Used</p>
-                    <div class="tech-category backend">
-                      <p><strong>Core Logic:</strong></p>
-                      <p><i class="fab fa-java " style="color: #007396;" title="Java"></i> Powered by Java with
-                        high-performance capabilities.</p>
-                    </div>
-
-                    <div class="tech-category frontend">
-                      <p><strong>User Interface:</strong></p>
-                      <p>🖼️ Crafted with Java Swing, providing a rich and interactive desktop application experience.
-                      </p>
-                    </div>
-
-                    <div class="tech-category database">
-                      <p><strong>Database:</strong></p>
-                      <p><i class="fas fa-database icon text-danger"></i> Reliable storage with MySQL.</p>
-                    </div>
-
-                  </div>
-
-                </div>
-              </div>
-              <div class="modal-footer">
-                <a href="https://github.com/romanhumagain/Hotel-Booking-Application"
-                  class="github-link gradient-btn my-1 mr-2">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-                <button type="button" class="close-btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5">
-          <div class="portfolio-item mb-4">
-            <a href="Images/portfolio/food_odering.png" target="_blank">
-              <img src="Images/portfolio/food_odering.png" class="w-100 project-image" alt="Tech Blog">
-            </a>
-            <h3 class="project-name text-capitalize fs-5 proj my-2 gradient-text">Food Ordering Website</h3>
-
-            <div class="text-center m-1">
-
-              <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
-              <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large ;"></i>
-              <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
-              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div>
-            <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/django-food-ordering-system"
-                class="github-link gradient-btn my-1">
-                <i class="fab fa-github bg-transparent"></i> View on GitHub
-              </a>
-
-              <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#food_ordering"
-                style="cursor: pointer;">
-                View Details
-              </span>
-            </p>
-          </div>
-        </div>
-
-        <!--Food Ordering Website Modal -->
-        <div class="modal fade" id="food_ordering" tabindex="-1" aria-labelledby="foodorderinglabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="foodorderinglabel"> <strong>Food Ordering Website</strong> </h6>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="content">
-                  <p><strong>Food Ordering Website</strong> built on Django, a powerful Python framework, that has the
-                    potential to transform the way people order food online.</p>
-                  <strong>🌟 Customer Capabilities:</strong>
-                  <ul>
-                    <li>Required registration and login.</li>
-                    <li>Order from the available menu.</li>
-                    <li>Track, update, or delete orders.</li>
-                  </ul>
-                  <strong>🔧 Hotel Admin Capabilities:</strong>
-                  <ul>
-                    <li>Easily add or update menu items.</li>
-                    <li>Track orders made by customers.</li>
-                    <li>Accept or decline customer requests.</li>
-                    <li>Manage food delivery based on customer's provided details.</li>
-                  </ul>
-                  <div id="tech-stack">
-                    <p class="text-muted text-center fw-bold mt-5">Languages Used</p>
-                    <div class="tech-category backend">
-                      <p><strong>Backend:</strong></p>
-                      <p>🐍 Crafted with the powerful Django framework (Python).</p>
-                    </div>
-
-                    <div class="tech-category frontend">
-                      <p><strong>Frontend:</strong></p>
-                      <p>🎨 Responsive and intuitive design using HTML and Bootstrap.</p>
-                    </div>
-
-                    <div class="tech-category database">
-                      <p><strong>Database:</strong></p>
-                      <p><i class="fas fa-database text-danger"></i> Reliable storage with MySQL.</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="modal-footer">
-                <a href="https://github.com/romanhumagain/django-food-ordering-system"
-                  class="github-link gradient-btn my-1 mr-2">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-                <button type="button" class="close-btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5 ">
-          <div class="portfolio-item mb-4">
-            <a href="Images/portfolio/weather-app.png" target="_blank">
-              <img src="Images/portfolio/weather-app.png" class="w-100 project-image" alt="weather_app ">
-            </a>
-            <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Weather Application</h3>
-
-            <div class="text-center m-1">
-
-              <i class="fab fa-html5" style="color: #E34F26; font-size: x-large ;"></i>
-              <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
-              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-            </div>
-
-            <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/Weather-Application" class="github-link gradient-btn my-1">
-                <i class="fab fa-github bg-transparent"></i> View on GitHub
-              </a>
-
-              <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#weather"
-                style="cursor: pointer;">
-                View Details
-              </span>
-            </p>
-          </div>
-        </div>
-
-        <!--weather Modal -->
-        <div class="modal fade" id="weather" tabindex="-1" aria-labelledby="weatherlabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="weatherlabel"><strong>Weather Application</strong></h6>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="content">
-                  <strong>Weather Application</strong>, made with Python Django Framework which is a sleek,
-                  user-friendly
-                  platform that provides real-time weather details for any city in the world. Users simply input a city,
-                  and the app promptly returns the current temperature, weather conditions, and an accompanying visual
-                  icon. Enhanced with interactive visual cues and transitions, it offers an engaging and intuitive
-                  weather-checking experience. Its features include an engaging user interface and rain notifications
-                  based on precipitation volume.
-
-                  <div id="tech-stack">
-                    <p class="text-muted text-center fw-bold mt-5">Languages Used</p>
-                    <div class="tech-category backend">
-                      <p><strong>Backend:</strong></p>
-                      <p>🐍 Developed using the powerful Django framework (Python).</p>
-                    </div>
-
-                    <div class="tech-category frontend">
-                      <p><strong>Frontend:</strong></p>
-                      <p>🎨 Built using HTML and Bootstrap for a seamless user experience.</p>
-                    </div>
-
-                    <p class="text-muted fw-light text-center">Used Weather API to fetch the weather data.</p>
-                  </div>
-
-                </div>
-              </div>
-              <div class="modal-footer">
-                <a href="https://github.com/romanhumagain/Weather-Application"
-                  class="github-link gradient-btn my-1 mr-2">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-                <button type="button" class="close-btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5 ">
-          <div class="portfolio-item mb-4">
-            <a href="Images/portfolio/AI-ChatBot.png" target="_blank">
-              <img src="Images/portfolio/AI-ChatBot.png" class="w-100 project-image" alt="portfolio">
-            </a>
-            <h3 class="project-name text-capitalize fs-5 proj my-2 gradient-text">AI ChatBot</h3>
-
-            <div class="text-center m-1">
-
-              <i class="fab fa-html5" style="color: #E34F26;  font-size: x-large ;"></i>
-              <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large ;"></i>
-              <i class="fab fa-python" style="color: #3776AB; font-size: x-large ;"></i>
-
-            </div>
-
-            <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/AI-Chat-Bot" class="github-link gradient-btn my-1">
-                <i class="fab fa-github bg-transparent"></i> View on GitHub
-              </a>
-              <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="#chatbot"
-                style="cursor: pointer;">
-                View Details
-              </span>
-            </p>
-          </div>
-        </div>
-
-        <!--AI ChatBot Modal -->
-        <div class="modal fade" id="chatbot" tabindex="-1" aria-labelledby="chatbotlabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h6 class="modal-title" id="chatbotlabel"><strong>AI ChatBot</strong></h6>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="content">
-                  <P><strong>A chatbot </strong> powered by OpenAI's (API), designed to answer queries and engage in
-                    conversations. I have used Python Django Framework for this platform.</P>
-
-                  <P>This current version of the project does not use a premium subscription for the OpenAI API.
-                    Therefore, the chatbot will often respond with:
-                    "We're currently on a limited OpenAI plan. For extended features and uninterrupted responses, please
-                    consider upgrading the API plan " as shown in the image.</P>
-
-                  <P>If you have a premium subscription for OpenAI GPT or if you're planning to subscribe, you can
-                    easily integrate it with this chatbot. Follow the instructions from my GitHub README file to set up.
-                  </P>
-
-                  <div id="tech-stack">
-                    <p class="text-muted text-center fw-bold mt-5">Languages Used</p>
-                    <div class="tech-category backend">
-                      <p><strong>Backend:</strong></p>
-                      <p>🐍 Crafted with the powerful Django framework (Python).</p>
-                    </div>
-
-                    <div class="tech-category frontend">
-                      <p><strong>Frontend:</strong></p>
-                      <p>🎨 Responsive and intuitive design using HTML and Bootstrap.</p>
-                    </div>
-
-                    <p class="text-muted fw-light text-center">Integrated with OpenAI's API for data retrieval.</p>
-
+                    <p class="mb-4 d-flex align-items-center justify-content-center">
+                      <a href="https://github.com/romanhumagain/TaskUnity" class="github-link gradient-btn my-1 mr-2">
+                        <i class="fab fa-github transparent-bg"></i> View on GitHub
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
-                <a href="https://github.com/romanhumagain/AI-Chat-Bot" class="github-link gradient-btn my-1 mr-2">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-                <button type="button" class="close-btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!-- <div class="shining-line "></div> -->
+
+          <!-- Project Row 2 -->
+          <div class="project-row-container">
+            <div class="project-row">
+              <div class="row justify-content-end w-full">
+                <div class="project-item even">
+                  <div class="portfolio-item mb-4">
+                    <a href="Images/portfolio/techx.png" target="_blank">
+                      <img src="Images/portfolio/techx.png" class="w-100 project-image" alt="TechX">
+                    </a>
+                    <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">TechX - A Social Media
+                      Platform</h3>
+                    <div class="text-center m-2">
+                      <!-- Icons -->
+                      <i class="fab fa-html5" style="color: #E34F26; font-size: x-large;"></i>
+                      <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large;"></i>
+                      <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large;"></i>
+                      <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large;"></i>
+                      <i class="fab fa-python" style="color: #3776AB; font-size: x-large;"></i>
+                    </div>
+                    <p class="mb-4 d-flex align-items-center justify-content-center">
+                      <a href="https://github.com/romanhumagain/TechBlog-A_Blogging_Platform"
+                        class="github-link gradient-btn my-1 mr-2">
+                        <i class="fab fa-github transparent-bg"></i> View on GitHub
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <!-- <div class="shining-line d-none d-md-block"></div> -->
 
-        <div class="col-md-6 col-lg-7 mt-2 p-2 p-lg-5">
-          <div class="portfolio-item mb-4">
-            <a href="Images/portfolio/news_app.png" target="_blank">
-              <img src="Images/portfolio/news_app.png" class="w-100 project-image" alt="portfolio">
-            </a>
-            <h3 class="project-name text-capitalize fs-5 proj my-2 gradient-text">News App</h3>
-
-            <div class="text-center m-1">
-              <i class="fab fa-react" style="color: #61DAFB; font-size: x-large;"></i> 
-                <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large;"></i>
-
+          <!-- Project Row 3 -->
+          <div class="project-row-container">
+            <div class="project-row">
+              <div class="row justify-content-start w-full">
+                <div class="project-item odd">
+                  <div class="portfolio-item mb-4">
+                    <a href="Images/portfolio/student_management.png" target="_blank">
+                      <img src="Images/portfolio/student_management.png" class="w-100 project-image"
+                        alt="Student Management System">
+                    </a>
+                    <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Student Management System</h3>
+                    <div class="text-center m-2">
+                      <!-- Icons -->
+                      <i class="fab fa-html5" style="color: #E34F26; font-size: x-large;"></i>
+                      <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large;"></i>
+                      <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large;"></i>
+                      <i class="fab fa-python" style="color: #3776AB; font-size: x-large;"></i>
+                    </div>
+                    <p class="mb-2 d-flex align-items-center justify-content-center">
+                      <a href="https://github.com/romanhumagain/Django_Student-Management-System"
+                        class="github-link gradient-btn my-1">
+                        <i class="fab fa-github bg-transparent"></i> View on GitHub
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <p class="mb-4 d-flex align-items-center justify-content-center">
-              <a href="https://github.com/romanhumagain/React-News-App" class="github-link gradient-btn my-1">
-                <i class="fab fa-github bg-transparent"></i> View on GitHub
-              </a>
-              <!-- Icon to trigger modal -->
-              <span class="view-details-text m-3" data-bs-toggle="modal" data-bs-target="" style="cursor: pointer;">
-                View Details
-              </span>
-            </p>
           </div>
-        </div>
+          <!-- <div class="shining-line d-none d-md-block"></div> -->
 
+          <!-- Project Row 4 -->
+          <div class="project-row-container">
+            <div class="project-row">
+              <div class="row justify-content-end w-full">
+                <div class="project-item even">
+                  <div class="portfolio-item mb-4">
+                    <a href="Images/portfolio/taxi_booking.png" target="_blank">
+                      <img src="Images/portfolio/taxi_booking.png" class="w-100 project-image"
+                        alt="Taxi Booking System">
+                    </a>
+                    <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Taxi Booking System</h3>
+                    <div class="text-center m-1">
+                      <!-- Icons -->
+                      <i class="fab fa-python" style="color: #3776AB; font-size: x-large;"></i>
+                    </div>
+                    <p class="mb-4 d-flex align-items-center justify-content-center">
+                      <a href="https://github.com/romanhumagain/Taxi-Booking-System"
+                        class="github-link gradient-btn my-1">
+                        <i class="fab fa-github bg-transparent"></i> View on GitHub
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="shining-line d-none d-md-block"></div> -->
+
+          <!-- Project Row 5 -->
+          <div class="project-row-container">
+            <div class="project-row">
+              <div class="row justify-content-start w-full">
+                <div class="project-item odd">
+                  <div class="portfolio-item mb-4">
+                    <a href="Images/portfolio/hotel_management.png" target="_blank">
+                      <img src="Images/portfolio/hotel_management.png" class="w-100 project-image"
+                        alt="Hotel Booking Application">
+                    </a>
+                    <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Hotel Booking Application</h3>
+                    <div class="text-center m-1">
+                      <!-- Icons -->
+                      <i class="fab fa-java" style="color: #007396; font-size: x-large;"></i>
+                    </div>
+                    <p class="mb-4 d-flex align-items-center justify-content-center">
+                      <a href="https://github.com/romanhumagain/Hotel-Booking-Application"
+                        class="github-link gradient-btn my-1">
+                        <i class="fab fa-github bg-transparent"></i> View on GitHub
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="shining-line d-none d-md-block"></div> -->
+
+          <!-- Project Row 6 -->
+          <div class="project-row-container">
+            <div class="project-row">
+              <div class="row justify-content-end w-full">
+                <div class="project-item even">
+                  <div class="portfolio-item mb-4">
+                    <a href="Images/portfolio/food_odering.png" target="_blank">
+                      <img src="Images/portfolio/food_odering.png" class="w-100 project-image"
+                        alt="Food Ordering Website">
+                    </a>
+                    <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Food Ordering Website</h3>
+                    <div class="text-center m-1">
+                      <!-- Icons -->
+                      <i class="fab fa-html5" style="color: #E34F26; font-size: x-large;"></i>
+                      <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large;"></i>
+                      <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large;"></i>
+                      <i class="fab fa-python" style="color: #3776AB; font-size: x-large;"></i>
+                    </div>
+                    <p class="mb-4 d-flex align-items-center justify-content-center">
+                      <a href="https://github.com/romanhumagain/Food-Ordering-Website"
+                        class="github-link gradient-btn my-1">
+                        <i class="fab fa-github bg-transparent"></i> View on GitHub
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Row 7 -->
+          <div class="project-row-container">
+            <div class="project-row">
+              <div class="row justify-content-start w-full">
+                <div class="project-item even">
+                  <div class="portfolio-item mb-4">
+                    <a href="Images/portfolio/weather-app.png" target="_blank">
+                      <img src="Images/portfolio/weather-app.png" class="w-100 project-image"
+                        alt="Food Ordering Website">
+                    </a>
+                    <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">Weather Application</h3>
+                    <div class="text-center m-1">
+                      <!-- Icons -->
+                      <i class="fab fa-html5" style="color: #E34F26; font-size: x-large;"></i>
+                      <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large;"></i>
+                      <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large;"></i>
+                      <i class="fab fa-python" style="color: #3776AB; font-size: x-large;"></i>
+                    </div>
+                    <p class="mb-4 d-flex align-items-center justify-content-center">
+                      <a href="https://github.com/romanhumagain/Weather-Application"
+                        class="github-link gradient-btn my-1">
+                        <i class="fab fa-github bg-transparent"></i> View on GitHub
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Row 8 -->
+          <div class="project-row-container">
+            <div class="project-row">
+              <div class="row justify-content-end w-full">
+                <div class="project-item even">
+                  <div class="portfolio-item mb-4">
+                    <a href="Images/portfolio/AI-ChatBot.png" target="_blank">
+                      <img src="Images/portfolio/AI-ChatBot.png" class="w-100 project-image"
+                        alt="Food Ordering Website">
+                    </a>
+                    <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">AI Chatbot</h3>
+                    <div class="text-center m-1">
+                      <!-- Icons -->
+                      <i class="fab fa-html5" style="color: #E34F26; font-size: x-large;"></i>
+                      <i class="fab fa-css3-alt" style="color: #1572B6; font-size: x-large;"></i>
+                      <i class="fab fa-bootstrap" style="color: #7952B3; font-size: x-large;"></i>
+                      <i class="fab fa-python" style="color: #3776AB; font-size: x-large;"></i>
+                    </div>
+                    <p class="mb-4 d-flex align-items-center justify-content-center">
+                      <a href="https://github.com/romanhumagain/AI-Chat-Bot" class="github-link gradient-btn my-1">
+                        <i class="fab fa-github bg-transparent"></i> View on GitHub
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Row 9 -->
+          <div class="project-row-container">
+            <div class="project-row">
+              <div class="row justify-content-start w-full">
+                <div class="project-item even">
+                  <div class="portfolio-item mb-4">
+                    <a href="Images/portfolio/news_app.png" target="_blank">
+                      <img src="Images/portfolio/news_app.png" class="w-100 project-image" alt="Food Ordering Website">
+                    </a>
+                    <h3 class="project-name text-capitalize fs-5 my-2 proj gradient-text">News App</h3>
+                    <div class="text-center m-1">
+                      <i class="fab fa-react" style="color: #61DAFB; font-size: x-large;"></i>
+                      <i class="fab fa-js-square" style="color: #F7DF1E; font-size: x-large;"></i>
+                    </div>
+                    <p class="mb-4 d-flex align-items-center justify-content-center">
+                      <a href="https://github.com/romanhumagain/React-News-App" class="github-link gradient-btn my-1">
+                        <i class="fab fa-github bg-transparent"></i> View on GitHub
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
+
     </div>
   </section>
   <!-- portfolio section end  -->
@@ -1343,9 +1004,9 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center">
-        <div class="contact-form-container ">
-          <h4 class="form-title transparent-bg ">Get in Touch!</h4>
+      <div class="d-flex justify-content-center px-2">
+        <div class="contact-form-container">
+          <h4 class="gredient-text transparent-bg ">Get in Touch!</h4>
           <form class="contact-form transparent-bg" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="ad9f78ce-04e6-4b39-85c0-d7c93d3a1b94" />
             <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio Website" />
@@ -1372,7 +1033,7 @@
 
       <p class="education_desc mb-3 mt-5">Interested in working together? Reach out!</p>
 
-      <div class="row justify-content-center">
+      <div class="row justify-content-center px-2">
         <div class="col-12 col-md-4 mb-4">
           <div class="card border-0 shadow-sm gradient-card ">
             <div class="card-body d-flex align-items-center justify-content-center bg-transparent">
@@ -1386,7 +1047,8 @@
         <div class="col-12 col-md-4">
           <div class="card border-0 shadow-sm gradient-card"> <!-- Added gradient-card here -->
             <div class="card-body d-flex align-items-center justify-content-center bg-transparent">
-              <i class="linkedin-icon fab fa-linkedin fa-2x text-white me-3 bg-transparent"></i> <!-- Color adjusted to white -->
+              <i class="linkedin-icon fab fa-linkedin fa-2x text-white me-3 bg-transparent"></i>
+              <!-- Color adjusted to white -->
               <a href="https://www.linkedin.com/in/roman-humagain/"
                 class="linkedin text-decoration-none text-white bg-transparent">LinkedIn
                 Profile</a> <!-- Color adjusted to white -->

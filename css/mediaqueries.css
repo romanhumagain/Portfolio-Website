@@ -63,6 +63,10 @@
   .copy-right {
     font-size: 16px; 
   }
+  .project-row {
+    padding-left: 60px;  /* Adjust as needed */
+    padding-right: 60px; /* Adjust as needed */
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

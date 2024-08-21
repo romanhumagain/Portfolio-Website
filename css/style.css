@@ -333,11 +333,11 @@ a {
 
 .home-img:hover .profile-pic {
   transform: scale(1.01) ; 
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); 
+  /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);  */
 }
 
 .section__text__top{
-  color: gray;
+  color: rgb(162, 162, 162);
 }
 
 
@@ -371,11 +371,12 @@ a {
 }
 
 .typed-color-1 {
-  color: #11acac;  
+  color: #15cbcb;  
 }
 
 .typed-color-2 {
-  color: #f63434;  
+  color: #15cbcb;  
+
 }
 
 
@@ -501,7 +502,7 @@ a {
 /* Individual icon colors */
 .social a .fa-facebook { color: #1877F2; }
 .social a .fa-instagram { color: #C13584; }
-.social a .fa-linkedin { color: #0A66C2; }
+.social a .fa-linkedin { color: #2c80d4; background-color: white; }
 .social a .fa-github { color: #eaeaea; }
 .social a .fa-twitter { color: #1DA1F2; }
 .social a .fa-pinterest { color: #E60023; }
@@ -518,7 +519,7 @@ a {
 
 /* Gradient Text */
 .gradient-text {
-  background: linear-gradient(45deg, #c9c7c7, #5e5e5e);
+  background: linear-gradient(60deg, #c9c7c7, #424242);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -677,25 +678,25 @@ a {
 .section-title h2 {
   font-family: 'Poppins', sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(45deg, #2E3192, #07d6d6, #FF7A87, #FFCC00);
+  background: linear-gradient(45deg, #403f3f, #ffffff, #3a3a3a);
   background-size: 200% auto; 
   -webkit-background-clip: text;
   color: transparent;
   animation: GradientAnimation 4s ease infinite; 
 }
 
-/* Animation for moving gradient */
 @keyframes GradientAnimation {
   0% {
-    background-position: 100% 0;
+    background-position: 0% 0%;
   }
   50% {
-    background-position: 0 100%;
+    background-position: 100% 0%;
   }
   100% {
-    background-position: 100% 0;
+    background-position: 0% 100%;
   }
 }
+
 
 
 
@@ -1045,4 +1046,99 @@ a {
   background: linear-gradient(135deg, #131212, #6e6e6e); /* Gradient reverse on hover */
 }
 
+.skills_card {
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
 
+/* .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+} */
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-icon {
+  text-align: center;
+  position: relative;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+.skill-icon .skill-name {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.skill-icon:hover .skill-name {
+  display: block;
+}
+
+.project-container {
+  position: relative;
+}
+
+.project-row-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.project-item {
+  width: 600px;
+}
+
+.project-item.odd {
+  text-align: left;
+}
+
+.project-item.even {
+  text-align: right;
+}
+
+.shining-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 100px; /* Adjust the height as needed */
+  background: linear-gradient(to bottom, #c1c1c1, #424242, #2d2d2d); /* Shining effect */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.line{
+  text-align: center;
+  height: 100px;
+  background: linear-gradient(to bottom, #c1c1c1, #424242, #2d2d2d); /* Shining effect */
+  width: 2px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .copy-right {
+    font-size: 16px;
+  }
+  .project-row-container {
+    padding-left: 60px; /* Adjust as needed */
+    padding-right: 60px; /* Adjust as needed */
+  }
+}
