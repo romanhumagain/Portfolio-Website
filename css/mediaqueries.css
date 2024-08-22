@@ -46,6 +46,9 @@
     height: 46vw;
     justify-content: center;
   }
+  .project-line {
+    height: 40px;
+  }
 }
 
 
@@ -55,6 +58,21 @@
 @media (min-width: 768px) {
   .copy-right {
     font-size: 14px; 
+  }
+  .odd, .even {
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .odd:hover {
+    transform: rotate(2deg);
+  }
+  
+  .even:hover {
+    transform: rotate(-2deg);
+  }
+  .project-container{
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -292,6 +310,12 @@ margin-left:20px;
   }
   .section-title h2::before, .section-title h2::after {
     width: 10%; /* reduce the length on smaller screens */
+  }
+  .project-item {
+    width: 450px;
+  }
+  .project-line {
+    height: 60px;
   }
 }
 
