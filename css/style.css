@@ -37,7 +37,12 @@ nav {
   gap: 1.7rem;
   list-style: none;
   font-size: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  background: linear-gradient(60deg, rgb(33, 33, 33), rgb(29, 29, 29)); /* Dark to slightly darker gradient */
 }
+
 
 a {
   color: black;
@@ -46,16 +51,13 @@ a {
 }
 .top-nav-links .nav-links li a {
   font-size: 1.08rem;
+  transition: color 0.4s ease, transform 0.4s ease;
 }
 
 .top-nav-links .nav-links li a:hover {
-  color: rgb(190, 187, 187);
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(7, 217, 220);
+  color: rgb(237, 237, 237);
   transition: color 0.4s ease;
-  
-
+  transform: scale(1.05);
 }
 
 
@@ -126,7 +128,6 @@ a {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: rgba(18, 18, 18, 0.99); /* Slightly transparent background */
   color: white;
   width: fit-content;
   max-height: 0;
@@ -215,10 +216,6 @@ a {
 .close-menu-btn i {
   font-size: 1.5rem;  
 }
-
-
-
-
 
 #socials-container {
   display: flex;
@@ -697,11 +694,6 @@ a {
   }
 }
 
-
-
-
-
-
 /* for certificates */
 #certificates .carousel-inner img {
   max-width: 50%;
@@ -747,8 +739,6 @@ a {
   color: white;
 }
 
-
-
 .slide-count {
   background: linear-gradient(45deg, #2E3192, #1BFFFF);
   -webkit-background-clip: text;
@@ -756,9 +746,6 @@ a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 
 }
-
-
-
 
 
 /* to show the number of certificate */
