@@ -1,7 +1,7 @@
 import React from 'react';
 import SocialLinks from './SocialLinks';
 import main_img from '../assets/images/main_image.jpg';
-import resume from '../assets/Roman-Humagain-cv.pdf';
+import resume from '../assets/Roman_Humagain_Resume.pdf';
 
 import { FaDownload } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter';
