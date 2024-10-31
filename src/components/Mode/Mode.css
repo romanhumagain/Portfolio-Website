@@ -1,0 +1,15 @@
+@keyframes pulses {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-toggle {
+  animation: pulses 1.8s infinite ;
+}
