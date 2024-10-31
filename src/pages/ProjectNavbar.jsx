@@ -85,7 +85,7 @@ const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileApp
             </Link>
 
             <p
-            className='px-3 mt-2 mb-5 py-[3px] text-[15px] w-[30%] flex justify-center font-semibold transition-transform duration-700 rounded-full shadow-sm cursor-pointer bg-gradient-to-r from-pink-600 to-purple-700 text-neutral-300 hover:scale-105'
+            className='px-3 mt-3 mb-5 py-[3px] text-[15px] w-[30%] flex justify-center font-semibold transition-transform duration-700 rounded-full shadow-sm cursor-pointer bg-gradient-to-r from-pink-600 to-purple-700 text-neutral-300 hover:scale-105'
             onClick={()=>{setIsContactModalOpen(true)}}
           >
             Contact
