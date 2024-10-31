@@ -84,7 +84,7 @@ function App() {
               <Footer />
             </>
           } />
-          <Route path='/project-details' element={<ProjectDetailsPage />} />
+          <Route path='/projects' element={<ProjectDetailsPage />} />
           <Route path='/project-source-code' element={<SourceCodeDetailsPage />} />
         </Routes>
 

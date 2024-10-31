@@ -29,7 +29,7 @@ const ProjectPage = () => {
               <div className="flex flex-wrap items-center gap-4 mt-6">
                 <button className='flex items-center gap-2 px-4 py-[3px] font-semibold text-white transition-transform duration-700 rounded-lg shadow-md sm:py-1 text-md bg-gradient-to-r from-pink-600 to-purple-700 hover:shadow-lg hover:scale-105'
                   onClick={() => {
-                    navigate('/project-details')
+                    navigate('/projects')
                   }}>
                   View All Projects <GoProjectSymlink />
                 </button>

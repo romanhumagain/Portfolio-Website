@@ -168,6 +168,7 @@ const projectsData = [
         github_link: 'https://github.com/romanhumagain/Taxi-Booking-Application',
         technology: [
           { icon: FaPython, name: 'Python', brand_color: '#3776AB' },
+          { icon: FaPython, name: 'Tkinter', brand_color: '#3776AB' },
           { icon: SiMysql, name: 'MySQL', brand_color: '#005D8A' }
         ]
       },
@@ -178,7 +179,10 @@ const projectsData = [
         description: 'A hotel management system for handling reservations, guest check-ins, and staff operations.',
         github_link: 'https://github.com/romanhumagain/Hotel-Booking-Application',
         technology: [
-          { icon: FaJava, name: 'Java', brand_color: '#3776AB' },
+          { icon: FaJava, name: 'Java', brand_color: '#007396' },
+          { icon: FaJava, name: 'Java Swing', brand_color: '#007396' },
+          { icon: FaJava, name: 'JDBC', brand_color: '#007396' },
+
           { icon: SiMysql, name: 'MySQL', brand_color: '#005D8A' }
         ]
       }
