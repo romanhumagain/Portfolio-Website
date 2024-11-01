@@ -3,19 +3,7 @@ import ContactModal from '../../modal/ContactModal';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 const MobileNavbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef, scrollToSection }) => {
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [contactOptionClicked, setContactOptionClicked] = useState(false);
-
-
-  const handleOpenModal = () => {
-    setIsContactModalOpen(true);
-    setIsMenuOpen(false);
-  };
-
-  const handleCloseModal = () => {
-    setIsContactModalOpen(false);
-  };
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -38,7 +26,6 @@ const MobileNavbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef,
         </div>
       </div>
 
-      {/* Slide-in Menu with Animation */}
       <div
         className={`fixed top-0 right-0 z-50 w-1/2 h-screen bg-opacity-100 shadow-lg bg-gradient-to-r from-slate-100 md:from-slate-200 md:via-slate-300 to-slate-300 md:to-slate-400 dark:from-neutral-900 dark:to-neutral-950
           transform transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}
@@ -67,17 +54,9 @@ const MobileNavbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef,
               {section}
             </button>
           ))}
-          <div className='flex justify-start px-6 mt-4'>
-            <button
-              className='px-4 py-[5px] text-[15px] font-semibold transition-transform duration-700 rounded-full shadow-sm cursor-pointer bg-gradient-to-r from-pink-600 to-purple-700 text-neutral-300 hover:scale-105'
-              onClick={handleOpenModal}>
-              Contact
-            </button>
-          </div>
         </div>
       </div>
 
-      {isContactModalOpen && <ContactModal isOpen={isContactModalOpen} onClose={handleCloseModal} setContactOptionClicked={setContactOptionClicked} />}
     </div>
   );
 };

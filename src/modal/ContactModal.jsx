@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 
-const ContactModal = ({ isOpen, onClose, setContactOptionClicked }) => {
+const ContactModal = ({ isOpen, onClose }) => {
   const [isModalOpen, setIsModalOpen] = useState(isOpen);
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
   const [formMessage, setFormMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setIsModalOpen(isOpen);
-    setContactOptionClicked(true);
   }, [isOpen]);
 
   const closeModal = () => {
@@ -24,7 +24,7 @@ const ContactModal = ({ isOpen, onClose, setContactOptionClicked }) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
   
@@ -32,44 +32,46 @@ const ContactModal = ({ isOpen, onClose, setContactOptionClicked }) => {
     const email = formData.get('email');
   
     if (!validateEmail(email)) {
-      setEmailError("Please enter a valid email.")
+      setEmailError("Please enter a valid email.");
       toast.error('Invalid email format.');
-      
-      return; 
+      return;
     }
   
-    // Append access key
     formData.append('access_key', "ad9f78ce-04e6-4b39-85c0-d7c93d3a1b94");
     const json = JSON.stringify(Object.fromEntries(formData));
   
-    toast.promise(
-      fetch('https://api.web3forms.com/submit', {
+    setLoading(true);
+    toast.loading("Sending...");
+  
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json',
         },
         body: json,
-      }).then((response) => {
-        if (!response.ok) throw new Error('Failed to send');
-        return response.json();
-      }),
-      {
-        loading: 'Sending...',
-        success: <b>Successfully sent message!</b>,
-        error: <b>Something went wrong. Please try again.</b>,
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to send');
       }
-    )
-    .then((result) => {
+  
+      const result = await response.json();
       if (result.success) {
+        toast.dismiss(); // Remove the loading toast
+        toast.success("Successfully sent message!");
         closeModal();
       } else {
+        toast.dismiss();
         toast.error("Something went wrong. Please try again.");
       }
-    })
-    .catch((error) => {
-      setFormMessage('An error occurred while submitting the form.');
-    });
+    } catch (error) {
+      toast.dismiss();
+      toast.error("An error occurred while submitting the form.");
+    } finally {
+      setLoading(false);
+    }
   };
   
 
@@ -84,7 +86,7 @@ const ContactModal = ({ isOpen, onClose, setContactOptionClicked }) => {
       className={`fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-60 duration-300 ${isModalOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
       onClick={handleBackdropClick}
     >
-      <div className={`m-6 w-full max-w-sm sm:max-w-md lg:max-w-md p-6 bg-white dark:bg-neutral-800 rounded-2xl shadow-lg transform transition-transform duration-300 ${isModalOpen ? "translate-y-0" : "-translate-y-20"}`}>
+      <div className={`m-6 md:mt-20 w-full max-w-sm sm:max-w-md lg:max-w-md p-6 bg-white dark:bg-neutral-800 rounded-2xl shadow-lg transform transition-transform duration-300 ${isModalOpen ? "translate-y-0" : "-translate-y-20"}`}>
         <button
           type="button"
           className="absolute top-3 right-3.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -144,8 +146,12 @@ const ContactModal = ({ isOpen, onClose, setContactOptionClicked }) => {
             <textarea className="block w-full p-3 mt-1 bg-gray-200 h-28 dark:bg-neutral-700 dark:text-gray-300 focus:outline-none rounded-xl" id="message" name="message" required />
           </div>
 
-          <button type="submit" className="w-full px-4 py-[6px] mt-4 font-semibold text-white transition duration-200 rounded-full md:py-2 text-md bg-gradient-to-r from-pink-600 to-purple-700">
-            Submit
+          <button type="submit" disabled={loading} className="w-full px-4 py-[6px] mt-4 font-semibold text-white transition duration-200 rounded-full md:py-2 text-md bg-gradient-to-r from-pink-600 to-purple-700">
+            {loading ? (
+              <span className="loader"></span> 
+            ) : (
+              'Submit'
+            )}
           </button>
 
           {formMessage && <p className="mt-4 text-sm font-medium text-center text-gray-800 dark:text-gray-300">{formMessage}</p>}

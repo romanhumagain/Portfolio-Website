@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
 import SourceCodeDetailsPage from './pages/SourseCodeDetailsPage';
 import toast, { Toaster } from 'react-hot-toast';
+import Contact from './modal/Contact';
 
 function App() {
   const homeRef = useRef(null);
@@ -47,6 +48,10 @@ function App() {
       <div className="relative min-h-screen bg-gradient-to-r from-slate-100 md:from-slate-200 md:via-slate-300 to-slate-300 md:to-slate-400 dark:from-neutral-900 dark:to-neutral-950" style={{ fontFamily: "Montserrat, sans-serif" }}>
         <div className='absolute z-50'>
           <Mode />
+        </div>
+
+        <div className='absolute z-50'>
+          <Contact/>
         </div>
 
         <Routes>

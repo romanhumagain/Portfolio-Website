@@ -18,7 +18,6 @@ const HomePage = () => {
               <p className='mt-1 text-xl font-semibold sm:text-xl md:text-2xl lg:text-3xl text-slate-700 dark:text-gray-100 animate-slideIn'>Roman Humagain</p>
 
               <div className='mt-1'>
-                {/* Add Typewriter Effect here */}
                 <p className='text-sm font-semibold sm:text-lg lg:text-lg text-slate-700 dark:text-gray-300 animate-fadeIn'>
                   a{' '}
                   <span className="text-cyan-500 dark:text-cyan-500">
