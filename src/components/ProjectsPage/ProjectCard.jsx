@@ -37,7 +37,7 @@ const ProjectCard = () => {
             <div key={index} className='relative'>
               <img
                 src={project.img}
-                className='cursor-pointer w-[63px] transition-transform duration-700 rounded-lg h-[136px] hover:scale-105 lg:h-48 md:h-[120px] md:w-[90px]'
+                className='cursor-pointer w-[63px] transition-transform duration-700 rounded-lg h-[136px] hover:scale-105 lg:h-48 md:h-[130px] md:w-[60px] lg:w-[85px]'
                 alt={project.alt}
               />
               <div className='absolute inset-0 flex items-center justify-center transition-opacity duration-700 bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100'>

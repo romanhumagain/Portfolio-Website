@@ -9,7 +9,7 @@ const ServicePage = () => {
     <>
       <div className='flex flex-col items-center justify-center h-full min-h-screen'>
         <div className='w-full max-w-3xl p-10 mt-24 rounded-lg md:mt-0 '>
-          <SectionHeading title={"Skills & Services"} />
+          <SectionHeading title={"My Expertise"} />
           <div className=''>
             {services.length > 0 && services.map((service, index) => (
               <>
