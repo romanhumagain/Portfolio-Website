@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import ContactModal from '../../modal/ContactModal';
-
-
+import { useContactModal } from '../../context/ContactModalContext';
 
 const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef, scrollToSection }) => {
   const [activeSection, setActiveSection] = useState('Home');
+  const {isContactModalOpen} = useContactModal();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +37,7 @@ const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certi
 
   return (
     <>
-      <div className='fixed z-50 flex justify-center w-full max-w-3xl px-3 py-3 my-5 rounded-full shadow-md bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 dark:from-neutral-700 dark:via-neutral-800 dark:to-neutral-800'>
+      <div className={`fixed ${!isContactModalOpen && 'z-50'} flex justify-center w-full max-w-3xl px-3 py-3 my-5 rounded-full shadow-md bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 dark:from-neutral-700 dark:via-neutral-800 dark:to-neutral-800`}>
         <ul className='flex items-center gap-10 font-semibold text-[15px] text-slate-800 dark:text-neutral-300'>
           {['Home', 'About', 'Skills', 'Expertise', 'Projects', 'Certificates'].map((section, index) => {
             const sectionRefs = [homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef];

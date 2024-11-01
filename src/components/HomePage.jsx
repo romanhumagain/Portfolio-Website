@@ -53,16 +53,14 @@ const HomePage = () => {
             </div>
 
             <div className='flex flex-col items-center col-span-12 lg:col-span-4'>
-              <div className='w-32 h-32 overflow-hidden transition-transform duration-700 rounded-full shadow-lg sm:w-[191px] sm:h-[191px] lg:w-52 lg:h-52 hover:scale-105 hover:shadow-xl'>
+              <div className='w-32 h-32  overflow-hidden transition-transform duration-700 rounded-full sm:w-[191px] sm:h-[191px] lg:w-52 lg:h-52 hover:scale-105 hover:shadow-lg'>
                 <img
                   src={main_img}
                   alt="Profile"
-                  className='object-cover w-full h-full'
+                  className='object-cover w-full h-full transition duration-500 ease-in-out'
                 />
               </div>
             </div>
-
-
           </div>
 
           <div className='mt-10'>

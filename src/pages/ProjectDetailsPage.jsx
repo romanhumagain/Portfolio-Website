@@ -95,7 +95,7 @@ const ProjectDetailsPage = () => {
                 Mobile Application Projects
               </p>
             </div>
-            <div className='flex flex-col items-center justify-center gap-10'>
+            <div className='flex flex-col items-center justify-center gap-10 p-5'>
               {mobileAppProjectLists.length > 0 && mobileAppProjectLists[0].details.map((details, index) => (
                 <div key={index}>
                   <MobileAppProject details={details} index={index} />
@@ -118,7 +118,7 @@ const ProjectDetailsPage = () => {
                 Desktop Application Project
               </p>
             </div>
-            <div className='flex flex-col items-center justify-center gap-10'>
+            <div className='flex flex-col items-center justify-center gap-10 p-5'>
               {desktopAppProjectLists.length > 0 && desktopAppProjectLists[0].details.map((details, index) => (
                 <div key={index}>
                   <DesktopAppProject details={details} index={index} />

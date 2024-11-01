@@ -59,7 +59,7 @@ const ContactModal = ({ isOpen, onClose }) => {
   
       const result = await response.json();
       if (result.success) {
-        toast.dismiss(); // Remove the loading toast
+        toast.dismiss(); 
         toast.success("Successfully sent message!");
         closeModal();
       } else {
