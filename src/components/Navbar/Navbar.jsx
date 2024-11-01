@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import ContactModal from '../../modal/ContactModal';
 
+
+
 const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef, scrollToSection }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('Home');
+  const [contactOptionClicked, setContactOptionClicked] = useState(false);
 
   const handleOpenModal = () => {
     setIsContactModalOpen(true);
@@ -65,7 +68,7 @@ const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certi
             );
           })}
           <li
-            className='animate-fadeIn px-3 py-[3px] text-[15px] transition-transform duration-700 rounded-full shadow-sm cursor-pointer bg-gradient-to-r from-pink-600 to-purple-700 text-neutral-300 hover:scale-105'
+            className={`${!contactOptionClicked && 'animate-popup'} animate-fadeIn px-3 py-[3px] text-[15px] transition-transform duration-700 rounded-full shadow-sm cursor-pointer bg-gradient-to-r from-pink-600 to-purple-700 text-neutral-300 hover:scale-105`}
             onClick={handleOpenModal}
           >
             Contact
@@ -73,7 +76,7 @@ const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certi
         </ul>
       </div>
       {isContactModalOpen && (
-        <ContactModal isOpen={isContactModalOpen} onClose={handleCloseModal} />
+        <ContactModal isOpen={isContactModalOpen} onClose={handleCloseModal} setContactOptionClicked={setContactOptionClicked} />
       )}
     </>
   );

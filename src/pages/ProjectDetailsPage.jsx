@@ -20,6 +20,8 @@ const ProjectDetailsPage = () => {
   const [mobileAppProjectLists, setMobileAppProjectLists] = useState([]);
 
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [contactOptionClicked, setContactOptionClicked] = useState(false);
+
 
   const [isLoading, setIsLoading] = useState(true);
 
@@ -56,7 +58,7 @@ const ProjectDetailsPage = () => {
 
   return (
     <div className="min-h-screen md:p-5 bg-gradient-to-r from-slate-200 via-slate-300 to-slate-400 dark:from-neutral-900 dark:to-neutral-950" style={{ fontFamily: "Montserrat, sans-serif" }}>
-      <ProjectNavbar scrollToSection={scrollToSection} fullStackRef={fullStackRef} desktopAppRef={desktopAppRef} mobileAppRef={mobileAppRef} isContactModalOpen={isContactModalOpen} setIsContactModalOpen={setIsContactModalOpen} />
+      <ProjectNavbar scrollToSection={scrollToSection} fullStackRef={fullStackRef} desktopAppRef={desktopAppRef} mobileAppRef={mobileAppRef} isContactModalOpen={isContactModalOpen} setIsContactModalOpen={setIsContactModalOpen} contactOptionClicked={contactOptionClicked} />
       {isLoading ? (
         <div className="flex items-center justify-center min-h-screen">
           <img src={loading_gif} alt="Loading..." className="w-20 h-20 md:w-32 md:h-32" />
@@ -135,7 +137,7 @@ const ProjectDetailsPage = () => {
       )}
 
       {isContactModalOpen && (
-        <ContactModal isOpen={isContactModalOpen} onClose={handleCloseModal} />
+        <ContactModal isOpen={isContactModalOpen} onClose={handleCloseModal} setContactOptionClicked={setContactOptionClicked} />
       )}
     </div>
   );

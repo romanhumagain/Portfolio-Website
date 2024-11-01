@@ -4,9 +4,11 @@ import ProjectCard from "./ProjectCard";
 import VerticalLine from "../common/VerticalLine";
 import SectionHeading from "../common/SectionHeading";
 import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
 
 const ProjectPage = () => {
   const navigate = useNavigate();
+  const [isProjectDetailsPageOpen, setIsProjectDetailsPageOpen] = useState(false)
 
   return (
     <>
@@ -27,8 +29,9 @@ const ProjectPage = () => {
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-4 mt-6">
-                <button className='flex items-center gap-2 px-4 py-[3px] font-semibold text-white transition-transform duration-700 rounded-lg shadow-md sm:py-1 text-md bg-gradient-to-r from-pink-600 to-purple-700 hover:shadow-lg hover:scale-105'
+                <button className={`${!isProjectDetailsPageOpen && 'animate-popup-project'} flex items-center gap-2 px-4 py-[3px] font-semibold text-white transition-transform duration-700 rounded-lg shadow-md sm:py-1 text-md bg-gradient-to-r from-pink-600 to-purple-700 hover:shadow-lg hover:scale-105`}
                   onClick={() => {
+                    setIsProjectDetailsPageOpen(true)
                     navigate('/projects')
                   }}>
                   View All Projects <GoProjectSymlink />

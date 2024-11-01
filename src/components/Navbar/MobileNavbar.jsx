@@ -5,6 +5,8 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 const MobileNavbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef, scrollToSection }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [contactOptionClicked, setContactOptionClicked] = useState(false);
+
 
   const handleOpenModal = () => {
     setIsContactModalOpen(true);
@@ -75,7 +77,7 @@ const MobileNavbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef,
         </div>
       </div>
 
-      {isContactModalOpen && <ContactModal isOpen={isContactModalOpen} onClose={handleCloseModal} />}
+      {isContactModalOpen && <ContactModal isOpen={isContactModalOpen} onClose={handleCloseModal} setContactOptionClicked={setContactOptionClicked} />}
     </div>
   );
 };

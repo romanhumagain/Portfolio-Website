@@ -44,5 +44,50 @@
   animation: fadeIn 1s ease-in-out;
 }
 
+.wave-emoji {
+  display: inline-block;
+  animation: wave 1.5s ease-in-out infinite;
+  font-size: 0.8rem;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-20deg); }
+  40% { transform: rotate(10deg); }
+  60% { transform: rotate(-10deg); }
+  80% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes pulses {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-popup {
+  animation: pulses 1.8s infinite ;
+}
+
+@keyframes pulsesProj {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-popup-project{
+  animation: pulsesProj 1.8s infinite ;
+}
 
 

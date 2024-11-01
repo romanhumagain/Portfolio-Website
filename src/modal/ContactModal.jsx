@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 
-const ContactModal = ({ isOpen, onClose }) => {
+const ContactModal = ({ isOpen, onClose, setContactOptionClicked }) => {
   const [isModalOpen, setIsModalOpen] = useState(isOpen);
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
@@ -9,6 +9,7 @@ const ContactModal = ({ isOpen, onClose }) => {
 
   useEffect(() => {
     setIsModalOpen(isOpen);
+    setContactOptionClicked(true);
   }, [isOpen]);
 
   const closeModal = () => {

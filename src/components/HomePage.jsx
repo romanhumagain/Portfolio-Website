@@ -14,7 +14,7 @@ const HomePage = () => {
         <div className='w-full max-w-xl p-8 mt-10 shadow-xl dark:shadow-lg lg:max-w-2xl lg:p-10 lg:pt-16 bg-gradient-to-l from-slate-100 to-slate-300 dark:from-neutral-800 dark:to-neutral-900 rounded-3xl '>
           <div className='flex flex-col-reverse gap-5 lg:grid lg:items-center lg:grid-cols-12 lg:gap-0'>
             <div className='flex flex-col items-center col-span-12 lg:items-start lg:col-span-8'>
-              <p className='text-xs font-medium sm:text-sm: lg:text-md text-slate-500 dark:text-gray-400 animate-fadeIn'>Hey✋, I'm</p>
+              <p className='text-xs font-medium sm:text-sm: lg:text-md text-slate-500 dark:text-gray-400 animate-fadeIn'>Hey <span className="wave-emoji">✋</span>, I'm</p>
               <p className='mt-1 text-xl font-semibold sm:text-xl md:text-2xl lg:text-3xl text-slate-700 dark:text-gray-100 animate-slideIn'>Roman Humagain</p>
 
               <div className='mt-1'>

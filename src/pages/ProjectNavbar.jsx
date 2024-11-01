@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { RiMenu3Fill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 
-const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileAppRef , setIsContactModalOpen}) => {
+const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileAppRef , setIsContactModalOpen, contactOptionClicked}) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 
@@ -44,7 +44,7 @@ const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileApp
             </Link>
 
             <Link
-            className='px-3 py-[3px] text-[15px] animate-fadeIn  flex justify-center font-semibold transition-transform duration-700 rounded-full shadow-sm cursor-pointer bg-gradient-to-r from-pink-600 to-purple-700 text-neutral-300 hover:scale-105'
+            className={`${!contactOptionClicked && 'animate-popup'} animate-fadeIn px-3 py-[3px] text-[15px] transition-transform duration-700 rounded-full shadow-sm cursor-pointer bg-gradient-to-r from-pink-600 to-purple-700 text-neutral-300 hover:scale-105`}
             onClick={()=>{setIsContactModalOpen(true)}}
           >
             Contact
