@@ -11,28 +11,17 @@ import loading_gif from '../assets/loading.gif';
 import Footer from '../components/Footer/Footer'
 import DesktopAppProject from './DesktopAppProject';
 import ProjectHeading from './ProjectHeading';
-import ContactModal from '../modal/ContactModal';
 
 const ProjectDetailsPage = () => {
   const navigate = useNavigate();
   const [fullStackProjectLists, setFullStackProjectLists] = useState([]);
   const [desktopAppProjectLists, setDesktopAppProjectLists] = useState([]);
   const [mobileAppProjectLists, setMobileAppProjectLists] = useState([]);
-
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-  const [contactOptionClicked, setContactOptionClicked] = useState(false);
-
-
   const [isLoading, setIsLoading] = useState(true);
 
   const fullStackRef = useRef(null);
   const desktopAppRef = useRef(null);
   const mobileAppRef = useRef(null);
-
-  
-  const handleCloseModal = () => {
-    setIsContactModalOpen(false);
-  };
 
   const fetchProjectLists = () => {
     const fullStackProjects = projectsData.filter((project) => project.category === 'web');
@@ -58,7 +47,7 @@ const ProjectDetailsPage = () => {
 
   return (
     <div className="min-h-screen md:p-5 bg-gradient-to-r from-slate-200 via-slate-300 to-slate-400 dark:from-neutral-900 dark:to-neutral-950" style={{ fontFamily: "Montserrat, sans-serif" }}>
-      <ProjectNavbar scrollToSection={scrollToSection} fullStackRef={fullStackRef} desktopAppRef={desktopAppRef} mobileAppRef={mobileAppRef} isContactModalOpen={isContactModalOpen} setIsContactModalOpen={setIsContactModalOpen} contactOptionClicked={contactOptionClicked} />
+      <ProjectNavbar scrollToSection={scrollToSection} fullStackRef={fullStackRef} desktopAppRef={desktopAppRef} mobileAppRef={mobileAppRef} />
       {isLoading ? (
         <div className="flex items-center justify-center min-h-screen">
           <img src={loading_gif} alt="Loading..." className="w-20 h-20 md:w-32 md:h-32" />
@@ -134,10 +123,6 @@ const ProjectDetailsPage = () => {
           </div>
 
         </>
-      )}
-
-      {isContactModalOpen && (
-        <ContactModal isOpen={isContactModalOpen} onClose={handleCloseModal} setContactOptionClicked={setContactOptionClicked} />
       )}
     </div>
   );

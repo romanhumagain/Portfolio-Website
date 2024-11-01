@@ -107,5 +107,15 @@
   100% { transform: rotate(360deg); }
 }
 
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.modal-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.modal-scrollbar {
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
 
 
