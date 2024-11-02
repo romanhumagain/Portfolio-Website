@@ -2,15 +2,59 @@ import React from 'react';
 import { IoMdClose } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
 import { useChat } from '../../context/ChatContext';
+import { auth, db } from '../../firebase/firebase';
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import toast from 'react-hot-toast';
+
+const ADMIN_EMAIL = "romanhumagain@gmail.com"; // Secure if possible
 
 const ChatLogin = ({ closeModal }) => {
+  const { setIsAuthenticated, setUserRole, setUser, createChatRoom  } = useChat();
 
-  const {setIsAuthenticated, setUserRole} = useChat();
+  const handleGoogleLogin = async () => {
+    const provider = new GoogleAuthProvider();
 
-  const handleGoogleLogin = () => {
-    
-    setIsAuthenticated(true);
-    setUserRole("member");
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+
+      // Reference Firestore user document
+      const userRef = doc(db, "users", user.uid);
+      const userSnap = await getDoc(userRef);
+
+      let role;
+      let userData;
+
+      if (userSnap.exists()) {
+        userData = userSnap.data();
+        role = userData.role;
+        
+      } else {
+        role = user.email === ADMIN_EMAIL ? "admin" : "member";
+
+        userData = {
+          uid: user.uid,
+          displayName: user.displayName,
+          email: user.email,
+          photoURL: user.photoURL,
+          role,
+        };
+
+        await setDoc(userRef, userData);
+      }
+
+      setUserRole(role);
+      setIsAuthenticated(true);
+      setUser(userData);
+      toast.success("Successfully signed in!");
+
+      createChatRoom();
+
+    } catch (error) {
+      console.error("Error during sign in:", error);
+      toast.error("Failed to sign in. Please try again.");
+    }
   };
 
   return (
@@ -23,7 +67,8 @@ const ChatLogin = ({ closeModal }) => {
             onClick={closeModal}
           />
         </div>
-        <div className='flex flex-col items-center flex-grow p-8 py-20 bg-white rounded-b-lg shadow-md md:py-16 dark:bg-neutral-800'>
+        <div className='p-5'>
+          <div className='flex flex-col items-center flex-grow p-8 py-20 bg-white shadow-md rounded-xl md:py-16 dark:bg-neutral-800'>
           <p className='mb-5 text-xl font-semibold text-gray-700 dark:text-gray-300'>Chat with Roman</p>
           <p className='mb-4 text-sm text-center text-gray-600 dark:text-gray-400'>
             Your messages are encrypted for your privacy and security.
@@ -38,6 +83,8 @@ const ChatLogin = ({ closeModal }) => {
             By continuing, you agree to our <span className='text-blue-500 cursor-pointer'>Privacy Policy</span> and <span className='text-blue-500 cursor-pointer'>Terms of Service</span>.
           </p>
         </div>
+        </div>
+        
       </div>
       
       <div className="mt-auto text-xs text-center text-gray-500 md:text-md dark:text-gray-500">

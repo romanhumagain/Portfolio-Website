@@ -35,7 +35,7 @@ const ChatModal = ({ isOpen, onClose }) => {
       className={`fixed inset-0 z-50 flex items-center justify-end w-full h-full bg-black bg-opacity-60 duration-300 ${isModalOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
       onClick={handleBackdropClick}
     >
-      <div className={`top-0 right-0 bottom-0 max-h-screen h-full w-full max-w-[335px] md:max-w-[375px] lg:max-w-[386px] bg-gradient-to-r from-slate-100 md:from-slate-200 md:via-slate-300 to-slate-300 md:to-slate-400 dark:from-neutral-900 dark:to-neutral-950 rounded-tl-2xl rounded-bl-2xl shadow-lg transform transition-transform duration-300 ${isModalOpen ? "translate-y-0" : "-translate-y-20"}`}>
+      <div className={`top-0 right-0 bottom-0 max-h-[98vh] h-full w-full max-w-[335px] md:max-w-[375px] lg:max-w-[386px] bg-gradient-to-r from-slate-100 md:from-slate-200 md:via-slate-300 to-slate-300 md:to-slate-400 dark:from-neutral-900 dark:to-neutral-950 rounded-tl-2xl rounded-bl-2xl shadow-lg transform transition-transform duration-300 ${isModalOpen ? "translate-y-0" : "-translate-y-20"}`}>
 
 
         {isAuthenticated ?
