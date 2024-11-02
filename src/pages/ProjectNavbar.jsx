@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import { RiMenu3Fill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 import {useContactModal} from '../context/ContactModalContext'
+import { useChat } from '../context/ChatContext';
 
 
 const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileAppRef}) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const {isContactModalOpen} = useContactModal();
+  const {isContactModalOpen, isChatModalOpen} = useContactModal();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -19,7 +20,7 @@ const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileApp
   }
 
   return (
-    <nav className={`fixed top-0 left-0 ${!isContactModalOpen && 'z-50'} w-full shadow-md bg-gradient-to-r from-slate-200 via-slate-300 to-slate-400 dark:from-neutral-900 dark:to-neutral-950`}>
+    <nav className={`fixed top-0 left-0 z-40 w-full shadow-md bg-gradient-to-r from-slate-200 via-slate-300 to-slate-400 dark:from-neutral-900 dark:to-neutral-950`}>
       <div className="max-w-6xl py-4 mx-auto px-7">
         <div className="flex items-center justify-between">
           <Link to={'/'}>

@@ -10,6 +10,8 @@ export const useContactModal = () => {
 const ContactModalContextProvider = ({ children }) => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
+  const [isChatModalOpen, setIsChatModalOpen] = useState(false);
+
   const handleOpenModal = () => {
     setIsContactModalOpen(true);
   };
@@ -18,11 +20,26 @@ const ContactModalContextProvider = ({ children }) => {
     setIsContactModalOpen(false);
   };
 
+
+  const handleOpenChatModal = () => {
+    setIsChatModalOpen(true);
+  };
+
+  const handleCloseChatModal = () => {
+    setIsChatModalOpen(false);
+  };
+
   const context = {
     isContactModalOpen,
     setIsContactModalOpen,
     handleOpenModal,
     handleCloseModal,
+
+    isChatModalOpen,
+    setIsChatModalOpen,
+    handleOpenChatModal,
+    handleCloseChatModal,
+
   
   };
 

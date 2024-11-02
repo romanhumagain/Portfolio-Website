@@ -7,11 +7,12 @@ import { BiMessage } from "react-icons/bi";
 import ContactModal from "./ContactModal";
 import { useState } from "react";
 import { useContactModal } from "../context/ContactModalContext";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   const navigate = useNavigate();
 
-  const {handleOpenModal, isContactModalOpen, setIsContactModalOpen, handleCloseModal} = useContactModal();
+  const { handleOpenModal, isContactModalOpen, setIsContactModalOpen, handleCloseModal } = useContactModal();
 
   const openContactPage = () => {
     handleOpenModal();
@@ -19,15 +20,14 @@ const Contact = () => {
 
   return (
     <>
-
-
       <div
-        className="animate-popup fixed p-[9px]  text-white transition-transform duration-500 rounded-full shadow-xl cursor-pointer md:p-3 right-6 bottom-[98px] md:right-10 md:bottom-[120px] bg-gradient-to-r from-pink-600 to-purple-700 hover:scale-110 hover:shadow-xl"
+        className="animate-popup fixed p-[8px] text-white transition-transform duration-500 rounded-full shadow-xl cursor-pointer md:p-[10px] right-6 bottom-[94px] md:right-10 md:bottom-[110px] bg-gradient-to-r from-red-200 to-red-600 hover:scale-110 hover:shadow-xl"
         onClick={openContactPage}
       >
-        <FiMessageSquare className="text-[22px]" />
+        <MdEmail className="text-[20px]" />
       </div>
-      
+
+
       {isContactModalOpen && (
         <ContactModal isOpen={isContactModalOpen} onClose={handleCloseModal} />
       )}

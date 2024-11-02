@@ -15,6 +15,8 @@ import SourceCodeDetailsPage from './pages/SourseCodeDetailsPage';
 import toast, { Toaster } from 'react-hot-toast';
 import Contact from './modal/Contact';
 import ContactModalContextProvider from './context/ContactModalContext';
+import Chat from './modal/Chat';
+import ChatContextProvider from './context/ChatContext';
 
 function App() {
   const homeRef = useRef(null);
@@ -44,6 +46,7 @@ function App() {
   };
 
   return (
+    <ChatContextProvider>
     <ContactModalContextProvider>
       <Router>
         <div className="relative min-h-screen bg-gradient-to-r from-slate-100 md:from-slate-200 md:via-slate-300 to-slate-300 md:to-slate-400 dark:from-neutral-900 dark:to-neutral-950" style={{ fontFamily: "Montserrat, sans-serif" }}>
@@ -53,6 +56,10 @@ function App() {
 
           <div className='absolute z-50'>
             <Contact />
+          </div>
+
+          <div className='absolute z-50'>
+            <Chat />
           </div>
 
           <Routes>
@@ -98,6 +105,7 @@ function App() {
         </div>
       </Router>
     </ContactModalContextProvider>
+    </ChatContextProvider>
   );
 }
 

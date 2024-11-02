@@ -26,15 +26,15 @@ const Mode = () => {
 
   return (
     <div 
-      className={`fixed p-[9px] transition-transform duration-500 rounded-full shadow-xl cursor-pointer md:p-3 right-6 bottom-[32px] md:right-10 md:bottom-12 
+      className={`fixed p-[9px] transition-transform duration-500 rounded-full shadow-xl cursor-pointer md:p-[10px] right-6 bottom-[32px] md:right-10 md:bottom-12 
                   ${mode === 'dark' ? 'bg-gradient-to-r from-gray-700 to-gray-300 text-white animate-popup' : 'bg-gradient-to-r from-slate-200 to-slate-500 md:to-slate-600 text-black animate-popup'} 
                   hover:scale-110 hover:shadow-xl`} 
       onClick={toggleMode}
     >
       {mode === "dark" ? (
-        <IoSunnyOutline className=" text-[24px]" />
+        <IoSunnyOutline className=" text-[20px]" />
       ) : (
-        <MdDarkMode className="text-[22px]" />
+        <MdDarkMode className="text-[20px]" />
       )}
     </div>
   );

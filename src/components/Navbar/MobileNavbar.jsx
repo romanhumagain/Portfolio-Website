@@ -5,7 +5,7 @@ import { useContactModal } from '../../context/ContactModalContext';
 
 const MobileNavbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef, scrollToSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const {isContactModalOpen} = useContactModal();
+  const {isContactModalOpen, isChatModalOpen} = useContactModal();
 
 
   const handleToggleMenu = () => {
@@ -14,7 +14,7 @@ const MobileNavbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef,
 
   return (
     <div>
-      <div className={`fixed top-0 left-0 ${!isContactModalOpen && 'z-50'} shadow-md w-full h-[70px] bg-opacity-100 bg-gradient-to-r from-slate-100 md:from-slate-200  md:via-slate-300 to-slate-300 md:to-slate-400 dark:from-neutral-900 dark:to-neutral-950`} style={{ fontFamily: "Montserrat, sans-serif" }}>
+      <div className={`fixed top-0 left-0 z-40 shadow-md w-full h-[70px] bg-opacity-100 bg-gradient-to-r from-slate-100 md:from-slate-200  md:via-slate-300 to-slate-300 md:to-slate-400 dark:from-neutral-900 dark:to-neutral-950`} style={{ fontFamily: "Montserrat, sans-serif" }}>
         <div className="flex items-center justify-end h-full px-10 ">
 
           <button
