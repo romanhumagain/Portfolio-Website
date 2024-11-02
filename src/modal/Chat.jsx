@@ -20,10 +20,10 @@ const Chat = () => {
 
 
       <div
-        className="animate-popup fixed p-[8px] text-white transition-transform duration-500 rounded-full shadow-xl cursor-pointer md:p-[10px] right-6 bottom-[153px] md:right-10 md:bottom-[170px] bg-gradient-to-r from-pink-600 to-purple-700 hover:scale-110 hover:shadow-xl"
+        className="animate-popup fixed p-[8px] text-white transition-transform duration-500 rounded-full shadow-xl cursor-pointer md:p-[10px] right-6 bottom-[94px] md:right-10 md:bottom-[110px] bg-gradient-to-r from-pink-600 to-purple-700 hover:scale-110 hover:shadow-xl"
         onClick={openContactPage}
       >
-        <BsChatDotsFill className="text-[20px]" />
+        <BsChatDotsFill className="text-[21px]" />
       </div>
       
       {isChatModalOpen && (

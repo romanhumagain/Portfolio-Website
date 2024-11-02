@@ -53,10 +53,10 @@ function App() {
           <div className='absolute z-50'>
             <Mode />
           </div>
-
+{/* 
           <div className='absolute z-50'>
             <Contact />
-          </div>
+          </div> */}
 
           <div className='absolute z-50'>
             <Chat />

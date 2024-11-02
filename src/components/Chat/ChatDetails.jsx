@@ -30,7 +30,7 @@ const ChatDetails = ({ closeModal }) => {
 
       </div>
 
-      <div className='px-5'>
+      <div className='px-3 md:px-5'>
         <div className="flex items-center w-full p-1 px-2 bg-gray-100 rounded-2xl dark:bg-neutral-800">
           <input
             type="text"
