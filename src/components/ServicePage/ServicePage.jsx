@@ -12,7 +12,7 @@ const ServicePage = () => {
           <SectionHeading title={"My Expertise"} />
           <div className=''>
             {services.length > 0 && services.map((service, index) => (
-              <>
+              <div key={index}>
                 <div className={`flex ${index % 2 === 0 ? 'justify-center md:justify-start' : 'justify-center md:justify-end'}`}>
                   <Service service={service} />
                 </div>
@@ -23,7 +23,7 @@ const ServicePage = () => {
                     </div>
                   </div>
                 )}
-              </>
+              </div>
             ))}
           </div>
         </div>

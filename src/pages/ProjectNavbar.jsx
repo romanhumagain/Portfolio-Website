@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { RiMenu3Fill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 import {useContactModal} from '../context/ContactModalContext'
-import { useChat } from '../context/ChatContext';
+
 
 
 const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileAppRef}) => {

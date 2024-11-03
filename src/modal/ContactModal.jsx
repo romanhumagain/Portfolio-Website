@@ -121,7 +121,7 @@ const ContactModal = ({ isOpen, onClose }) => {
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="font-serif text-gray-800 dark:text-gray-300" htmlFor="fullName">Full Name</label>
-            <input className="block w-full p-2 mt-1 bg-gray-200 dark:bg-neutral-700 dark:text-gray-300 focus:outline-none rounded-xl" type="text" id="name" name="name" required />
+            <input className="block w-full p-2 mt-1 bg-gray-200 dark:bg-neutral-700 dark:text-gray-300 focus:outline-none rounded-xl" type="text" id="fullName" name="name" required />
           </div>
 
           <div className="mb-4">

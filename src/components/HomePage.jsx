@@ -2,19 +2,11 @@ import React from 'react';
 import SocialLinks from './SocialLinks';
 import main_img from '../assets/images/main_image.jpg';
 import resume from '../assets/Roman_Humagain_Resume.pdf';
-
 import { FaDownload } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter';
-import VerticalLine from './common/VerticalLine';
-import { useContactModal } from '../context/ContactModalContext';
-import { MdEmail } from "react-icons/md";
-import ContactModal from '../modal/ContactModal';
-const HomePage = () => {
-  const { handleOpenModal, isContactModalOpen, setIsContactModalOpen, handleCloseModal } = useContactModal();
-  const openContactPage = () => {
-    handleOpenModal();
-  };
 
+
+const HomePage = () => {
   return (
     <>
       <div className='flex flex-col items-center justify-center h-full min-h-screen p-10 lg:p-1 ' style={{ fontFamily: "Montserrat, sans-serif" }}>
@@ -50,13 +42,6 @@ const HomePage = () => {
                 >
                   Download Resume <FaDownload />
                 </a>
-
-                <div
-                  className="animate-popup p-[5px] text-white transition-transform duration-500 rounded-full shadow-xl cursor-pointer md:p-[8px] right-6 bottom-[94px] md:right-10 md:bottom-[110px] bg-gradient-to-r from-red-300 to-red-700 hover:scale-110 hover:shadow-xl"
-                  onClick={openContactPage}
-                >
-                  <MdEmail className="text-[18px] md:text-[20px]" />
-                </div>
               </div>
 
               <div className='mt-4'>
@@ -83,10 +68,6 @@ const HomePage = () => {
             </p>
           </div>
         </div>
-
-        {isContactModalOpen && (
-        <ContactModal isOpen={isContactModalOpen} onClose={handleCloseModal} />
-      )}
       </div>
     </>
   );
