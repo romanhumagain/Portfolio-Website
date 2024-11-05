@@ -73,14 +73,56 @@ const ProjectHeading = () => {
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mt-8 animate-fadeIn md:gap-6">
-              <FaPython className="text-3xl text-yellow-500 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
-              <SiDjango className="text-3xl text-green-700 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
-              <FaReact className="text-3xl text-blue-500 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
-              <FaNodeJs className="text-3xl text-green-500 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
-              <SiMongodb className="text-3xl text-green-500 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
-              <SiExpress className="text-3xl text-gray-700 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
-              <SiFlutter className="text-3xl text-blue-400 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
+              <div className="relative group">
+                <FaPython className="text-3xl text-yellow-500 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
+                <span className="absolute px-2 py-1 text-sm text-white transition-opacity duration-300 transform -translate-x-1/2 bg-gray-800 rounded-md opacity-0 dark:bg-neutral-700 left-1/2 -bottom-9 group-hover:opacity-100">
+                  Python
+                </span>
+              </div>
+
+              <div className="relative group">
+                <SiDjango className="text-3xl text-green-700 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
+                <span className="absolute px-2 py-1 text-sm text-white transition-opacity duration-300 transform -translate-x-1/2 bg-gray-800 rounded-md opacity-0 dark:bg-neutral-700 left-1/2 -bottom-9 group-hover:opacity-100">
+                  Django
+                </span>
+              </div>
+
+              <div className="relative group">
+                <FaReact className="text-3xl text-blue-500 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
+                <span className="absolute px-2 py-1 text-sm text-white transition-opacity duration-300 transform -translate-x-1/2 bg-gray-800 rounded-md opacity-0 dark:bg-neutral-700 left-1/2 -bottom-9 group-hover:opacity-100">
+                  React
+                </span>
+              </div>
+
+              <div className="relative group">
+                <FaNodeJs className="text-3xl text-green-500 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
+                <span className="absolute px-2 py-1 text-sm text-white transition-opacity duration-300 transform -translate-x-1/2 bg-gray-800 rounded-md opacity-0 dark:bg-neutral-700 left-1/2 -bottom-9 group-hover:opacity-100">
+                  Node.js
+                </span>
+              </div>
+
+              <div className="relative group">
+                <SiMongodb className="text-3xl text-green-500 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
+                <span className="absolute px-2 py-1 text-sm text-white transition-opacity duration-300 transform -translate-x-1/2 bg-gray-800 rounded-md opacity-0 dark:bg-neutral-700 left-1/2 -bottom-9 group-hover:opacity-100">
+                  MongoDB
+                </span>
+              </div>
+
+              <div className="relative group">
+                <SiExpress className="text-3xl text-gray-700 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
+                <span className="absolute px-2 py-1 text-sm text-white transition-opacity duration-300 transform -translate-x-1/2 bg-gray-800 rounded-md opacity-0 dark:bg-neutral-700 left-1/2 -bottom-9 group-hover:opacity-100">
+                  Express
+                </span>
+              </div>
+
+              <div className="relative group">
+                <SiFlutter className="text-3xl text-blue-400 transition-transform duration-500 transform hover:scale-125 animate-pulse" />
+                <span className="absolute px-2 py-1 text-sm text-white transition-opacity duration-300 transform -translate-x-1/2 bg-gray-800 rounded-md opacity-0 dark:bg-neutral-700 left-1/2 -bottom-9 group-hover:opacity-100">
+                  Flutter
+                </span>
+              </div>
             </div>
+
           </div>
 
           <div className="flex flex-col items-center mt-16 text-center">

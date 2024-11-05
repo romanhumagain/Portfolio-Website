@@ -8,7 +8,7 @@ import {useContactModal} from '../context/ContactModalContext'
 
 const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileAppRef}) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const {isContactModalOpen, isChatModalOpen} = useContactModal();
+  // const {isContactModalOpen, isChatModalOpen} = useContactModal();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
