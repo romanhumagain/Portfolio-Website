@@ -47,7 +47,7 @@ const HomePage = () => {
                 {/* Email Icon with enhanced styling */}
                 <a
                   href="mailto:romanhumagain@gmail.com"
-                  className="p-[5px] text-white transition-all duration-500 rounded-full shadow-md bg-gradient-to-r from-red-400 to-purple-500 hover:from-red-500 hover:to-purple-600 hover:scale-105 hover:shadow-md active:scale-95"
+                  className="p-[5px] text-white transition-all duration-500 rounded-full shadow-md bg-gradient-to-r from-red-500 to-purple-500 hover:from-red-500 hover:to-purple-600 hover:scale-105 hover:shadow-md active:scale-95"
                   title="Send an Email"
                 >
                   <MdOutlineMailOutline className='text-lg lg:text-2xl' />
