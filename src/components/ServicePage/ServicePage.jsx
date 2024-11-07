@@ -18,10 +18,11 @@ const ServicePage = () => {
                 </div>
 
                 {services?.length > index + 1 && (
-                  <div className='flex justify-center'>
-                    <div className=" w-[2px]  bg-gray-400 dark:bg-neutral-700 h-14 rounded-xl ">
+                  <div className="flex justify-center">
+                    <div className="w-[2px] h-12 md:h-14 rounded-xl bg-gradient-to-b from-neutral-800 via-gray-500 to-gray-400 shadow-lg">
                     </div>
                   </div>
+
                 )}
               </div>
             ))}
