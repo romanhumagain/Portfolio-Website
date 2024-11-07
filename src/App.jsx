@@ -15,7 +15,6 @@ import SourceCodeDetailsPage from './pages/SourseCodeDetailsPage';
 import toast, { Toaster } from 'react-hot-toast';
 import Contact from './modal/Contact';
 import ContactModalContextProvider from './context/ContactModalContext';
-import SparklesPreview from './components/SparklesPreview';
 import { SpotlightPreview } from './components/SpotlightPreview';
 import {motion} from 'framer-motion';
 

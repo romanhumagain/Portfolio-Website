@@ -5,6 +5,7 @@ import resume from '../assets/Roman_Humagain_Resume.pdf';
 import { FaDownload } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { motion } from 'framer-motion';
+import { Typewriter } from 'react-simple-typewriter';
 
 const HomePage = () => {
   return (
@@ -28,8 +29,15 @@ const HomePage = () => {
                 <p className='text-sm font-semibold sm:text-lg lg:text-lg text-slate-700 dark:text-gray-300'>
                   a{' '}
                   <span className="text-cyan-500 dark:text-cyan-500">
-                    {/* Add Typewriter here if needed */}
-                    Software Developer
+                  <Typewriter
+                      words={['Software Developer', 'Full Stack Developer', 'Mobile App Developer']}
+                      loop={true}
+                      cursor
+                      cursorStyle='|'
+                      typeSpeed={80}
+                      deleteSpeed={50}
+                      delaySpeed={1500}
+                    />
                   </span>
                 </p>
               </div>

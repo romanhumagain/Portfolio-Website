@@ -6,7 +6,7 @@ import './Mode.css';
 import {motion} from 'framer-motion'
 
 const Mode = () => {
-  const initialMode = localStorage.getItem('portfolio-mode') || 'light';
+  const initialMode = localStorage.getItem('portfolio-mode') || 'dark';
   const [mode, setMode] = useState(initialMode);
 
   const element = document.documentElement;

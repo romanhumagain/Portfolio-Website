@@ -8,7 +8,7 @@ import { TypewriterEffectSmoothDemo } from "./ui/TypewriterEffectSmoothDemo";
 export function SpotlightPreview() {
   return (
     (<div
-      className="h-screen w-full flex md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      className="h-screen w-full flex md:items-center md:justify-center dark:bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden" style={{ fontFamily: "Montserrat, sans-serif" }}>
       <div
         className="flex flex-col items-center justify-center w-full h-screen overflow-hidden bg-neutral-950">
 
@@ -29,7 +29,7 @@ export function SpotlightPreview() {
               delay: 0.5,
               ease: "easeInOut",
             }}
-            className="text-[42px] mb-1 font-bold text-center text-transparent bg-opacity-50 md:text-6xl bg-clip-text bg-gradient-to-b from-orange-300 via-pink-600 to-purple-300"
+            className="text-[42px] mb-1 font-bold text-center text-transparent bg-opacity-50 md:text-6xl bg-clip-text bg-gradient-to-b from-orange-300 via-pink-600 to-purple-200"
 
           >
             Roman
@@ -60,7 +60,7 @@ export function SpotlightPreview() {
           <div
             className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
           <div
-            className="absolute top-0 w-1/4 h-2px inset-x-60 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
+            className="absolute top-0 w-1/4 h-[2px] inset-x-60 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
           <div>
 
           </div>
