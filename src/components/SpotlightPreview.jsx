@@ -29,7 +29,7 @@ export function SpotlightPreview() {
               delay: 0.5,
               ease: "easeInOut",
             }}
-            className="text-[42px] font-bold text-center text-transparent bg-opacity-50 md:text-6xl bg-clip-text bg-gradient-to-b from-orange-300 via-pink-600 to-purple-300"
+            className="text-[40px] font-bold text-center text-transparent bg-opacity-50 md:text-6xl bg-clip-text bg-gradient-to-b from-orange-300 via-pink-600 to-purple-300"
 
           >
             Roman

@@ -16,7 +16,6 @@ const About = () => {
           <p className='mt-4 text-sm font-light leading-relaxed text-center text-gray-700 md:text-[16px] dark:text-gray-400'>
             I am always looking to connect with like-minded individuals and explore new opportunities in both web and mobile development. Let's keep in touch!
           </p>
-
         </div>
 
         <div className='flex flex-col items-center gap-5 px-8 mt-3 md:flex-row'>

@@ -17,6 +17,7 @@ import Contact from './modal/Contact';
 import ContactModalContextProvider from './context/ContactModalContext';
 import { SpotlightPreview } from './components/SpotlightPreview';
 import {motion} from 'framer-motion';
+import { CoolModeDemo } from './components/ui/CoolModeDemo';
 
 
 function App() {
@@ -49,7 +50,7 @@ function App() {
 
   const scrollToSection = (ref) => {
     if (ref.current) {
-      const navbarHeight = 60;
+      const navbarHeight = isMobile?65:30;
       const top = ref.current.getBoundingClientRect().top + window.scrollY - navbarHeight;
       window.scrollTo({ top, behavior: 'smooth' });
     }
@@ -72,6 +73,7 @@ function App() {
               <Contact />
             </div>
             </div>
+            
             
 
             <Routes>

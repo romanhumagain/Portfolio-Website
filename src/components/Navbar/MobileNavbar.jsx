@@ -52,7 +52,7 @@ const MobileNavbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef,
                 scrollToSection([homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef][index]);
                 setIsMenuOpen(false);
               }}
-              className="block w-full px-6 py-[15px] font-semibold text-left text-gray-700 transition-all duration-300 text-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+              className="block w-full px-6 py-[15px] font-semibold text-left text-gray-700 transition-all duration-300 text-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-neutral-700"
             >
               {section}
             </button>

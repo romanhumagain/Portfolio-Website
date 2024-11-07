@@ -2,17 +2,24 @@ import Skills from "./Skills"
 import skills from "../../data/skillsData"
 import VerticalLine from "../common/VerticalLine"
 import SectionHeading from "../common/SectionHeading"
+import { IconCloudDemo } from "../ui/IconCloudDemo"
+import CoolMode from "../ui/CoolMode"
 
 const SkillsPage = () => {
   return (
     <>
       <div className='flex flex-col items-center justify-center h-full min-h-screen px-8'>
-        <div className='w-full max-w-4xl py-8 mt-24 shadow-lg mt-30 md:mt-0 rounded-3xl '>
+        <div className='w-full max-w-4xl py-8 mt-6 shadow-lg md:mt-28 rounded-3xl '>
 
-          <div className="md:p-4 ">
+          <div className="">
             <div className="">
               <SectionHeading title={"Skills"} />
             </div>
+            <CoolMode>
+              <div className="">
+                <IconCloudDemo />
+              </div>
+            </CoolMode>
 
             <div className="flex flex-wrap justify-center gap-3 mt-5">
 

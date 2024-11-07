@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ContactModal from '../../modal/ContactModal';
 import { useContactModal } from '../../context/ContactModalContext';
 import { motion } from 'framer-motion'
+import CoolMode from '../ui/CoolMode';
 
 const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef, scrollToSection }) => {
   const [activeSection, setActiveSection] = useState('Home');
@@ -40,7 +41,7 @@ const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certi
     <>
 
       <motion.div
-       className={`fixed z-40 flex justify-center w-full max-w-[665px] px-3 py-[12px] my-5 rounded-full shadow-md bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 dark:from-neutral-700 dark:via-neutral-800 dark:to-neutral-800`}
+       className={`fixed z-40 flex justify-center w-full max-w-[665px] px-3 py-[13px] my-5 rounded-full shadow-md bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 dark:from-neutral-700 dark:via-neutral-800 dark:to-neutral-800`}
        initial={{ scale: 0.9, opacity: 0, y: -15 }} 
           animate={{ scale: 1, opacity: 1, y: 0 }} 
           transition={{
