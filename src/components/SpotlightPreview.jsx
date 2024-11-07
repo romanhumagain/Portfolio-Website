@@ -46,7 +46,7 @@ export function SpotlightPreview() {
           }}
           className="max-w-xl mx-auto text-sm text-center md:text-lg text-neutral-400"
         >
-          <p className="max-w-lg mx-auto mt-1 text-xs font-normal text-center md:text-lg text-neutral-300">
+          <p className="max-w-lg mx-auto text-sm font-normal text-center md:text-lg text-neutral-300">
             Software Engineer || Full Stack Developer
           </p>
         </motion.p>
@@ -60,7 +60,7 @@ export function SpotlightPreview() {
           <div
             className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
           <div
-            className="absolute top-0 w-1/4 h-[2px] inset-x-60 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
+            className="absolute top-0 w-[30%] h-[3px] inset-x-90 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
           <div>
 
           </div>

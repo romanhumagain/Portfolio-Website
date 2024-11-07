@@ -1,12 +1,13 @@
 import React from 'react';
 import SocialLinks from './SocialLinks';
+import main_img from '../assets/images/main_image.jpg';
 import resume from '../assets/Roman_Humagain_Resume.pdf';
 import { FaDownload } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 
-const HomePage = ({main_img}) => {
+const HomePage = () => {
   return (
     <>
       <div className='flex flex-col items-center justify-center h-full min-h-screen p-10 lg:p-1 ' style={{ fontFamily: "Montserrat, sans-serif" }}>
