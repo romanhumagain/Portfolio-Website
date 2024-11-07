@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import ContactModal from '../../modal/ContactModal';
 import { useContactModal } from '../../context/ContactModalContext';
+import { motion } from 'framer-motion'
 
 const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef, scrollToSection }) => {
   const [activeSection, setActiveSection] = useState('Home');
-  const {isContactModalOpen, isChatModalOpen} = useContactModal();
+  const { isContactModalOpen, isChatModalOpen } = useContactModal();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +38,16 @@ const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certi
 
   return (
     <>
-      <div className={`fixed z-40 flex justify-center w-full max-w-[665px] px-3 py-[12px] my-5 rounded-full shadow-md bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 dark:from-neutral-700 dark:via-neutral-800 dark:to-neutral-800`}>
+
+      <motion.div
+       className={`fixed z-40 flex justify-center w-full max-w-[665px] px-3 py-[12px] my-5 rounded-full shadow-md bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 dark:from-neutral-700 dark:via-neutral-800 dark:to-neutral-800`}
+       initial={{ scale: 0.9, opacity: 0, y: -15 }} 
+          animate={{ scale: 1, opacity: 1, y: 0 }} 
+          transition={{
+            duration: 0.5,
+            ease: 'easeOut', 
+          }}
+       >
         <ul className='flex items-center gap-10 font-semibold text-[15px] text-slate-800 dark:text-neutral-300 '>
           {['Home', 'About', 'Skills', 'Expertise', 'Projects', 'Certificates'].map((section, index) => {
             const sectionRefs = [homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef];
@@ -58,7 +68,7 @@ const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certi
             );
           })}
         </ul>
-      </div>
+      </motion.div>
     </>
   );
 };

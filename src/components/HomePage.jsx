@@ -3,33 +3,33 @@ import SocialLinks from './SocialLinks';
 import main_img from '../assets/images/main_image.jpg';
 import resume from '../assets/Roman_Humagain_Resume.pdf';
 import { FaDownload } from "react-icons/fa6";
-import { Typewriter } from 'react-simple-typewriter';
 import { MdOutlineMailOutline } from "react-icons/md";
-
+import { motion } from 'framer-motion';
 
 const HomePage = () => {
   return (
     <>
       <div className='flex flex-col items-center justify-center h-full min-h-screen p-10 lg:p-1 ' style={{ fontFamily: "Montserrat, sans-serif" }}>
-        <div className='w-full max-w-xl p-8 mt-10 shadow-xl dark:shadow-lg lg:max-w-[640px] lg:p-10 lg:pb-8 lg:pt-12 bg-gradient-to-l from-slate-100 to-slate-300 dark:from-neutral-800 dark:to-neutral-900 rounded-3xl '>
+        <motion.div
+          className='w-full max-w-xl p-8 mt-10 shadow-xl dark:shadow-lg lg:max-w-[640px] lg:p-10 lg:pb-8 lg:pt-12 bg-gradient-to-l from-slate-100 to-slate-300 dark:from-neutral-800 dark:to-neutral-900 rounded-3xl'
+          initial={{ scale: 0.9, opacity: 0, y: 15 }} 
+          animate={{ scale: 1, opacity: 1, y: 0 }} 
+          transition={{
+            duration: 0.5,
+            ease: 'easeOut', 
+          }}
+        >
           <div className='flex flex-col-reverse gap-5 lg:grid lg:items-center lg:grid-cols-12 lg:gap-0'>
             <div className='flex flex-col items-center col-span-12 lg:items-start lg:col-span-8'>
-              <p className='text-xs font-medium sm:text-sm: lg:text-md text-slate-500 dark:text-gray-400 animate-fadeIn'>Hey <span className="wave-emoji">✋</span>, I'm</p>
-              <p className='mt-1 text-xl font-semibold sm:text-xl md:text-2xl lg:text-3xl text-slate-700 dark:text-gray-100 animate-slideIn'>Roman Humagain</p>
+              <p className='text-xs font-medium sm:text-sm: lg:text-md text-slate-500 dark:text-gray-400'>Hey <span className="wave-emoji">✋</span>, I'm</p>
+              <p className='mt-1 text-xl font-semibold sm:text-xl md:text-2xl lg:text-3xl text-slate-700 dark:text-gray-100'>Roman Humagain</p>
 
               <div className='mt-1'>
-                <p className='text-sm font-semibold sm:text-lg lg:text-lg text-slate-700 dark:text-gray-300 animate-fadeIn'>
+                <p className='text-sm font-semibold sm:text-lg lg:text-lg text-slate-700 dark:text-gray-300'>
                   a{' '}
                   <span className="text-cyan-500 dark:text-cyan-500">
-                    <Typewriter
-                      words={['Software Developer', 'Full Stack Developer', 'Mobile App Developer']}
-                      loop={true}
-                      cursor
-                      cursorStyle='|'
-                      typeSpeed={80}
-                      deleteSpeed={50}
-                      delaySpeed={1500}
-                    />
+                    {/* Add Typewriter here if needed */}
+                    Software Developer
                   </span>
                 </p>
               </div>
@@ -53,7 +53,6 @@ const HomePage = () => {
                 </a>
               </div>
 
-
               <div className='mt-5'>
                 <div className='flex gap-5'>
                   <SocialLinks />
@@ -73,11 +72,11 @@ const HomePage = () => {
           </div>
 
           <div className='mt-10'>
-            <p className="text-sm text-center text-gray-800 transition-transform duration-700 sm:text-lg lg:text-lg font-extralight dark:text-gray-400 hover:scale-105">
+            <p className="text-sm text-center text-gray-800 sm:text-lg lg:text-[17px] font-extralight dark:text-gray-400">
               &lt;Passion in Every Line of Code/&gt;
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
