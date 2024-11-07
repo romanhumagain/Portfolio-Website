@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaReact, FaNodeJs, FaPython, FaDatabase, FaDocker, FaAndroid, FaGithub } from 'react-icons/fa';
 import { SiDjango, SiMongodb, SiFlutter, SiExpress } from 'react-icons/si';
-import socialLinks from '../data/socialLinks'
+import socialLinks , {socialLinksDetails} from '../data/socialLinks'
 import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 import { BsTwitterX } from "react-icons/bs";
 
@@ -11,51 +11,18 @@ const ProjectHeading = () => {
     <>
       <div className='flex flex-col items-center justify-center min-h-screen gap-1 md:gap-5 lg:gap-10 md:flex-row'>
         <div className='md:pr-8 lg:pb-20 lg:pr-20'>
-          <div className='items-center hidden gap-5 mt-5 md:flex md:flex-col'>
-            <a
-              href={socialLinks?.linkedin}
-              className='text-[23px] md:text-[28px] text-blue-600 transition-transform duration-700 transform hover:text-blue-800 hover:scale-110'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaLinkedin />
-            </a>
-
-            <a
-              href={socialLinks?.github}
-              className='text-[23px] md:text-[28px] text-gray-800 transition-transform duration-700 transform dark:text-gray-100 hover:text-gray-900 dark:hover:text-gray-200 hover:scale-110'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaGithub />
-            </a>
-
-            <a
-              href={socialLinks?.instagram}
-              className='text-[23px] md:text-[28px] text-pink-500 transition-transform duration-700 transform dark:text-pink-700 hover:text-pink-700 hover:scale-110'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaInstagram />
-            </a>
-
-            <a
-              href={socialLinks?.facebook}
-              className='text-[23px] md:text-[28px] text-blue-700 transition-transform duration-700 transform hover:text-blue-900 hover:scale-110'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <FaFacebook />
-            </a>
-
-            <a
-              href={socialLinks?.x}
-              className='text-[23px] md:text-[28px] text-black transition-transform duration-700 transform dark:text-white hover:scale-110'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <BsTwitterX />
-            </a>
+          <div className='items-center hidden gap-6 mt-5 md:flex md:flex-col'>
+          {socialLinksDetails.length > 0 && socialLinksDetails.map((socialLink, index) => (
+          
+          <a
+            href={socialLink.link}
+            className={`text-[21px] md:text-[26px] ${socialLink.brand_color} transition-transform duration-700 transform hover:scale-110 cursor-pointer `}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <socialLink.icon />
+          </a>
+      ))}
           </div>
         </div>
         <div className="flex flex-col items-center justify-center p-8 py-10 text-center md:py-16" style={{ fontFamily: "Montserrat, sans-serif" }}>

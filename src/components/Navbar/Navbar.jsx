@@ -37,8 +37,8 @@ const Navbar = ({ homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certi
 
   return (
     <>
-      <div className={`fixed z-40 flex justify-center w-full max-w-2xl px-3 py-[13px] my-5 rounded-full shadow-md bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 dark:from-neutral-700 dark:via-neutral-800 dark:to-neutral-800`}>
-        <ul className='flex items-center gap-10 font-semibold text-[15px] text-slate-800 dark:text-neutral-300'>
+      <div className={`fixed z-40 flex justify-center w-full max-w-[665px] px-3 py-[12px] my-5 rounded-full shadow-md bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 dark:from-neutral-700 dark:via-neutral-800 dark:to-neutral-800`}>
+        <ul className='flex items-center gap-10 font-semibold text-[15px] text-slate-800 dark:text-neutral-300 '>
           {['Home', 'About', 'Skills', 'Expertise', 'Projects', 'Certificates'].map((section, index) => {
             const sectionRefs = [homeRef, aboutRef, skillsRef, expertiseRef, projectsRef, certificatesRef];
             return (

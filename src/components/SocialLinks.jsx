@@ -1,58 +1,26 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
-import socialLinks from '../data/socialLinks'
+import socialLinks, {socialLinksDetails} from '../data/socialLinks'
 import { BsTwitterX } from "react-icons/bs";
+import { FaThreads } from 'react-icons/fa6';
 
 const SocialLinks = () => {
   return (
     <div className='mt-3'>
       <p className='font-medium text-md md:text-lg text-slate-600 dark:text-neutral-400'>Find me on</p>
-      <div className='flex items-center gap-5 mt-5'>
-        
-        <a
-          href={socialLinks?.linkedin}
-          className='text-[23px] md:text-[28px] text-blue-600 transition-transform duration-700 transform hover:text-blue-800 hover:scale-110'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <FaLinkedin />
-        </a>
+      <div className='flex items-center gap-[18px] md:gap-5 mt-5'>
 
-        <a
-          href={socialLinks?.github}
-          className='text-[23px] md:text-[28px] text-gray-800 transition-transform duration-700 transform dark:text-gray-100 hover:text-gray-900 dark:hover:text-gray-200 hover:scale-110'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <FaGithub />
-        </a>
-
-        <a
-          href={socialLinks?.instagram}
-          className='text-[23px] md:text-[28px] text-pink-500 transition-transform duration-700 transform dark:text-pink-700 hover:text-pink-700 hover:scale-110'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <FaInstagram />
-        </a>
-
-        <a
-          href={socialLinks?.facebook}
-          className='text-[23px] md:text-[28px] text-blue-700 transition-transform duration-700 transform hover:text-blue-900 hover:scale-110'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <FaFacebook />
-        </a>
-
-        <a
-          href={socialLinks?.x}
-          className='text-[23px] md:text-[28px] text-black transition-transform duration-700 transform dark:text-white hover:scale-110'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <BsTwitterX />
-        </a>
+        {socialLinksDetails.length > 0 && socialLinksDetails.map((socialLink, index) => (
+          
+            <a
+              href={socialLink.link}
+              className={`text-[21px] md:text-[26px] ${socialLink.brand_color} transition-transform duration-700 transform hover:scale-110 cursor-pointer `}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <socialLink.icon />
+            </a>
+        ))}
       </div>
     </div>
   );

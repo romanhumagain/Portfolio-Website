@@ -15,7 +15,7 @@ const ProjectPage = () => {
       <div className='flex flex-col items-center justify-center h-full min-h-screen' style={{ fontFamily: "Montserrat, sans-serif" }}>
         <div className='w-full max-w-[1100px] px-5 mt-24 rounded-lg md:mt-10 sm:px-8'>
           <SectionHeading title={"Latest Projects"} />
-          <div className="grid items-center grid-cols-1 gap-10 py-5 shadow-lg sm:grid-cols-12 md:gap-5 sm:px-12 lg:px-14 rounded-3xl bg-gradient-to-r dark:bg-gradient-to-r from-slate-200 md:from-slate-200 md:via-slate-300 to-slate-300 md:to-slate-400 dark:from-neutral-800 dark:to-neutral-900">
+          <div className="grid items-center grid-cols-1 gap-10 py-5 shadow-lg md:py-2 sm:grid-cols-12 md:gap-5 sm:px-12 lg:px-14 rounded-3xl bg-gradient-to-r dark:bg-gradient-to-r from-slate-200 md:from-slate-200 md:via-slate-300 to-slate-300 md:to-slate-400 dark:from-neutral-800 dark:to-neutral-900">
             <div className="flex flex-col items-center px-5 md:items-center sm:col-span-5">
               <div className="text-start md:text-start">
                 <h2 className="mt-1 text-2xl font-semibold text-transparent sm:text-3xl bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text">

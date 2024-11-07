@@ -36,7 +36,7 @@ const ProjectDetailsPage = () => {
   useEffect(() => {
     fetchProjectLists();
 
-    const timer = setTimeout(() => setIsLoading(false), 2000);
+    const timer = setTimeout(() => setIsLoading(false), 1500);
 
     return () => clearTimeout(timer);
   }, []);
