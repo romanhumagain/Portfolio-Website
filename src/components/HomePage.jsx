@@ -15,7 +15,7 @@ const HomePage = () => {
           initial={{ scale: 0.9, opacity: 0, y: 15 }} 
           animate={{ scale: 1, opacity: 1, y: 0 }} 
           transition={{
-            duration: 0.5,
+            duration: 0.48,
             ease: 'easeOut', 
           }}
         >
