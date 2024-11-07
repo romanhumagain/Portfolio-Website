@@ -17,6 +17,8 @@ import Contact from './modal/Contact';
 import ContactModalContextProvider from './context/ContactModalContext';
 import { SpotlightPreview } from './components/SpotlightPreview';
 import {motion} from 'framer-motion';
+import main_img from './assets/images/main_image.jpg';
+
 
 function App() {
   const homeRef = useRef(null);
@@ -32,7 +34,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 4500);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -99,7 +101,7 @@ function App() {
                       />
                     )}
                   </div>
-                  <div ref={homeRef}><HomePage /></div>
+                  <div ref={homeRef}><HomePage main_img={main_img} /></div>
                   <div ref={aboutRef}><About /></div>
                   <div ref={skillsRef}><SkillsPage /></div>
                   <div ref={expertiseRef}><ServicePage /></div>

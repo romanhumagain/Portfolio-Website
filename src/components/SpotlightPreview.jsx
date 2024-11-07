@@ -29,14 +29,14 @@ export function SpotlightPreview() {
               delay: 0.5,
               ease: "easeInOut",
             }}
-            className="text-[42px] mb-1 font-bold text-center text-transparent bg-opacity-50 md:text-6xl bg-clip-text bg-gradient-to-b from-orange-300 via-pink-600 to-purple-200"
+            className="text-[42px] font-bold text-center text-transparent bg-opacity-50 md:text-6xl bg-clip-text bg-gradient-to-b from-orange-300 via-pink-600 to-purple-300"
 
           >
             Roman
           </motion.h1>
         </motion.h2>
 
-        {/* <motion.p
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -49,8 +49,8 @@ export function SpotlightPreview() {
           <p className="max-w-lg mx-auto mt-1 text-xs font-normal text-center md:text-lg text-neutral-300">
             Software Engineer || Full Stack Developer
           </p>
-        </motion.p> */}
-        <TypewriterEffectSmoothDemo/>
+        </motion.p>
+        {/* <TypewriterEffectSmoothDemo/> */}
 
         <div className="w-[40rem] h-40 relative mt-5">
           <div
