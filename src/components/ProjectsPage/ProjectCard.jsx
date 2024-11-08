@@ -24,8 +24,8 @@ const ProjectCard = () => {
                 className='transition-transform duration-700 rounded-lg cursor-pointer hover:scale-105'
                 alt={project.alt}
               />
-              <div className='absolute inset-0 flex items-center justify-center transition-opacity duration-700 bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100'>
-                <p className='mx-8 text-[13px] font-semibold text-white md:text-md'>{project.title}</p>
+              <div className='absolute inset-0 flex items-center justify-center overflow-hidden transition-opacity duration-700 bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100'>
+                <p className='mx-8 text-[11px] font-semibold text-white md:text-md'>{project.title}</p>
               </div>
             </div>
           ))}

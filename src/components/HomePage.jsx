@@ -11,7 +11,7 @@ import CoolMode from './ui/CoolMode';
 const HomePage = () => {
   return (
     <>
-      <div className='flex flex-col items-center justify-center h-full min-h-screen p-8 lg:p-0 ' style={{ fontFamily: "Montserrat, sans-serif" }}>
+      <div className='flex flex-col items-center justify-center h-full min-h-screen p-8 mb-10 lg:p-0 md:mb-8 lg:mb-0 ' style={{ fontFamily: "Montserrat, sans-serif" }}>
         <CoolMode>
           <motion.div
             className='w-full max-w-xl p-5 py-9 mt-12 shadow-xl dark:shadow-lg lg:max-w-[640px] lg:p-10 lg:pb-8 lg:pt-12 bg-gradient-to-l from-slate-100 to-slate-300 dark:from-neutral-800 dark:to-neutral-900 rounded-3xl'
@@ -24,8 +24,8 @@ const HomePage = () => {
           >
             <div className='flex flex-col-reverse gap-5 lg:grid lg:items-center lg:grid-cols-12 lg:gap-0'>
               <div className='flex flex-col items-center justify-center col-span-12 lg:items-start lg:col-span-8'>
-                <p className='text-xs font-medium sm:text-sm: lg:text-md text-slate-500 dark:text-gray-400'>Hey <span className="wave-emoji">✋</span>, I'm</p>
-                <p className='mt-1 text-xl font-semibold sm:text-xl md:text-2xl lg:text-3xl text-slate-700 dark:text-gray-100'>Roman Humagain</p>
+                <p className='mb-[2px] md:mb-[5px] text-xs font-medium sm:text-sm: lg:text-md text-slate-500 dark:text-gray-400'>Hey <span className="wave-emoji">✋</span>, I'm</p>
+                <p className='mt-1 text-[21px] font-semibold sm:text-xl md:text-2xl lg:text-3xl text-slate-700 dark:text-gray-100'>Roman Humagain</p>
 
                 <div className='mt-1'>
                   <p className='text-sm font-semibold sm:text-lg lg:text-lg text-slate-700 dark:text-gray-300'>
@@ -71,7 +71,7 @@ const HomePage = () => {
               </div>
 
               <div className='flex flex-col items-center col-span-12 lg:col-span-4'>
-                <div className='w-32 h-32  overflow-hidden transition-transform duration-700 rounded-full sm:w-[191px] sm:h-[191px] lg:w-52 lg:h-52 hover:scale-105 hover:shadow-lg'>
+                <div className='w-[129px] h-[129px]  overflow-hidden transition-transform duration-700 rounded-full sm:w-[191px] sm:h-[191px] lg:w-52 lg:h-52 hover:scale-105 hover:shadow-lg'>
                   <img
                     src={main_img}
                     alt="Profile"
