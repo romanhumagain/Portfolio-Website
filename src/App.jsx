@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 3200);
 
     return () => clearTimeout(timer);
   }, []);
@@ -72,8 +72,6 @@ function App() {
             </div>
             </div>
             
-            
-
             <Routes>
               <Route path='/' element={
                 <>
