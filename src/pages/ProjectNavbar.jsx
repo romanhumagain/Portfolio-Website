@@ -28,20 +28,20 @@ const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileApp
           <div className="hidden space-x-6 md:flex md:items-center md:justify-center">
             <Link
               onClick={() => scrollToSection(fullStackRef)}
-              className="text-gray-800 cursor-pointer dark:text-gray-300 hover:text-white"
+              className="font-semibold text-gray-800 cursor-pointer dark:text-gray-300 hover:text-white"
             >
               Full Stack Application
             </Link>
             <Link
               onClick={() => scrollToSection(mobileAppRef)}
-              className="text-gray-800 cursor-pointer dark:text-gray-300 hover:text-white"
+              className="font-semibold text-gray-800 cursor-pointer dark:text-gray-300 hover:text-white"
             >
               Mobile Application
             </Link>
 
             <Link
               onClick={() => scrollToSection(desktopAppRef)}
-              className="text-gray-800 cursor-pointer dark:text-gray-300 hover:text-white"
+              className="font-semibold text-gray-800 cursor-pointer dark:text-gray-300 hover:text-white"
             >
               Desktop Application
             </Link>

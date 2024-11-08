@@ -86,7 +86,7 @@ const ContactModal = ({ isOpen, onClose }) => {
       className={`fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-60 duration-300 ${isModalOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
       onClick={handleBackdropClick}
     >
-      <div className={`modal-scrollbar max-h-screen overflow-y-auto m-8 md:mt-[100px] md:mb-10 w-full max-w-sm sm:max-w-md lg:max-w-md p-6 pb-10 bg-white dark:bg-neutral-800 rounded-2xl shadow-lg transform transition-transform duration-300 ${isModalOpen ? "translate-y-0" : "-translate-y-20"}`}>
+      <div className={`modal-scrollbar max-h-screen overflow-y-auto m-8 md:mt-[100px] md:mb-10 w-full max-w-sm sm:max-w-[350px] md:max-w-[390px] lg:max-w-[430px] p-6 pb-10 bg-white dark:bg-neutral-800 rounded-2xl shadow-lg transform transition-transform duration-300 ${isModalOpen ? "translate-y-0" : "-translate-y-20"}`}>
         <button
           type="button"
           className="absolute top-3 right-3.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -115,7 +115,7 @@ const ContactModal = ({ isOpen, onClose }) => {
           <p className='mt-2 text-[15px] font-light text-gray-600 text-start md:text-md dark:text-gray-400'>
             Feel free to reach out to me directly via email at <a href="mailto:romanhumagain@gmail.com" className="text-purple-700 underline dark:text-purple-500">romanhumagain@gmail.com</a> or simply fill out the contact form below.
           </p>
-          <p className='mt-1 font-medium text-gray-600 text-start text-[15px] md:text-md dark:text-gray-400'>Please leave a valid Email to get a reply.</p>
+          <p className=' hidden md:flex mt-1 font-medium text-gray-600 text-start text-[15px] md:text-md dark:text-gray-400'>Please leave a valid Email to get a reply.</p>
         </div>
 
         <form onSubmit={handleSubmit}>

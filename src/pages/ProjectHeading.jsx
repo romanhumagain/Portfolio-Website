@@ -9,7 +9,7 @@ import { BsTwitterX } from "react-icons/bs";
 const ProjectHeading = () => {
   return (
     <>
-      <div className='flex flex-col items-center justify-center min-h-screen gap-1 md:gap-5 lg:gap-10 md:flex-row'>
+      <div className='flex flex-col items-center justify-center min-h-screen gap-1 mt-10 md:gap-5 lg:gap-10 md:flex-row'>
         <div className='md:pr-8 lg:pb-20 lg:pr-20'>
           <div className='items-center hidden gap-6 mt-5 md:flex md:flex-col'>
           {socialLinksDetails.length > 0 && socialLinksDetails.map((socialLink, index) => (

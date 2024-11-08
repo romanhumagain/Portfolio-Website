@@ -11,10 +11,10 @@ import CoolMode from './ui/CoolMode';
 const HomePage = () => {
   return (
     <>
-      <div className='flex flex-col items-center justify-center h-full min-h-screen p-10 lg:p-1 ' style={{ fontFamily: "Montserrat, sans-serif" }}>
+      <div className='flex flex-col items-center justify-center h-full min-h-screen p-8 lg:p-0 ' style={{ fontFamily: "Montserrat, sans-serif" }}>
         <CoolMode>
           <motion.div
-            className='w-full max-w-xl p-8 mt-10 shadow-xl dark:shadow-lg lg:max-w-[640px] lg:p-10 lg:pb-8 lg:pt-12 bg-gradient-to-l from-slate-100 to-slate-300 dark:from-neutral-800 dark:to-neutral-900 rounded-3xl'
+            className='w-full max-w-xl p-5 py-9 mt-12 shadow-xl dark:shadow-lg lg:max-w-[640px] lg:p-10 lg:pb-8 lg:pt-12 bg-gradient-to-l from-slate-100 to-slate-300 dark:from-neutral-800 dark:to-neutral-900 rounded-3xl'
             initial={{ scale: 0.9, opacity: 0, y: 15 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             transition={{
@@ -23,7 +23,7 @@ const HomePage = () => {
             }}
           >
             <div className='flex flex-col-reverse gap-5 lg:grid lg:items-center lg:grid-cols-12 lg:gap-0'>
-              <div className='flex flex-col items-center col-span-12 lg:items-start lg:col-span-8'>
+              <div className='flex flex-col items-center justify-center col-span-12 lg:items-start lg:col-span-8'>
                 <p className='text-xs font-medium sm:text-sm: lg:text-md text-slate-500 dark:text-gray-400'>Hey <span className="wave-emoji">✋</span>, I'm</p>
                 <p className='mt-1 text-xl font-semibold sm:text-xl md:text-2xl lg:text-3xl text-slate-700 dark:text-gray-100'>Roman Humagain</p>
 
@@ -44,7 +44,7 @@ const HomePage = () => {
                   </p>
                 </div>
 
-                <div className='flex items-center gap-3 mt-6 md:gap-4'>
+                <div className='flex flex-wrap items-center justify-center gap-3 mt-6 md:gap-4'>
                   <a
                     href={resume}
                     target='_blank'

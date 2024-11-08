@@ -19,7 +19,7 @@ const Footer = () => {
           Your vision, my expertise. Let's collaborate!
         </div>
 
-        <div className="text-sm text-center text-gray-500 md:text-md dark:text-gray-500">
+        <div className="text-xs text-center text-gray-500 md:text-md dark:text-gray-500">
           <p>&copy; {new Date().getFullYear()} Roman Humagain. All rights reserved.</p>
         </div>
       </div>
