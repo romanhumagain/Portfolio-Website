@@ -9,7 +9,7 @@ const SkillsPage = () => {
   return (
     <>
       <div className='flex flex-col items-center justify-center h-full min-h-screen px-5 mb-28 md:mb-10 lg:mb-0'>
-        <div className='w-full max-w-[890px] pb-6 p-3 shadow-lg md:pb-8 md:mt-20 rounded-3xl '>
+        <div className='w-full max-w-[890px] pb-6 p-3 shadow-lg mt-7 md:pb-8 md:mt-20 rounded-3xl '>
 
           <div className="">
             <div className="">

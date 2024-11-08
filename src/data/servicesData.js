@@ -3,13 +3,13 @@ import { FaLaptopCode, FaMobileAlt, FaDesktop } from 'react-icons/fa';
 const services = [
   {
     title: 'Full Stack Development',
-    description: 'I build complete web applications that work well on both the front and back ends. This includes creating user-friendly designs, ensuring smooth server operations, and developing REST APIs for efficient data exchange.',
+    description: 'I build complete web applications that work well on both the front and back ends. This includes creating user-friendly designs, ensuring smooth server operations, and developing REST APIs.',
     technologies: "(React, Django, MySQL)",
     icon: FaLaptopCode
   },
   {
     title: "MERN Stack",
-    description: "I create full-stack web apps using the MERN stack, ensuring a smooth connection between the front-end and back-end. I focus on responsive designs and effective data management.",
+    description: "I create full-stack web apps using the MERN stack, ensuring a smooth connection between the front-end and back-end. ",
     technologies: "(React, Node.js, Express, MongoDB)",
     icon: FaLaptopCode
   },
