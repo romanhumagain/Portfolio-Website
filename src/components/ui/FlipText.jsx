@@ -3,6 +3,8 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../../lib/utils";
+import { FaHome } from "react-icons/fa";
+import { FaR } from "react-icons/fa6";
 
 export function SlightFlip({
   word,
