@@ -58,7 +58,7 @@ const ProjectDetailsPage = () => {
 
           <div className='flex flex-col justify-center' ref={fullStackRef} style={{ paddingTop: '88px' }}>
             <div className="flex items-center justify-center px-5 mb-4 space-x-3">
-              <p className="text-2xl font-semibold text-transparent lg:text-3xl bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text">
+              <p className="text-[22px] font-semibold text-transparent lg:text-3xl bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text">
                 Full Stack Projects
               </p>
             </div>
@@ -80,7 +80,7 @@ const ProjectDetailsPage = () => {
 
           <div className='flex flex-col justify-center mt-8' ref={mobileAppRef} style={{ paddingTop: '88px' }}>
             <div className="flex items-center justify-center px-5 mb-4 space-x-3">
-              <p className="text-2xl font-semibold text-transparent lg:text-3xl bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text">
+              <p className="text-[22px] font-semibold text-transparent lg:text-3xl bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text">
                 Mobile Application Projects
               </p>
             </div>
@@ -103,7 +103,7 @@ const ProjectDetailsPage = () => {
 
           <div className='flex flex-col justify-center mt-16 mb-10 md:mt-18 lg:mt-20' ref={desktopAppRef} style={{ paddingTop: '88px' }}>
             <div className="flex items-center justify-center px-5 mb-4 space-x-3">
-              <p className="text-2xl font-semibold text-transparent lg:text-3xl bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text">
+              <p className="text-[22px] font-semibold text-transparent lg:text-3xl bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text">
                 Desktop Application Project
               </p>
             </div>

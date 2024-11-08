@@ -25,7 +25,7 @@ const HomePage = () => {
             <div className='flex flex-col-reverse gap-5 lg:grid lg:items-center lg:grid-cols-12 lg:gap-0'>
               <div className='flex flex-col items-center justify-center col-span-12 lg:items-start lg:col-span-8'>
                 <p className='mb-[2px] md:mb-[5px] text-xs font-medium sm:text-sm: lg:text-md text-slate-500 dark:text-gray-400'>Hey <span className="wave-emoji">✋</span>, I'm</p>
-                <p className='mt-1 text-[21px] font-semibold sm:text-xl md:text-2xl lg:text-3xl text-slate-700 dark:text-gray-100'>Roman Humagain</p>
+                <p className='mt-1 text-[20px] font-semibold sm:text-xl md:text-2xl lg:text-3xl text-slate-700 dark:text-gray-100'>Roman Humagain</p>
 
                 <div className='mt-1'>
                   <p className='text-sm font-semibold sm:text-lg lg:text-lg text-slate-700 dark:text-gray-300'>
