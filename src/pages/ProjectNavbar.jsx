@@ -24,7 +24,7 @@ const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileApp
       <div className="max-w-6xl py-[19px] mx-auto px-7">
         <div className="flex items-center justify-between">
           <Link to={'/'}>
-            <h1 className="text-xl font-bold text-gray-800 md:text-2xl dark:text-gray-200">Portfolio</h1></Link>
+            <h1 className="text-[22px] font-bold text-gray-800 md:text-2xl dark:text-gray-200">Portfolio</h1></Link>
           <div className="hidden space-x-6 md:flex md:items-center md:justify-center">
             <Link
               onClick={() => scrollToSection(fullStackRef)}
@@ -50,9 +50,9 @@ const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileApp
           <div className="md:hidden">
             <button onClick={toggleMobileMenu} className="text-gray-800 dark:text-gray-300 focus:outline-none">
               {isMobileMenuOpen ?
-                <RxCross2 className='text-2xl' />
+                <RxCross2 className='text-[29px]' />
                 :
-                <RiMenu3Fill className='text-2xl' />
+                <RiMenu3Fill className='text-[29px]' />
               }
             </button>
           </div>
