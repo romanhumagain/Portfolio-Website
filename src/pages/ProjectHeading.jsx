@@ -30,12 +30,12 @@ const ProjectHeading = () => {
           <h1 className="text-[22px] font-semibold text-transparent bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text md:text-3xl">
             Explore My Projects
           </h1>
-          <p className="max-w-xl mt-8 text-[14px] text-gray-700 dark:text-gray-300 md:text-md">
+          <p className="max-w-xl mt-8 text-[14px] text-gray-700 dark:text-gray-300 md:text-[16px]">
             Dive into a selection of my latest projects, spanning Full Stack web applications, mobile apps, and desktop software. Each project showcases skills, tools, and design choices bringing ideas to life.
           </p>
 
           <div className="flex flex-col items-center justify-center mt-8 text-center">
-            <p className="max-w-md text-[13px] text-neutral-500 md:text-md">
+            <p className="max-w-md text-[14px] text-neutral-500 md:text-[15px]">
               Some of the core technologies I use to build scalable projects across different platforms.
             </p>
 

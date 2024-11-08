@@ -61,21 +61,21 @@ const ProjectNavbar = ({ scrollToSection, fullStackRef, desktopAppRef, mobileApp
           <div className="flex flex-col mt-4 md:hidden">
             <Link
               onClick={() => handleMobileScroll(fullStackRef)}
-              className="py-3 font-semibold text-gray-700 dark:text-gray-400 hover:text-white"
+              className="py-3 font-semibold text-gray-700 text-[15px] dark:text-gray-400 hover:text-white"
             >
               Full Stack Application
             </Link>
 
             <Link
               onClick={() => handleMobileScroll(mobileAppRef)}
-              className="py-3 font-semibold text-gray-700 dark:text-gray-400 hover:text-white"
+              className="py-3 font-semibold text-[15px] text-gray-700 dark:text-gray-400 hover:text-white"
             >
               Mobile Application
             </Link>
 
             <Link
               onClick={() => handleMobileScroll(desktopAppRef)}
-              className="py-3 font-semibold text-gray-700 dark:text-gray-400 hover:text-white"
+              className="py-3 font-semibold text-[15px] text-gray-700 dark:text-gray-400 hover:text-white"
             >
               Desktop Application
             </Link>
