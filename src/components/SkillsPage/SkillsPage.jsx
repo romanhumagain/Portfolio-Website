@@ -8,18 +8,18 @@ import CoolMode from "../ui/CoolMode"
 const SkillsPage = () => {
   return (
     <>
-      <div className='flex flex-col items-center justify-center h-full min-h-screen px-8'>
-        <div className='w-full max-w-4xl py-8 mt-6 shadow-lg md:mt-28 rounded-3xl '>
+      <div className='flex flex-col items-center justify-center h-full min-h-screen px-8 mb-28 md:mb-10 lg:mb-0'>
+        <div className='w-full max-w-4xl py-8 shadow-lg md:mt-28 rounded-3xl '>
 
           <div className="">
             <div className="">
               <SectionHeading title={"Skills"} />
             </div>
-            <CoolMode>
-              <div className="">
-                <IconCloudDemo />
-              </div>
-            </CoolMode>
+
+            <div className="">
+              <IconCloudDemo />
+            </div>
+
 
             <div className="flex flex-wrap justify-center gap-3 mt-5">
 

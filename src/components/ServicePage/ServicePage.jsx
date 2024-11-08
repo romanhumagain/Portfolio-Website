@@ -7,8 +7,8 @@ import SectionHeading from '../common/SectionHeading'
 const ServicePage = () => {
   return (
     <>
-      <div className='flex flex-col items-center justify-center h-full min-h-screen'>
-        <div className='w-full max-w-3xl p-10 mt-6 rounded-lg md:mt-28 '>
+      <div className='flex flex-col items-center justify-center h-full min-h-screen mb-28 md:mb-10 lg:mb-0'>
+        <div className='w-full max-w-3xl p-10 rounded-lg md:mt-28 '>
           <SectionHeading title={"My Expertise"} />
           <div className=''>
             {services.length > 0 && services.map((service, index) => (

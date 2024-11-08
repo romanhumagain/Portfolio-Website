@@ -12,12 +12,10 @@ import Mode from "./components/Mode/Mode";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
 import SourceCodeDetailsPage from './pages/SourseCodeDetailsPage';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import Contact from './modal/Contact';
 import ContactModalContextProvider from './context/ContactModalContext';
-import { SpotlightPreview } from './components/SpotlightPreview';
-import {motion} from 'framer-motion';
-import { CoolModeDemo } from './components/ui/CoolModeDemo';
+import { FlipTextDemo } from './components/ui/FlipTextDemo';
 
 
 function App() {
@@ -59,7 +57,7 @@ function App() {
   return (
     isLoading
       ?
-      <SpotlightPreview />
+      <FlipTextDemo/>
       :
       <ContactModalContextProvider>
         <Router>

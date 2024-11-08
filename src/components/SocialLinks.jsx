@@ -14,7 +14,7 @@ const SocialLinks = () => {
           
             <a
               href={socialLink.link}
-              className={`text-[21px] md:text-[26px] ${socialLink.brand_color} transition-transform duration-700 transform hover:scale-110 cursor-pointer `}
+              className={`text-[21px] md:text-[26px] ${socialLink.brand_color} transition-transform duration-700 transform hover:scale-125 cursor-pointer `}
               target='_blank'
               rel='noopener noreferrer'
             >

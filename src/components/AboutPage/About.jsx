@@ -6,7 +6,7 @@ import SectionHeading from '../common/SectionHeading';
 const About = () => {
   return (
     <>
-      <div className='flex flex-col items-center justify-center h-full min-h-screen p-5 ' >
+      <div className='flex flex-col items-center justify-center h-full min-h-screen p-5 mb-28 md:mb-10 lg:mb-0 ' >
         <div className='w-full max-w-4xl p-3 px-2 rounded-lg md:p-12 '>
           <SectionHeading title={"About Me"} />
           <p className='mt-5 text-sm font-medium leading-relaxed text-center text-gray-800 md:text-[16px] dark:text-gray-300'>
