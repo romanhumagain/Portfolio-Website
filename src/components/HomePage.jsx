@@ -12,7 +12,6 @@ const HomePage = () => {
   return (
     <>
       <div className='flex flex-col items-center justify-center h-full min-h-screen p-8 mb-10 lg:p-0 md:mb-8 lg:mb-0 ' style={{ fontFamily: "Montserrat, sans-serif" }}>
-        <CoolMode>
           <motion.div
             className='w-full max-w-xl p-5 py-9 mt-12 shadow-xl dark:shadow-lg lg:max-w-[640px] lg:p-10 lg:pb-8 lg:pt-12 bg-gradient-to-l from-slate-100 to-slate-300 dark:from-neutral-800 dark:to-neutral-900 rounded-3xl'
             initial={{ scale: 0.9, opacity: 0, y: 15 }}
@@ -85,11 +84,8 @@ const HomePage = () => {
               <p className="text-[13px] text-center text-gray-800 md:text-[15px] lg:text-[17px] font-extralight dark:text-gray-400">
                 &lt;Passion in Every Line of Code/&gt;
               </p>
-
-
             </div>
           </motion.div>
-        </CoolMode>
       </div>
     </>
   );

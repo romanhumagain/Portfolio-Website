@@ -10,9 +10,9 @@ export const cloudProps = {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      width: "100%",
+      width: "92%",
       paddingTop: 40,
-      height: "100%", 
+      height: "92%", 
     },
   },
   options: {
