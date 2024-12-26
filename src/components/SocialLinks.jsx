@@ -13,6 +13,7 @@ const SocialLinks = () => {
         {socialLinksDetails.length > 0 && socialLinksDetails.map((socialLink, index) => (
           
             <a
+            key={index}
               href={socialLink.link}
               className={`text-[21px] md:text-[26px] ${socialLink.brand_color} transition-transform duration-700 transform hover:scale-125 cursor-pointer `}
               target='_blank'

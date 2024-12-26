@@ -12,7 +12,6 @@ const slugs = [
   "html5",
   "css3",
   "django",
-  "djangorestframework",
   "react",
   "nodedotjs",
   "express",

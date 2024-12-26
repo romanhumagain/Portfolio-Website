@@ -10,6 +10,7 @@ import chatbot_img from '../assets/images/portfolio/AI-ChatBot.png';
 import news_web_img from '../assets/images/portfolio/news_app.png';
 import weather_app from '../assets/images/portfolio/weather-app.png';
 import news_app from '../assets/images/portfolio/flutter_news_app.jpg';
+import mero_career from '../assets/images/portfolio/MeroCareer.png'
 
 import { FaPython, FaJava, FaJs, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaBootstrap, FaGithub, FaFigma } from 'react-icons/fa';
 import { SiCsharp, SiTypescript, SiDjango, SiExpress, SiFlutter, SiTailwindcss, SiMysql, SiMongodb, SiFirebase, SiOracle, SiDart, SiPostman, SiGit } from 'react-icons/si';
@@ -132,6 +133,22 @@ const projectsData = [
   {
     category: 'mobile',
     details: [
+      {
+        img: mero_career,
+        title: 'MeroCareer ',
+        alt: 'MeroCareer',
+        description: 'MeroCareer is a job-finding and recruitment mobile application designed to connect job seekers and recruiters.',
+        github_link: 'https://github.com/romanhumagain/MeroCareer',
+        technology: [
+          { icon: SiDart, name: 'Dart', brand_color: '#00BFFF' },
+          { icon: SiFlutter, name: 'Flutter', brand_color: '#02569B' },
+          { icon: SiDjango, name: 'Django', brand_color: '#0E4B3A' },
+          { icon: SiFirebase, name: 'Firebase', brand_color: '#FFCA28' },
+          { icon: FaReact, name: 'React', brand_color: '#61DAFB' },
+          { icon: SiTailwindcss, name: 'Tailwind', brand_color: '#38B2AC' }
+
+        ]
+      },
       {
         img: food_delivery_app_img,
         title: 'Food Delivery App',

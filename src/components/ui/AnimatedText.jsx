@@ -13,7 +13,7 @@ export const AnimatedText = ({ text }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 0.4,
-            delay: index * 0.3, // delay each letter based on its index
+            delay: index * 0.3, 
             ease: [0.42, 0, 0.58, 1], // smooth easing function
           }}
           className="text-white"

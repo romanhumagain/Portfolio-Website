@@ -10,6 +10,8 @@ import chatbot_img from '../../assets/images/portfolio/AI-ChatBot.png'
 import news_web_img from '../../assets/images/portfolio/news_app.png'
 import weather_app from '../../assets/images/portfolio/weather-app.png'
 import news_app from '../../assets/images/portfolio/flutter_news_app.jpg'
+import mero_career from '../../assets/images/portfolio/MeroCareer.png'
+
 
 const projectsData = [
   {
@@ -43,17 +45,18 @@ const projectsData = [
     column: 1
   },
   {
+    img: mero_career,
+    title: 'MeroCareer ',
+    alt: 'MeroCareer',
+    column: 2
+  },
+  {
     img: food_delivery_app_img,
     title: 'Food Delivery App',
     alt: 'Food Delivery App',
     column: 2
   },
-  {
-    img: news_app,
-    title: 'News App',
-    alt: 'News App',
-    column: 2
-  },
+  
   {
     img: food_ordering_img,
     title: 'Food Ordering',
